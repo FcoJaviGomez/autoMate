@@ -9,7 +9,7 @@
 :root{
     --negro: #1F191A;
     --amarillo: #FFD966;
-    --gris: #B3ABAC;
+    --gris40: rgba(179, 171, 172, 0.4);
     --gris10: rgba(179, 171, 172, 0.1);
     font-family: 'Mukta Vaani', sans-serif;
 }
