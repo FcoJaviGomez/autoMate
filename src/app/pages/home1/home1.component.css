@@ -1,0 +1,73 @@
+.background{
+    position: absolute;
+    width: 414px;
+    height: 764px;
+    background-image: url("../../../assets/multimedia/background.png");
+}
+
+.consejo{
+    position: absolute;
+    width: 209px;
+    height: 171px;
+    left: 168px;
+    top: 83px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 37px;
+    text-align: right;
+    color: #FAFAFA;
+}
+
+.imagen{
+    position: absolute;
+    width: 365px;
+    height: 278px;
+    left: 24px;
+    top: 274px;
+    background: url("../../../assets/multimedia/cocheHome.png");
+}
+
+.bloque_3{
+    position: absolute;
+    width: 186px;
+    height: 58px;
+    left: 192px;
+    top: 588px;
+}
+
+.btn_home{
+    position: absolute;
+    padding-top: 4px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: var(--amarillo);
+    border-radius: 30px;
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 33px;
+    text-align: center;
+    border: none;
+}
+
+.enlace_1{
+    position: absolute;
+    width: 235px;
+    left: 143px;
+    top: 666px;
+    text-decoration: none;
+    color: #FAFAFA;
+}
+
+.enlace_2{
+    position: absolute;
+    width: 75px;
+    left: 306px;
+    top: 666px;
+    text-decoration: none;
+    color: var(--amarillo);
+}
