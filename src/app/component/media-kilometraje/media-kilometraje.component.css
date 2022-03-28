@@ -1,0 +1,80 @@
+.all
+{
+    border: 3px solid red;
+    position: absolute;
+    width: 414px;
+    height: 694px;
+}
+.back
+{
+    position: absolute;
+    width: 345px;
+    height: 464px;
+    left: 34px;
+    top: 58px;
+    
+    background: rgba(179, 171, 172, 0.4);
+    border-radius: 10px;
+}
+/* .form
+{
+    display: flex;
+    gap: 29px;
+
+} */
+.tittle
+{
+    position: absolute;
+    width: 310px;
+    height: 54px;
+    left: 18px;
+    top: 32px;
+
+    background: rgba(179, 171, 172, 0.4);
+    border: 1px solid var(--gris);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.text
+{
+    position: absolute;
+    width: 282px;
+    height: 33px;
+    left: 14px;
+    top: 10px;
+    
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 33px;
+    text-align: center;
+    
+}
+.input
+{
+    position: absolute;
+    width: 310px;
+    height: 54px;
+    left: 18px;
+    top: 115px;
+    
+    background: #FAFAFA;
+    border: 1px solid var(--gris);
+    box-sizing: border-box;
+    border-radius: 10px; 
+    text-align: center;
+}
+.butt
+{
+    position: absolute;
+    width: 186px;
+    height: 58px;
+    left: 76px;
+    top: 369px;
+    border-radius: 10px;
+    box-shadow: inset;
+    background-color: var(--amarillo);
+    border: none;
+    box-shadow: 0px 1px 3px 1px var(--gris);
+}
