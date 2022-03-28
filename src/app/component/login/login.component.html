@@ -1,0 +1,15 @@
+<div class="login">
+
+
+    <div class="div">
+        <input type="email" #input1 class="div_correo" placeholder="Correo">
+        <input type="password" #input2 class="div_contraseña" placeholder="Contraseña">
+        <button on-click=iniciarSesion(input1,input2) class="div_boton">INICIAR SESIÓN</button>
+        <a class="div_olvidarContra" routerLink="/pagina-recuperar">¿Olvidaste tu contraseña?</a>
+        <div>
+            <a class="div_noTienesCuenta">¿No tienes una cuenta?</a>
+            <a class="div_registrate" routerLink="/pagina-registro">Regístrate</a>
+        </div>
+    </div>
+
+</div>
