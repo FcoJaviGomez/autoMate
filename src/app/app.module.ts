@@ -18,6 +18,8 @@ import { Home2Component } from './pages/home2/home2.component';
 import { PaginaMantenimientoComponent } from './pages/pagina-mantenimiento/pagina-mantenimiento.component';
 import { PaginaPerfilComponent } from './pages/pagina-perfil/pagina-perfil.component';
 
+import { MisDatosComponent } from './component/mis-datos/mis-datos.component';
+import { PaginaMisDatosComponent } from './pages/pagina-mis-datos/pagina-mis-datos.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { PaginaPerfilComponent } from './pages/pagina-perfil/pagina-perfil.compo
     PaginaMantenimientoComponent,
     PaginaPerfilComponent,
    
+    MisDatosComponent,
+    PaginaMisDatosComponent
   ],
   imports: [
     BrowserModule,
