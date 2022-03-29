@@ -10,6 +10,8 @@ import { PaginaLoginComponent } from './pages/pagina-login/pagina-login.componen
 import { Home1Component } from './pages/home1/home1.component';
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { PaginaRegistroComponent } from './pages/pagina-registro/pagina-registro.component';
+import { RegistroComponent } from './component/registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FooterComponent } from './component/footer/footer.component';
     PaginaLoginComponent,
     Home1Component,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    PaginaRegistroComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
