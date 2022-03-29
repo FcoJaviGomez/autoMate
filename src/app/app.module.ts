@@ -15,6 +15,8 @@ import { PaginaRecuperacionComponent } from './pages/pagina-recuperacion/pagina-
 import { PaginaRegistroComponent } from './pages/pagina-registro/pagina-registro.component';
 import { RegistroComponent } from './component/registro/registro.component';
 import { Home2Component } from './pages/home2/home2.component';
+import { PaginaPerfilComponent } from './pages/pagina-perfil/pagina-perfil.component';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { Home2Component } from './pages/home2/home2.component';
     PaginaRecuperacionComponent,
     PaginaRegistroComponent,
     RegistroComponent,
-    Home2Component
+    Home2Component,
+    PaginaPerfilComponent,
+   
   ],
   imports: [
     BrowserModule,

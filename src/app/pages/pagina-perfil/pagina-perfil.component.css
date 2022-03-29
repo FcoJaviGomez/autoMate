@@ -1,0 +1,70 @@
+.body
+{
+    width: 414px;
+    height: 694px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+.contenedor{
+    width: 345px;
+    height: 521px;
+    left: 22px;
+    top: 190px;
+    background-color:rgba(179, 171, 172, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-around;
+    align-items: center;
+}
+.boton{
+    width: 310px;
+    height: 58px;
+    left: 39px;
+    top: 452px;
+    background: #FFD966;
+    border-radius: 10px;
+    font-family: 'Mukta Vaani';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 53px;
+    text-align: center;
+    color: #000000;
+    border: none;
+}
+.cerrar{ 
+    /* border: solid 2px red; */
+
+    width: 205px;
+    height: 45px;
+    /* left: 93px; */
+    /* top: 644px; */
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    /* font-weight: 700; */
+    font-size: 32px;
+    text-align: center;
+    color: #000000;
+    /* border: none; */
+    background: none;
+    text-decoration:none;
+
+}
+.caja{
+    /* border: solid 2px green; */
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 1px;
+
+
+}
+.linea{
+    width: 165px;
+    height: 0px;
+    border: 1px solid #FFD966;
+    transform: rotate(-0.3deg);
+}
