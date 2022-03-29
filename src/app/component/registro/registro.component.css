@@ -1,0 +1,146 @@
+.registro{
+    width: 414px;
+    height: 694px;
+    /* margin-top: 132px; */
+    display: flex;
+    justify-content: center;
+    font-family: 'Mukta Vaani';
+    /* background-color: red; */
+}
+
+.div{
+    position: absolute;
+    width: 345px;
+    height: 587px;
+    top: 186px;
+    background: var(--gris10);
+    border-radius: 10px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.texto{
+    position: absolute;
+    width: 269px;
+    height: 75px;
+    top: 15px;
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--negro);
+}
+
+
+.div_nombre{
+    position: absolute;
+    width: 310px;
+    height: 54px;
+    top: 105px;
+    background: #FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 43px;
+    color: var(--negro);
+    padding-left: 15px;
+}
+
+.div_apellido{
+    position: absolute;
+    width: 310px;
+    height: 54px;
+    top: 185px;
+    background: #FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 43px;
+    color: var(--negro);
+    padding-left: 15px;
+}
+
+.div_correo{
+    position: absolute;
+    width: 310px;
+    height: 54px;
+    top: 265px;
+    background: #FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 43px;
+    color: var(--negro);
+    padding-left: 15px;
+}
+
+.div_contraseña{
+    position: absolute;
+    width: 310px;
+    height: 54px;
+    top: 345px;
+    background: #FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 43px;
+    color: var(--negro);
+    padding-left: 15px;
+}
+
+.div_contraseña1{
+    position: absolute;
+    width: 310px;
+    height: 54px;
+    top: 425px;
+    background: #FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 43px;
+    color: var(--negro);
+    padding-left: 15px;
+}
+
+.boton{
+    position: absolute;
+    width: 186px;
+    height: 58px;
+    top: 503px;
+    background: var(--amarillo);
+    border-radius: 10px;
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 33px;
+    text-align: center;
+    color: var(--negro);
+    border: none;
+    box-shadow: 0px 1px 3px 1px var(--gris);
+}

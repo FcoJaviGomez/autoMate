@@ -12,6 +12,9 @@ import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { RecuperacionComponent } from './component/recuperacion/recuperacion.component';
 import { PaginaRecuperacionComponent } from './pages/pagina-recuperacion/pagina-recuperacion.component';
+import { PaginaRegistroComponent } from './pages/pagina-registro/pagina-registro.component';
+import { RegistroComponent } from './component/registro/registro.component';
+import { Home2Component } from './pages/home2/home2.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { PaginaRecuperacionComponent } from './pages/pagina-recuperacion/pagina-
     HeaderComponent,
     FooterComponent,
     RecuperacionComponent,
-    PaginaRecuperacionComponent
+    PaginaRecuperacionComponent,
+    PaginaRegistroComponent,
+    RegistroComponent,
+    Home2Component
   ],
   imports: [
     BrowserModule,
