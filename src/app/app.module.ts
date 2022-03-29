@@ -16,6 +16,7 @@ import { PaginaRegistroComponent } from './pages/pagina-registro/pagina-registro
 import { RegistroComponent } from './component/registro/registro.component';
 import { Home2Component } from './pages/home2/home2.component';
 import { PaginaMantenimientoComponent } from './pages/pagina-mantenimiento/pagina-mantenimiento.component';
+import { HistorialComponent } from './pages/historial/historial.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { PaginaMantenimientoComponent } from './pages/pagina-mantenimiento/pagin
     PaginaRegistroComponent,
     RegistroComponent,
     Home2Component,
-    PaginaMantenimientoComponent
+    PaginaMantenimientoComponent,
+    HistorialComponent
   ],
   imports: [
     BrowserModule,
