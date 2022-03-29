@@ -37,7 +37,6 @@
     flex-direction: column;
     align-items: center;
     margin-top: 81px;
-    gap: 20px;
 }
 
 .card_mantenimiento{
@@ -45,8 +44,6 @@
     width: 310px;
     height: 81px;
     background: var(--gris40);
-    box-shadow: 0 0 5px 3px green;
-    box-sizing: border-box;
     border-radius: 10px;
     margin-bottom: 20px;
 }

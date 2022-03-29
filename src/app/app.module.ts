@@ -20,6 +20,7 @@ import { PaginaPerfilComponent } from './pages/pagina-perfil/pagina-perfil.compo
 
 import { MisDatosComponent } from './component/mis-datos/mis-datos.component';
 import { PaginaMisDatosComponent } from './pages/pagina-mis-datos/pagina-mis-datos.component';
+import { HistorialComponent } from './pages/historial/historial.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { PaginaMisDatosComponent } from './pages/pagina-mis-datos/pagina-mis-dat
     PaginaPerfilComponent,
    
     MisDatosComponent,
-    PaginaMisDatosComponent
+    PaginaMisDatosComponent,
+    HistorialComponent
   ],
   imports: [
     BrowserModule,
