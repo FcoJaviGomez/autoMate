@@ -1,0 +1,91 @@
+.all
+{
+    position: absolute;
+    width: 414px;
+    height: 694px;
+    /* padding-top: 132px; */
+}
+.back
+{
+    position: absolute;
+    width: 345px;
+    height: 406px;
+    left: 34px;
+    top: 190px;
+    background-color: var(--gris10);
+
+    border-radius: 10px;
+}
+.img
+{
+    position: absolute;
+    width: 147px;
+    height: 99px;
+    left: 99px;
+    top: 27px;
+}
+.text1
+{
+    position: absolute;
+    width: 334px;
+    height: 29px;
+    left: 6px;
+    top: 126px;
+    font-family: 'Mukta Vaani';
+    font-style: bold;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 188% */
+
+    text-align: center;
+}
+.text2
+{
+    position: absolute;
+    width: 311px;
+    height: 63px;
+    left: 17px;
+    top: 171px;
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+
+    text-align: center;
+}
+.input
+{
+    position: absolute;
+    width: 310px;
+    height: 54px;
+    left: 18px;
+    top: 244px;
+    background: white;
+    /* opacity: 0.3; */
+    border: 1px solid var(--gris10);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-size: 22px;
+}
+.butt
+{
+    position: absolute;
+    width: 186px;
+    height: 58px;
+    left: 80px;
+    top: 324px;
+    background-color: var(--amarillo);
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 33px;
+    text-align: center;
+    color: var(--negro);
+    border: none;
+    box-shadow: 0px 1px 3px 1px var(--gris);
+}

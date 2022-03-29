@@ -4,6 +4,8 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Mukta Vaani', sans-serif;
+
 }
 
 :root{
@@ -11,5 +13,5 @@
     --amarillo: #FFD966;
     --gris40: rgba(179, 171, 172, 0.4);
     --gris10: rgba(179, 171, 172, 0.1);
-    font-family: 'Mukta Vaani', sans-serif;
+    --gris: #B3ABAC;
 }
