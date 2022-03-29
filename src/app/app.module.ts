@@ -13,6 +13,7 @@ import { FooterComponent } from './component/footer/footer.component';
 import { PaginaRegistroComponent } from './pages/pagina-registro/pagina-registro.component';
 import { RegistroComponent } from './component/registro/registro.component';
 import { Home2Component } from './pages/home2/home2.component';
+import { PaginaMantenimientoComponent } from './pages/pagina-mantenimiento/pagina-mantenimiento.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { Home2Component } from './pages/home2/home2.component';
     FooterComponent,
     PaginaRegistroComponent,
     RegistroComponent,
-    Home2Component
+    Home2Component,
+    PaginaMantenimientoComponent
   ],
   imports: [
     BrowserModule,
