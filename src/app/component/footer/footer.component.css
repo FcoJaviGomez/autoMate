@@ -1,9 +1,10 @@
 .contenedor{
         position: absolute;
-        width: 390px;
-        height: 90px;
+        position: absolute;
+        width: 414px;
+        height: 69px;
         left: 0px;
-        top: 754px;
+        top: 827px;
         background: #1F191A;
         display:flex;
         flex-direction: row;
