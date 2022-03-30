@@ -1,0 +1,29 @@
+.all
+{
+    position: absolute;
+    width: 414px;
+    height: 694px;
+    margin-top: 132px;
+}
+.back
+{
+    position: absolute;
+    width: 345px;
+    height: 514px;
+    left: 30px;
+    top: 90px;
+    border-radius: 10px;
+    background-color: var(--gris10);
+    padding-top: 60px;
+}
+.text
+{
+    font-size: 16px;
+    text-align: center;
+}
+.subtitle
+{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 15px;
+}
