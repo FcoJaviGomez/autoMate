@@ -21,7 +21,12 @@ import { PaginaPerfilComponent } from './pages/pagina-perfil/pagina-perfil.compo
 import { MisDatosComponent } from './component/mis-datos/mis-datos.component';
 import { PaginaMisDatosComponent } from './pages/pagina-mis-datos/pagina-mis-datos.component';
 import { HistorialComponent } from './pages/historial/historial.component';
+<<<<<<< HEAD
 import { InfoAppComponent } from './pages/info-app/info-app.component';
+import { DetalleMantenimientoComponent } from './pages/detalle-mantenimiento/detalle-mantenimiento.component';
+=======
+import { DetalleMantenimientoComponent } from './pages/detalle-mantenimiento/detalle-mantenimiento.component';
+>>>>>>> detalleMantenimiento
 
 @NgModule({
   declarations: [
@@ -44,7 +49,8 @@ import { InfoAppComponent } from './pages/info-app/info-app.component';
     MisDatosComponent,
     PaginaMisDatosComponent,
     HistorialComponent,
-    InfoAppComponent
+    InfoAppComponent,
+    DetalleMantenimientoComponent
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,8 @@ import { PaginaRecuperacionComponent } from './pages/pagina-recuperacion/pagina-
 import { PaginaPerfilComponent } from './pages/pagina-perfil/pagina-perfil.component';
 import { PaginaMisDatosComponent } from './pages/pagina-mis-datos/pagina-mis-datos.component';
 import { InfoAppComponent } from './pages/info-app/info-app.component';
+import { DetalleMantenimientoComponent } from './pages/detalle-mantenimiento/detalle-mantenimiento.component';
+import { Home2Component } from './pages/home2/home2.component';
 
 const routes: Routes = [
   { path: "", component: Home1Component},
@@ -21,7 +23,9 @@ const routes: Routes = [
   { path: "recuperacion", component: PaginaRecuperacionComponent},
   { path: "perfil", component: PaginaPerfilComponent},
   { path: "mis-datos", component: PaginaMisDatosComponent},
-  { path: "info-app", component: InfoAppComponent}
+  { path: "info-app", component: InfoAppComponent},
+  { path: "detalle-mantenimiento", component: DetalleMantenimientoComponent},
+  { path: "home-logueado", component: Home2Component}
 ];
 
 

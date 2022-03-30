@@ -1,0 +1,147 @@
+.detalleMantenimiento {
+    position: absolute;
+    width: 414px;
+    height: 694px;
+    margin-top: 132px;
+}
+
+.card {
+    position: absolute;
+    width: 346px;
+    height: 538px;
+    left: 34px;
+    top: 56px;
+    background: var(--gris10);
+    border-radius: 10px;
+}
+
+.back{
+    position: absolute;
+    width: 55px;
+    height: 49px;
+    left: 271px;
+    top: 11px;
+}
+
+.txtNegro {
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 43px;
+    color: var(--negro);
+}
+
+.txtAmarillo {
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 43px;
+    color: var(--amarillo);
+}
+
+.l1 {
+    position: absolute;
+    width: 310px;
+    height: 43px;
+    left: 21px;
+    top: 53px;
+}
+
+.l2 {
+    position: absolute;
+    width: 249px;
+    height: 43px;
+    left: 38px;
+    top: 82px;
+}
+
+.l3 {
+    position: absolute;
+    width: 310px;
+    height: 43px;
+    left: 21px;
+    top: 126px;
+}
+
+.l4 {
+    position: absolute;
+    width: 258px;
+    height: 43px;
+    left: 38px;
+    top: 160px;
+}
+
+.l5 {
+    position: absolute;
+    width: 310px;
+    height: 43px;
+    left: 21px;
+    top: 199px;
+}
+
+.l6 {
+    position: absolute;
+    width: 258px;
+    height: 43px;
+    left: 38px;
+    top: 235px;
+}
+
+.l7{
+    position: absolute;
+    width: 310px;
+    height: 43px;
+    left: 21px;
+    top: 272px;
+}
+
+.l8 {
+    position: absolute;
+    width: 258px;
+    height: 43px;
+    left: 38px;
+    top: 307px;
+}
+
+.l9 {
+    position: absolute;
+    width: 310px;
+    height: 43px;
+    left: 21px;
+    top: 344px;
+}
+
+.l10 {
+    position: absolute;
+    width: 258px;
+    height: 43px;
+    left: 38px;
+    top: 379px;
+}
+
+.l11 {
+    position: absolute;
+    width: 75px;
+    height: 43px;
+    left: 21px;
+    top: 417px;
+}
+
+.l12 {
+    position: absolute;
+    width: 96px;
+    height: 43px;
+    left: 38px;
+    top: 452px;
+}
+
+.animacion {
+    position: absolute;
+    width: 145px;
+    height: 109px;
+    left: 181px;
+    top: 417px;
+}
+
