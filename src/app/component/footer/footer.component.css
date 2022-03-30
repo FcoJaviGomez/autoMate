@@ -1,16 +1,15 @@
 .contenedor{
         position: fixed;
         z-index: 1;
-        position: absolute;
         width: 414px;
         height: 69px;
         left: 0px;
-        top: 827px;
         background: #1F191A;
         display:flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        bottom: 0;
 }
 
 

@@ -1,12 +1,12 @@
 .paginaMantenimiento{
-    position: absolute;
+    /* position: absolute; */
     width: 414px;
     height: 694px;
     margin-top: 132px;
 }
 
 .titulo{
-    position: absolute;
+    /* position: absolute; */
     width: 268px;
     height: 52px;
     left: 73px;
@@ -48,7 +48,7 @@
     box-shadow: 0 0 5px 3px green;
     box-sizing: border-box;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .texto_1{
