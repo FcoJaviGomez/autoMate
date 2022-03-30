@@ -12,6 +12,8 @@ import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { PaginaRegistroComponent } from './pages/pagina-registro/pagina-registro.component';
 import { RegistroComponent } from './component/registro/registro.component';
+import { AgregarMantenimientoComponent } from './component/agregar-mantenimiento/agregar-mantenimiento.component';
+import { PaginaAgregarMantenimientoComponent } from './pages/pagina-agregar-mantenimiento/pagina-agregar-mantenimiento.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { RegistroComponent } from './component/registro/registro.component';
     HeaderComponent,
     FooterComponent,
     PaginaRegistroComponent,
-    RegistroComponent
+    RegistroComponent,
+    AgregarMantenimientoComponent,
+    PaginaAgregarMantenimientoComponent
   ],
   imports: [
     BrowserModule,
