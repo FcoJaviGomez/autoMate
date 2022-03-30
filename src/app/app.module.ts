@@ -24,6 +24,7 @@ import { HistorialComponent } from './pages/historial/historial.component';
 import { InfoAppComponent } from './pages/info-app/info-app.component';
 import { DetalleMantenimientoComponent } from './pages/detalle-mantenimiento/detalle-mantenimiento.component';
 
+import { PaginaSobreNosotrosComponent } from './pages/pagina-sobre-nosotros/pagina-sobre-nosotros.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { DetalleMantenimientoComponent } from './pages/detalle-mantenimiento/det
     PaginaMisDatosComponent,
     HistorialComponent,
     InfoAppComponent,
-    DetalleMantenimientoComponent
+    DetalleMantenimientoComponent,
+    PaginaSobreNosotrosComponent
   ],
   imports: [
     BrowserModule,
