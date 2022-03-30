@@ -25,6 +25,8 @@ import { InfoAppComponent } from './pages/info-app/info-app.component';
 import { DetalleMantenimientoComponent } from './pages/detalle-mantenimiento/detalle-mantenimiento.component';
 
 import { PaginaSobreNosotrosComponent } from './pages/pagina-sobre-nosotros/pagina-sobre-nosotros.component';
+import { AgregarMantenimientoComponent } from './component/agregar-mantenimiento/agregar-mantenimiento.component';
+import { PaginaAgregarMantenimientoComponent } from './pages/pagina-agregar-mantenimiento/pagina-agregar-mantenimiento.component';
 
 @NgModule({
   declarations: [
@@ -43,13 +45,15 @@ import { PaginaSobreNosotrosComponent } from './pages/pagina-sobre-nosotros/pagi
     Home2Component,
     PaginaMantenimientoComponent,
     PaginaPerfilComponent,
-   
+
     MisDatosComponent,
     PaginaMisDatosComponent,
     HistorialComponent,
     InfoAppComponent,
     DetalleMantenimientoComponent,
-    PaginaSobreNosotrosComponent
+    PaginaSobreNosotrosComponent,
+    AgregarMantenimientoComponent,
+    PaginaAgregarMantenimientoComponent
   ],
   imports: [
     BrowserModule,
