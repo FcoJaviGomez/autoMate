@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-recuperacion',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecuperacionComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router) { }
+  recuperar() {
+    this.router.navigate(['/pagina-login'])
+  }
 
   ngOnInit(): void {
   }
