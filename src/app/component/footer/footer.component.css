@@ -1,5 +1,6 @@
 .contenedor{
-        position: absolute;
+        position: fixed;
+        z-index: 1;
         position: absolute;
         width: 414px;
         height: 69px;
