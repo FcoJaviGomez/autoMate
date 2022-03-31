@@ -1,68 +1,67 @@
-.contenedor{
-        position: fixed;
-        z-index: 1;
-        width: 414px;
-        height: 69px;
-        left: 0px;
-        background: #1F191A;
-        display:flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        bottom: 0;
+.contenedor {
+    position: fixed;
+    z-index: 1;
+    width: 414px;
+    height: 69px;
+    left: 0px;
+    background: #1F191A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
 }
 
-.boton1{
+.boton1 {
     width: 60px;
     height: 55px;
     background-image: url(../../../assets/multimedia/iconoHome.png);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-size: 60px;
     background-color: #1F191A;
-    border:none;
+    border: none;
 }
 
 
-.boton1_activado{
+.boton1_activado {
     width: 60px;
     height: 55px;
     background-image: url(../../../assets/multimedia/iconoHomeAmarillo.png);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-size: 60px;
     background-color: #1F191A;
-    border:none;
-}
-    
-.boton2{
-     width: 65px;
-     height: 65px;
-     background-image: url(../../../assets/multimedia/iconoMas.png);
-     background-repeat: no-repeat;
-     background-size: cover; 
-     background-color: #1F191A;
-     border:none;
+    border: none;
 }
 
-.boton2_activado{
+.boton2 {
     width: 65px;
-     height: 65px;
-     background-image: url(../../../assets/multimedia/iconoMasAmarillo.png);
-     background-repeat: no-repeat;
-     background-size: cover; 
-     background-color: #1F191A;
-     border:none;
+    height: 65px;
+    background-image: url(../../../assets/multimedia/iconoMas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1F191A;
+    border: none;
 }
 
-.boton3{
+.boton2_activado {
+    width: 65px;
+    height: 65px;
+    background-image: url(../../../assets/multimedia/iconoMasAmarillo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1F191A;
+    border: none;
+}
+
+.boton3 {
     width: 60px;
     height: 55px;
     background-image: url(../../../assets/multimedia/iconoLlave.png);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-size: 60px;
     background-color: #1F191A;
-    border:none;
+    border: none;
 }
-

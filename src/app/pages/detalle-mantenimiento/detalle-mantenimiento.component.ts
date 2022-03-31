@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MantenimientosService } from 'src/app/servicios/mantenimientos.service';
 
 @Component({
   selector: 'app-detalle-mantenimiento',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detalle-mantenimiento.component.css']
 })
 export class DetalleMantenimientoComponent implements OnInit {
+  public mantenimientos: any
 
-  constructor() { }
+  constructor(private mantenimientoService: MantenimientosService) {
+    this.mantenimientos = this.mantenimientoService.mantenimientoSeleccionado
+  }
 
   ngOnInit(): void {
   }

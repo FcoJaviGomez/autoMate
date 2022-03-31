@@ -14,6 +14,7 @@ import { InfoAppComponent } from './pages/info-app/info-app.component';
 import { DetalleMantenimientoComponent } from './pages/detalle-mantenimiento/detalle-mantenimiento.component';
 import { Home2Component } from './pages/home2/home2.component';
 import { PaginaSobreNosotrosComponent } from './pages/pagina-sobre-nosotros/pagina-sobre-nosotros.component';
+import { DetalleHistorialComponent } from './pages/detalle-historial/detalle-historial.component';
 
 const routes: Routes = [
   { path: "", component: Home1Component },
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: "pagina-perfil", component: PaginaPerfilComponent },
   { path: "pagina-mis-datos", component: PaginaMisDatosComponent },
   { path: "info-app", component: InfoAppComponent },
+  { path: "detalle-historial", component: DetalleHistorialComponent },
   { path: "detalle-mantenimiento", component: DetalleMantenimientoComponent },
   { path: "home-logueado", component: Home2Component },
   { path: "home2", component: Home2Component },

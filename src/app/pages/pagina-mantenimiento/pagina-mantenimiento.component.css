@@ -1,16 +1,18 @@
-.paginaMantenimiento{
+.paginaMantenimiento {
     /* position: absolute; */
     width: 414px;
+    /* min-height: 50vh; */
     height: 694px;
     margin-top: 132px;
 }
 
-.titulo{
+.titulo {
     /* position: absolute; */
-    width: 268px;
+    /* width: 268px;
     height: 52px;
     left: 73px;
-    top: 74px;
+    top: 74px; */
+    margin-top: 20px;
     font-family: 'Mukta Vaani';
     font-style: normal;
     font-weight: 700;
@@ -20,27 +22,26 @@
     color: var(--negro);
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 346px;
-    height: 569px;
+    min-height: 649px;
     margin-left: 34px;
-    margin-top: 56px;
+    margin-top: 188px;
     background: var(--gris10);
     border-radius: 10px;
+    padding-bottom: 90px;
 }
 
-.cards_mantenimiento{
+.cards_mantenimiento {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 81px;
+    margin-top: 23px;
     gap: 20px;
-}
-
-.card_mantenimiento{
+    border: none;
     display: flex;
     width: 310px;
     height: 81px;
@@ -48,10 +49,11 @@
     box-shadow: 0 0 5px 3px green;
     box-sizing: border-box;
     border-radius: 10px;
-    margin-bottom: 10px;
+    padding-right: 5px;
 }
 
-.texto_1{
+
+.texto_1 {
     position: absolute;
     width: 129px;
     height: 34px;
@@ -68,7 +70,7 @@
     flex-direction: row;
 }
 
-.subtexto_1{
+.subtexto_1 {
     font-family: 'Mukta Vaani';
     font-style: normal;
     font-weight: 500;
@@ -78,7 +80,7 @@
     margin-top: 8px;
 }
 
-.texto_2{
+.texto_2 {
     position: absolute;
     width: 160px;
     height: 23px;
@@ -92,7 +94,7 @@
     color: var(--negro);
 }
 
-.icono{
+.icono {
     display: flex;
     width: 53px;
     height: 63px;

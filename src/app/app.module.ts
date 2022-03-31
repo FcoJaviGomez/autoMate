@@ -27,6 +27,7 @@ import { DetalleMantenimientoComponent } from './pages/detalle-mantenimiento/det
 import { PaginaSobreNosotrosComponent } from './pages/pagina-sobre-nosotros/pagina-sobre-nosotros.component';
 import { AgregarMantenimientoComponent } from './component/agregar-mantenimiento/agregar-mantenimiento.component';
 import { PaginaAgregarMantenimientoComponent } from './pages/pagina-agregar-mantenimiento/pagina-agregar-mantenimiento.component';
+import { DetalleHistorialComponent } from './pages/detalle-historial/detalle-historial.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { PaginaAgregarMantenimientoComponent } from './pages/pagina-agregar-mant
     DetalleMantenimientoComponent,
     PaginaSobreNosotrosComponent,
     AgregarMantenimientoComponent,
-    PaginaAgregarMantenimientoComponent
+    PaginaAgregarMantenimientoComponent,
+    DetalleHistorialComponent
   ],
   imports: [
     BrowserModule,
