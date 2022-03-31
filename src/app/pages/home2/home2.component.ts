@@ -7,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Home2Component implements OnInit {
 
-  constructor() { }
+  public mantenimientos: number[];
+
+  constructor() { 
+
+    this.mantenimientos = [
+      
+    ];
+
+  }
 
   ngOnInit(): void {
   }

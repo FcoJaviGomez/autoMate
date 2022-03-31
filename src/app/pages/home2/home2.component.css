@@ -121,3 +121,19 @@
     background: url("../../../assets/multimedia/cocheHome2.png");
     z-index: -1;
 }
+
+.condicion{
+    position: absolute;
+    width: 310px;
+    height: 81px;
+    left: 17px;
+    top: 224px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+}

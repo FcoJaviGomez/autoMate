@@ -12,11 +12,18 @@
 
         <h2 class="titulo_2">Tu próximo servicio es:</h2>
 
-        <section class="card_mantenimiento">
-            <p class="texto_1">FILTRO</p>
-            <p class="texto_2">FECHA FIN: 30/03/2022</p>
-            <img class="icono" src="../../../assets/multimedia/iconoGancho.png">
-        </section>
+        <div *ngIf="mantenimientos.length === 0 ; else card" class="condicion">
+            No tienes ningún mantenimiento <br>
+            creado en estos momentos.
+        </div>
+
+        <ng-template #card> 
+            <div class="card_mantenimiento">
+                <p class="texto_1">FILTRO</p>
+                <p class="texto_2">FECHA FIN: 03/04/2022</p>
+                <img class="icono" src="../../../assets/multimedia/iconoGancho.png">
+            </div>
+        </ng-template>
 
         <figure class="imagen"></figure>
 

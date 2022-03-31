@@ -23,7 +23,7 @@ import { PaginaMisDatosComponent } from './pages/pagina-mis-datos/pagina-mis-dat
 import { HistorialComponent } from './pages/historial/historial.component';
 import { InfoAppComponent } from './pages/info-app/info-app.component';
 import { DetalleMantenimientoComponent } from './pages/detalle-mantenimiento/detalle-mantenimiento.component';
-
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import { PaginaMisGastosComponent } from './pages/pagina-mis-gastos/pagina-mis-gastos.component';
 
@@ -60,7 +60,9 @@ import { PaginaAgregarMantenimientoComponent } from './pages/pagina-agregar-mant
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxChartsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
