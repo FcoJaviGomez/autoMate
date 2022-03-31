@@ -21,7 +21,7 @@ const routes: Routes = [
   { path: "pagina-login", component: PaginaLoginComponent },
   { path: "pagina-registro", component: PaginaRegistroComponent },
   { path: "home2", component: Home2Component },
-  { path: "perfil", component: PaginaPerfilComponent},
+  { path: "pagina-perfil", component: PaginaPerfilComponent},
   { path: "mis-datos", component: PaginaMisDatosComponent},
   { path: "kilometraje", component: KilometrajeComponent },
   { path: "mis-gastos", component: PaginaMisGastosComponent},
@@ -30,7 +30,7 @@ const routes: Routes = [
   { path: "sobre-nosotros", component: PaginaSobreNosotrosComponent },
   { path: "mantenimiento", component: PaginaMantenimientoComponent },
   { path: "detalle-mantenimiento", component: DetalleMantenimientoComponent },
-  { path: "agregar-mantenimiento", component: PaginaAgregarMantenimientoComponent },
+  { path: "pagina-agregar-mantenimiento", component: PaginaAgregarMantenimientoComponent },
   { path: "recuperacion", component: PaginaRecuperacionComponent},
 ];
 
