@@ -24,7 +24,6 @@ import { HistorialComponent } from './pages/historial/historial.component';
 import { InfoAppComponent } from './pages/info-app/info-app.component';
 import { DetalleMantenimientoComponent } from './pages/detalle-mantenimiento/detalle-mantenimiento.component';
 
-
 import { PaginaMisGastosComponent } from './pages/pagina-mis-gastos/pagina-mis-gastos.component';
 
 import { PaginaSobreNosotrosComponent } from './pages/pagina-sobre-nosotros/pagina-sobre-nosotros.component';
@@ -65,6 +64,7 @@ import { DetalleHistorialComponent } from './pages/detalle-historial/detalle-his
     BrowserModule,
     AppRoutingModule,
     NgxChartsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
