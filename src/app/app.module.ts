@@ -30,6 +30,7 @@ import { PaginaMisGastosComponent } from './pages/pagina-mis-gastos/pagina-mis-g
 import { PaginaSobreNosotrosComponent } from './pages/pagina-sobre-nosotros/pagina-sobre-nosotros.component';
 import { AgregarMantenimientoComponent } from './component/agregar-mantenimiento/agregar-mantenimiento.component';
 import { PaginaAgregarMantenimientoComponent } from './pages/pagina-agregar-mantenimiento/pagina-agregar-mantenimiento.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { PaginaAgregarMantenimientoComponent } from './pages/pagina-agregar-mant
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
