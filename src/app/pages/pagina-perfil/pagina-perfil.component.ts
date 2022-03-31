@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
+import { UsuarioService } from 'src/app/servicios/usuario.service';
 
 @Component({
   selector: 'app-pagina-perfil',
@@ -7,7 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaginaPerfilComponent implements OnInit {
 
-  constructor() { }
+  constructor(public usuario: UsuarioService, public router: Router) { }
+
+  cerrarSesion()
+  {
+    this.usuario.logged= false;
+    this.router.navigate(['/'])
+  }
 
   ngOnInit(): void {
   }
