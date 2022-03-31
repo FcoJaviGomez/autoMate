@@ -42,5 +42,11 @@
     background-color: #1F191A;
     border:none;
 }
+@media screen and (max-width:844px)
+{
+   
+}
+@media screen and (max-width:812px)
+{
 
-
+}
