@@ -15,23 +15,25 @@ import { DetalleMantenimientoComponent } from './pages/detalle-mantenimiento/det
 import { Home2Component } from './pages/home2/home2.component';
 import { PaginaSobreNosotrosComponent } from './pages/pagina-sobre-nosotros/pagina-sobre-nosotros.component';
 import { PaginaMisGastosComponent } from './pages/pagina-mis-gastos/pagina-mis-gastos.component';
+import { DetalleHistorialComponent } from './pages/detalle-historial/detalle-historial.component';
 
 const routes: Routes = [
   { path: "", component: Home1Component },
   { path: "pagina-login", component: PaginaLoginComponent },
   { path: "pagina-registro", component: PaginaRegistroComponent },
-  { path: "home2", component: Home2Component },
-  { path: "pagina-perfil", component: PaginaPerfilComponent},
-  { path: "mis-datos", component: PaginaMisDatosComponent},
   { path: "kilometraje", component: KilometrajeComponent },
-  { path: "mis-gastos", component: PaginaMisGastosComponent},
   { path: "historial", component: HistorialComponent },
+  { path: "mantenimiento", component: PaginaMantenimientoComponent },
+  { path: "pagina-recuperar", component: PaginaRecuperacionComponent },
+  { path: "pagina-perfil", component: PaginaPerfilComponent },
+  { path: "pagina-mis-datos", component: PaginaMisDatosComponent },
+  { path: "detalle-historial", component: DetalleHistorialComponent },
+  { path: "detalle-mantenimiento", component: DetalleMantenimientoComponent },
+  { path: "home2", component: Home2Component },
+  { path: "mis-gastos", component: PaginaMisGastosComponent },
   { path: "sobre-app", component: InfoAppComponent },
   { path: "sobre-nosotros", component: PaginaSobreNosotrosComponent },
-  { path: "mantenimiento", component: PaginaMantenimientoComponent },
-  { path: "detalle-mantenimiento", component: DetalleMantenimientoComponent },
   { path: "pagina-agregar-mantenimiento", component: PaginaAgregarMantenimientoComponent },
-  { path: "recuperacion", component: PaginaRecuperacionComponent},
 ];
 
 
