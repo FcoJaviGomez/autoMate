@@ -1,0 +1,36 @@
+.misGastos {
+    position: absolute;
+    width: 414px;
+    height: 694px;
+    margin-top: 132px;
+}
+
+.card {
+    position: absolute;
+    width: 346px;
+    height: 538px;
+    left: 34px;
+    top: 56px;
+    border-radius: 10px;
+    background: var(--gris10);
+}
+
+.titulo {
+    position: absolute;
+    width: 310px;
+    height: 58px;
+    left: 18px;
+    top: 28px;
+    background: rgba(179, 171, 172, 0.4);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.grafico {
+    position: absolute;
+    width: 330px;
+    height: 369px;
+    left: 12px;
+    top: 30px;
+}

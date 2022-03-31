@@ -12,6 +12,7 @@ import { PaginaMisDatosComponent } from './pages/pagina-mis-datos/pagina-mis-dat
 import { InfoAppComponent } from './pages/info-app/info-app.component';
 import { DetalleMantenimientoComponent } from './pages/detalle-mantenimiento/detalle-mantenimiento.component';
 import { Home2Component } from './pages/home2/home2.component';
+import { PaginaMisGastosComponent } from './pages/pagina-mis-gastos/pagina-mis-gastos.component';
 
 const routes: Routes = [
   { path: "", component: Home1Component},
@@ -25,7 +26,8 @@ const routes: Routes = [
   { path: "mis-datos", component: PaginaMisDatosComponent},
   { path: "info-app", component: InfoAppComponent},
   { path: "detalle-mantenimiento", component: DetalleMantenimientoComponent},
-  { path: "home-logueado", component: Home2Component}
+  { path: "home-logueado", component: Home2Component},
+  { path: "mis-gastos", component: PaginaMisGastosComponent}
 ];
 
 
