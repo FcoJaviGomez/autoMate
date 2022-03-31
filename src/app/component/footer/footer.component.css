@@ -7,74 +7,52 @@
         background: #1F191A;
         display:flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         bottom: 0;
 }
-
 .boton1{
     width: 60px;
-    height: 55px;
+    height: 60px;
     background-image: url(../../../assets/multimedia/iconoHome.png);
     background-repeat: no-repeat;
     background-size: cover; 
-    background-size: 60px;
+    background-size: 55px;
     background-color: #1F191A;
     border:none;
 }
-
-
 .boton1_activado{
-    width: 60px;
-    height: 55px;
     background-image: url(../../../assets/multimedia/iconoHomeAmarillo.png);
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-size: 60px;
-    background-color: #1F191A;
-    border:none;
 }
-    
 .boton2{
-     width: 65px;
-     height: 65px;
+     width: 60px;
+     height: 60px;
      background-image: url(../../../assets/multimedia/iconoMas.png);
      background-repeat: no-repeat;
      background-size: cover; 
+     background-size: 60px;
      background-color: #1F191A;
      border:none;
 }
-
 .boton2_activado{
-    width: 65px;
-     height: 65px;
      background-image: url(../../../assets/multimedia/iconoMasAmarillo.png);
-     background-repeat: no-repeat;
-     background-size: cover; 
-     background-color: #1F191A;
-     border:none;
 }
-
 .boton3{
     width: 60px;
-    height: 55px;
-    background-image: url(../../../assets/multimedia/iconoLlave.png);
+    height: 60px;
+    background-image: url(../../../assets/multimedia/iconoLlave2.png);
     background-repeat: no-repeat;
     background-size: cover; 
-    background-size: 60px;
+    background-size: 53px;
     background-color: #1F191A;
-    border:none;
+    border: none;
+    margin-top: 9px;
 }
 
-.boton1{
-    width: 65px;
-    height: 65px;
-    background-image: url(../../../assets/multimedia/iconoHome.png);
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-color: #1F191A;
-    border:none;
+.boton3_activado{
+     background-image: url(../../../assets/multimedia/iconoLlaveAmarilla2.png);
 }
+
 @media screen and (max-width:844px)
 {
    
