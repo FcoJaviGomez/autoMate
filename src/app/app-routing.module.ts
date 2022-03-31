@@ -14,23 +14,24 @@ import { InfoAppComponent } from './pages/info-app/info-app.component';
 import { DetalleMantenimientoComponent } from './pages/detalle-mantenimiento/detalle-mantenimiento.component';
 import { Home2Component } from './pages/home2/home2.component';
 import { PaginaSobreNosotrosComponent } from './pages/pagina-sobre-nosotros/pagina-sobre-nosotros.component';
+import { PaginaMisGastosComponent } from './pages/pagina-mis-gastos/pagina-mis-gastos.component';
 
 const routes: Routes = [
   { path: "", component: Home1Component },
   { path: "pagina-login", component: PaginaLoginComponent },
   { path: "pagina-registro", component: PaginaRegistroComponent },
-  { path: "kilometraje", component: KilometrajeComponent },
-  { path: "historial", component: HistorialComponent },
-  { path: "mantenimiento", component: PaginaMantenimientoComponent },
-  { path: "pagina-recuperar", component: PaginaRecuperacionComponent },
-  { path: "pagina-perfil", component: PaginaPerfilComponent },
-  { path: "pagina-mis-datos", component: PaginaMisDatosComponent },
-  { path: "info-app", component: InfoAppComponent },
-  { path: "detalle-mantenimiento", component: DetalleMantenimientoComponent },
-  { path: "home-logueado", component: Home2Component },
   { path: "home2", component: Home2Component },
-  { path: "pagina-agregar-mantenimiento", component: PaginaAgregarMantenimientoComponent },
-  { path: "pagina-sobre-nosotros", component: PaginaSobreNosotrosComponent }
+  { path: "perfil", component: PaginaPerfilComponent},
+  { path: "mis-datos", component: PaginaMisDatosComponent},
+  { path: "kilometraje", component: KilometrajeComponent },
+  { path: "mis-gastos", component: PaginaMisGastosComponent},
+  { path: "historial", component: HistorialComponent },
+  { path: "sobre-app", component: InfoAppComponent },
+  { path: "sobre-nosotros", component: PaginaSobreNosotrosComponent },
+  { path: "mantenimiento", component: PaginaMantenimientoComponent },
+  { path: "detalle-mantenimiento", component: DetalleMantenimientoComponent },
+  { path: "agregar-mantenimiento", component: PaginaAgregarMantenimientoComponent },
+  { path: "recuperacion", component: PaginaRecuperacionComponent},
 ];
 
 

@@ -24,6 +24,9 @@ import { HistorialComponent } from './pages/historial/historial.component';
 import { InfoAppComponent } from './pages/info-app/info-app.component';
 import { DetalleMantenimientoComponent } from './pages/detalle-mantenimiento/detalle-mantenimiento.component';
 
+
+import { PaginaMisGastosComponent } from './pages/pagina-mis-gastos/pagina-mis-gastos.component';
+
 import { PaginaSobreNosotrosComponent } from './pages/pagina-sobre-nosotros/pagina-sobre-nosotros.component';
 import { AgregarMantenimientoComponent } from './component/agregar-mantenimiento/agregar-mantenimiento.component';
 import { PaginaAgregarMantenimientoComponent } from './pages/pagina-agregar-mantenimiento/pagina-agregar-mantenimiento.component';
@@ -45,7 +48,6 @@ import { PaginaAgregarMantenimientoComponent } from './pages/pagina-agregar-mant
     Home2Component,
     PaginaMantenimientoComponent,
     PaginaPerfilComponent,
-
     MisDatosComponent,
     PaginaMisDatosComponent,
     HistorialComponent,
@@ -53,7 +55,8 @@ import { PaginaAgregarMantenimientoComponent } from './pages/pagina-agregar-mant
     DetalleMantenimientoComponent,
     PaginaSobreNosotrosComponent,
     AgregarMantenimientoComponent,
-    PaginaAgregarMantenimientoComponent
+    PaginaAgregarMantenimientoComponent,
+    PaginaMisGastosComponent
   ],
   imports: [
     BrowserModule,
