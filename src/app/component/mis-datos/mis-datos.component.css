@@ -1,13 +1,12 @@
-.all
-{
+.all {
     position: absolute;
     width: 414px;
     height: 694px;
     left: 0px;
     top: 133px;
 }
-.back
-{
+
+.back {
     position: absolute;
     width: 345px;
     height: 464px;
@@ -20,33 +19,36 @@
     gap: 26px;
     padding-top: 28px;
 }
-.caja
-{
+
+.caja {
     display: flex;
     justify-content: center;
     /* padding-right: 18px; */
     /* gap: 26px; */
 }
-.label
-{
+
+.label {
     background-color: var(--gris40);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border: 1px solid var(--gris);
     width: 113px;
-    text-align: center;
+    /* text-align: center; */
+    padding-left: 15px;
     color: var(--negro);
     padding-top: 15px;
 }
-.input
-{
+
+.input {
     border: 1px solid var(--gris);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    width: 197px;
     height: 54px;
+    padding-left: 15px;
 }
-.butt
-{
+
+.butt {
     /* position: absolute; */
     width: 186px;
     height: 58px;

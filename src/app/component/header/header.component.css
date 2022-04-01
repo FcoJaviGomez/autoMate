@@ -1,4 +1,4 @@
-.contenedor1{
+.contenedor1 {
     position: fixed;
     z-index: 1;
     width: 414px;
@@ -6,20 +6,22 @@
     left: 0px;
     top: 0px;
     background: #1F191A;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     background: #1F191A;
 }
-.contenedor2{
-    width:273px;
+
+.contenedor2 {
+    width: 273px;
     height: 132px;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.contenedor3{
+
+.contenedor3 {
     width: 117px;
     height: 132px;
     display: flex;
@@ -27,22 +29,36 @@
     justify-content: center;
     align-items: center;
 }
-.boton{
-     width: 70px;
-     height: 70px;
-     background-image: url(../../../assets/multimedia/iconoPersona.png);
-     background-repeat: no-repeat;
-     background-size: cover; 
-     /* background-size: 70px; */
-     background-color: #1F191A;
-     border:none;
-}
-.boton_activado{
-     background-image: url(../../../assets/multimedia/iconoPersonaAmarillo.png);
-}
-.titulo{
-    color: #FFD966;
-    font-size: 32px;
+
+.boton {
+    width: 70px;
+    height: 70px;
+    background-image: url(../../../assets/multimedia/iconoPersona.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 70px; */
+    background-color: #1F191A;
+    border: none;
+    margin-top: 49px;
+
 }
 
- 
+.boton_activado {
+    width: 70px;
+    height: 70px;
+    background-image: url(../../../assets/multimedia/iconoPersonaAmarillo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 70px; */
+    background-color: #1F191A;
+    border: none;
+    margin-top: 49px;
+}
+
+.titulo {
+    position: absolute;
+    width: 230px;
+    height: 95px;
+    left: 23px;
+    top: 36px;
+}
