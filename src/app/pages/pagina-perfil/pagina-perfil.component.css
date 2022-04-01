@@ -1,23 +1,24 @@
-.body
-{
+.body{
     width: 414px;
     height: 694px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
+    margin-top: 38px;
 }
 .contenedor{
     width: 345px;
-    height: 521px;
+    height: 540px;
     left: 22px;
     top: 190px;
-    background-color:rgba(179, 171, 172, 0.1);
+    background-color:var(--gris10);
     border-radius: 10px;
     display: flex;
     flex-direction: column ;
     justify-content: space-around;
     align-items: center;
+    padding-top: 20px;
 }
 .boton{
     width: 310px;
@@ -44,7 +45,7 @@
     font-family: 'Mukta Vaani';
     font-style: normal;
     /* font-weight: 700; */
-    font-size: 32px;
+    font-size: 28px;
     text-align: center;
     color: #000000;
     /* border: none; */
@@ -54,11 +55,11 @@
 }
 .caja{
     /* border: solid 2px green; */
-     display:flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     padding: 1px;
+display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
 
 
 }
