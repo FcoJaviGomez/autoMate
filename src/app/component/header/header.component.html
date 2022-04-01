@@ -1,11 +1,16 @@
 <section class="contenedor1">
     <div class="contenedor2">
-        <p class="titulo">AutoMate</p>
-        
+        <!-- <p class="titulo">AutoMate</p> -->
+        <img class="titulo" src="../../../assets/multimedia/logo1.png">
+
     </div>
-    <div *ngIf="usuario.logged" class ="contenedor3" >
-        <button class="boton" routerLink="/pagina-perfil" routerLinkActive="boton_activado">
-              
+    <div *ngIf="usuario.logged" class="contenedor3">
+        <!-- <button class="boton" routerLink="/pagina-perfil" routerLinkActive="boton_activado">
+
+        </button> -->
+        <button on-click=pulsarBoton() routerLink="/pagina-perfil"
+            [ngClass]="{boton:usuario.iconoPerfil==false, boton_activado:usuario.iconoPerfil==true}">
+
         </button>
     </div>
 
