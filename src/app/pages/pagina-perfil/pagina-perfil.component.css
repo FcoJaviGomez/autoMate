@@ -36,25 +36,25 @@
     border: none;
 }
 .cerrar{ 
-    /* border: solid 2px red; */
+     border: solid 2px red; 
 
     width: 205px;
     height: 45px;
-    /* left: 93px; */
-    /* top: 644px; */
+     left: 93px; 
+     top: 644px; 
     font-family: 'Mukta Vaani';
     font-style: normal;
-    /* font-weight: 700; */
+     font-weight: 700; 
     font-size: 28px;
     text-align: center;
     color: #000000;
-    /* border: none; */
+     border: none; 
     background: none;
     text-decoration:none;
 
 }
-.caja{
-    /* border: solid 2px green; */
+/* .caja{
+     border: solid 2px green;
 display:flex;
     flex-direction: column;
     justify-content: center;
@@ -62,7 +62,7 @@ display:flex;
     padding: 1px;
 
 
-}
+} */
 .linea{
     width: 165px;
     height: 0px;
