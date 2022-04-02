@@ -136,7 +136,7 @@ export class AgregarMantenimientoComponent implements OnInit {
     if (tipoMantenimiento != "") {
       console.log(tipoMantenimiento);
       console.log(coste);
-      this.router.navigate(['/mantenimiento'])
+      this.router.navigate(['/pagina-mantenimiento'])
     }
 
   }
@@ -145,7 +145,7 @@ export class AgregarMantenimientoComponent implements OnInit {
       console.log(tipoMantenimiento);
       console.log(tipoFreno);
       console.log(coste);
-      this.router.navigate(['/mantenimiento'])
+      this.router.navigate(['/pagina-mantenimiento'])
     }
 
   }
@@ -154,7 +154,7 @@ export class AgregarMantenimientoComponent implements OnInit {
       console.log(tipoMantenimiento);
       console.log(tipoFiltro);
       console.log(coste);
-      this.router.navigate(['/mantenimiento'])
+      this.router.navigate(['/pagina-mantenimiento'])
     }
 
   }
@@ -164,7 +164,7 @@ export class AgregarMantenimientoComponent implements OnInit {
       console.log(posicionNeumatico);
       console.log(traccion);
       console.log(coste);
-      this.router.navigate(['/mantenimiento'])
+      this.router.navigate(['/pagina-mantenimiento'])
     }
 
   }
@@ -172,7 +172,7 @@ export class AgregarMantenimientoComponent implements OnInit {
     if (tipoMantenimiento != "") {
       console.log(tipoMantenimiento);
       console.log(coste);
-      this.router.navigate(['/mantenimiento'])
+      this.router.navigate(['/pagina-mantenimiento'])
     }
 
   }
@@ -183,7 +183,7 @@ export class AgregarMantenimientoComponent implements OnInit {
       console.log(descripcion);
       console.log(coste);
       console.log(fecha);
-      this.router.navigate(['/mantenimiento'])
+      this.router.navigate(['/pagina-mantenimiento'])
     }
 
   }
