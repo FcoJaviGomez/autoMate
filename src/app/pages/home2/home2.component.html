@@ -13,8 +13,14 @@
         <h2 class="titulo_2">Tu próximo servicio es:</h2>
 
         <div *ngIf="mantenimientos.length === 0 ; else card" class="condicion">
-            No tienes ningún mantenimiento <br>
-            creado en estos momentos.
+
+            <div routerLink="/pagina-agregar-mantenimiento" class="card_condicion">
+                <p class="texto_condicion">
+                    En este momento no tienes ningún servicio próximo.  
+                    Pulsa aquí para crear un mantenimiento.
+                </p>
+                <img class="icono_condicion" src="../../../assets/multimedia/precaucion.png">
+            </div>
         </div>
 
         <ng-template #card> 

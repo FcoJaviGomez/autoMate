@@ -67,7 +67,7 @@
     width: 310px;
     height: 81px;
     left: 17px;
-    top: 224px;
+    top: 234px;
     background: var(--gris40);
     /* border: 2px dashed #FF0000; */
     box-shadow: 0 0 5px 3px #FF0000;
@@ -117,7 +117,7 @@
     width: 318px;
     height: 242px;
     left: 13px;
-    top: 305px;
+    top: 310px;
     background: url("../../../assets/multimedia/cocheHome2.png");
     z-index: -1;
 }
@@ -127,7 +127,7 @@
     width: 310px;
     height: 81px;
     left: 17px;
-    top: 224px;
+    top: 234px;
     box-sizing: border-box;
     border-radius: 10px;
     font-family: 'Mukta Vaani';
@@ -136,4 +136,41 @@
     font-size: 16px;
     line-height: 27px;
     text-align: center;
+}
+
+.card_condicion {
+    position: absolute;
+    width: 310px;
+    height: 81px;
+    background: var(--gris40);
+    box-shadow: 0 0 5px 3px #16EA2C;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.texto_condicion {
+    position: absolute;
+    width: 211px;
+    height: 58px;
+    left: 22px;
+    top: 10px;
+
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    text-align: center;
+
+    color: #000000;
+}
+
+.icono_condicion {
+    position: absolute;
+    width: 64px;
+    height: 60px;
+    left: 238px;
+    top: 10px;
 }
