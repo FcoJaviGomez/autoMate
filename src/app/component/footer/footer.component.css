@@ -1,63 +1,71 @@
-.contenedor{
-        position: fixed;
-        z-index: 1;
-        width: 414px;
-        height: 69px;
-        left: 0px;
-        background: #1F191A;
-        display:flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        bottom: 0;
+.contenedor {
+    position: fixed;
+    z-index: 1;
+    width: 414px;
+    height: 69px;
+    left: 0px;
+    background: #1F191A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 0;
 }
-.boton1{
+
+.boton1 {
     width: 60px;
     height: 60px;
     background-image: url(../../../assets/multimedia/iconoHome.png);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-size: 55px;
     background-color: #1F191A;
-    border:none;
+    border: none;
 }
-.boton1_activado{
+
+.boton1_activado {
     background-image: url(../../../assets/multimedia/iconoHomeAmarillo.png);
 }
-.boton2{
-     width: 60px;
-     height: 60px;
-     background-image: url(../../../assets/multimedia/iconoMas.png);
-     background-repeat: no-repeat;
-     background-size: cover; 
-     background-size: 60px;
-     background-color: #1F191A;
-     border:none;
+
+.boton2 {
+    width: 60px;
+    height: 60px;
+    background-image: url(../../../assets/multimedia/iconoMas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 60px;
+    background-color: #1F191A;
+    border: none;
 }
-.boton2_activado{
-     background-image: url(../../../assets/multimedia/iconoMasAmarillo.png);
+
+.boton2_activado {
+    background-image: url(../../../assets/multimedia/iconoMasAmarillo.png);
 }
-.boton3{
+
+.boton3 {
     width: 60px;
     height: 60px;
     background-image: url(../../../assets/multimedia/iconoLlave2.png);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-size: 53px;
     background-color: #1F191A;
     border: none;
     margin-top: 9px;
 }
 
-.boton3_activado{
-     background-image: url(../../../assets/multimedia/iconoLlaveAmarilla2.png);
+.boton3_activado {
+    width: 60px;
+    height: 60px;
+    background-image: url(../../../assets/multimedia/iconoLlaveAmarilla2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 53px;
+    background-color: #1F191A;
+    border: none;
+    margin-top: 9px;
 }
 
-@media screen and (max-width:844px)
-{
-   
-}
-@media screen and (max-width:812px)
-{
+@media screen and (max-width:844px) {}
 
-} 
+@media screen and (max-width:812px) {}

@@ -10,7 +10,7 @@ export class Home1Component implements OnInit {
 
   constructor(public router: Router) { }
   iniciarSesion() {
-    this.router.navigate(['/home2'])
+    this.router.navigate(['/pagina-login'])
   }
 
   ngOnInit(): void {
