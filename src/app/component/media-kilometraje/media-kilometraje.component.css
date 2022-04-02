@@ -13,7 +13,7 @@
     left: 34px;
     top: 58px;
     
-    background: rgba(179, 171, 172, 0.4);
+    background: var(--gris10);
     border-radius: 10px;
 }
 .tittle
@@ -24,7 +24,7 @@
     left: 18px;
     top: 32px;
 
-    background: rgba(179, 171, 172, 0.4);
+    background: var(--gris40);
     border: 1px solid var(--gris);
     box-sizing: border-box;
     border-radius: 10px;
@@ -82,8 +82,7 @@
     height: 54px;
     left: 18px;
     top: 98px;
-    padding-left: 15px;
-    
+    text-align: center;    
     background: #FAFAFA;
     border: 1px solid var(--gris);
     box-sizing: border-box;
@@ -97,8 +96,7 @@
     height: 54px;
     left: 18px;
     top: 253px;
-    padding-left: 15px;
-    
+    text-align: center;    
     background: #FAFAFA;
     border: 1px solid var(--gris);
     box-sizing: border-box;
