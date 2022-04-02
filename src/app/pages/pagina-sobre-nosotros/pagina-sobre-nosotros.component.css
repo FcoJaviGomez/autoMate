@@ -21,52 +21,32 @@
     align-items: center;
 } 
 .card1{
-    
+    border: solid 2px #FFD966;
+    background: var(--amarillo);
     display: flex;
     flex-direction: row;
-    justify-content:center ;
+    justify-content:center;
     align-items: center; 
     width: 310px;
     height: 111px;
-    background: var(--gris40);
+    /* background: var(--gris40); */
     box-sizing: border-box;
     border-radius: 10px;
     margin-bottom: 10px; 
     left: 41px;
     top: 208px;
-    
+    padding: 40px;
 }
-.card2{
-    
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center; 
-    width: 310px;
-    height: 111px;
-    background: var(--gris40);
-    box-sizing: border-box;
-    border-radius: 10px;
-    margin-bottom: 10px; 
-    left: 41px;
-    top: 208px;
-    
-}
-
 .foto{
-   
     width: 80px;
     height: 80px;
     left: 58px;
     top: 224px;
-    border-radius: 40px;
+    border-radius: 10px;
     background: #C4C4C4;
-    margin: 15px;
-   
-    
+    margin: 1px;
 }
 .caja1{
-    
     display:flex;
     flex-direction: column;
     justify-items:center;
@@ -79,55 +59,63 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+    line-height: 3px;
+    text-align: center;
+    top: 30px;
 }
 .iconos{
-   
     width: 100px;
     display: flex;
     flex-direction:row;
     justify-content: space-evenly; 
     align-items: flex-start;
-    
-
+    top: 30px;
 }
-
 .nombre{
     width: 200px;
     display:flex;
     flex-direction: row;
     justify-content: center;
-    left: 154px;
-    top: 218px;
+    /* left: 154px; */
+    /* top: 218px; */
     font-family: 'Mukta Vaani';
     font-style: normal;
-    font-weight: 500;
+    /* font-weight: 500; */
     font-size: 24px;
-    line-height: 40px;
+    line-height: 15px;
+   
     color: #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 .dev{
-  
-  
-   width: 200px;
-    left: 155px;
-    top: 256px;
+    width: 200px;
+    /* left: 155px; */
+    /* top: 256px; */
     font-family: 'Mukta Vaani';
     font-style: normal;
-    font-weight: 500;
+    /* font-weight: 500; */
     font-size: 14px;
-    line-height: 23px;
     color: #000000;
     display:flex;
     flex-direction: row;
     justify-content: center;
-
+    line-height: 20px;
 }
-.lk{
-color: #0a66c2
-}
-.iconos{
+/* .cajaTexto{
+    
+     border: solid green 2px; 
+    height: 30px;
     display:flex;
-
+    flex-direction: column;
+    justify-content: center;
+    
+}  */
+.lk{
+color: var(--negro)
+}
+.mail{
+    color: var(--negro)
+}
+.git{
+    color: var(--negro)
 }
