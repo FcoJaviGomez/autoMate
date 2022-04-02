@@ -6,24 +6,89 @@
     margin-top: 132px;
 }
 .back
-{
+{   
     position: absolute;
     width: 345px;
-    height: 514px;
-    left: 30px;
-    top: 90px;
-    border-radius: 10px;
+    height: 530px;
+    left: 33px;
+    top: 56px;
+    border-radius: 10px;   
     background-color: var(--gris10);
-    padding-top: 60px;
+    padding-top: 20px;
+     /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+} 
+.cajatexto{
+   
+    width: 345px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+   
 }
-.text
-{
-    font-size: 16px;
+.text{
+    /* position: absolute; */
+    width: 329px; 
+    /* height: 389px;  */
+    left: 15px; 
+    top: 258px;   
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;  
+    line-height: 32px;
     text-align: center;
-}
+    color: #000000; 
+} 
+
 .subtitle
 {
-    font-size: 25px;
+    font-size: 17px;
     text-align: center;
     margin-top: 15px;
+    line-height: 20px;
+    
 }
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 310px;
+    background: var(--amarillo);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    left: 18px;
+   
+
+}
+
+.imagen{
+    
+    width:300px;
+    height: 70px;
+    background-image: url(../../../assets/multimedia/imagenAutoMate.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+   
+    
+    
+} 
+.padre{
+    /* border: solid 2px red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 345px;
+    height: 200px;
+  
+
+}
+
