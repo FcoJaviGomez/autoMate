@@ -31,7 +31,7 @@ const routes: Routes = [
   { path: "detalle-mantenimiento", component: DetalleMantenimientoComponent },
   { path: "home2", component: Home2Component },
   { path: "sobre-app", component: InfoAppComponent },
-  { path: "pagina-sobre-nosotros", component: PaginaSobreNosotrosComponent },
+  { path: "sobre-nosotros", component: PaginaSobreNosotrosComponent },
   { path: "pagina-agregar-mantenimiento", component: PaginaAgregarMantenimientoComponent },
   { path: "pagina-mis-gastos", component: PaginaMisGastosComponent },
 ];
