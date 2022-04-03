@@ -1,9 +1,10 @@
 .background{
     position: absolute;
-    width: 414px;
-    height: 764px;
-    margin-top: 132px;
-    background-image: url("../../../assets/multimedia/background.png");
+    width: 417px;
+    height: 776px;
+    margin-top: 120px;
+    left: -3px;
+    background-image: url("../../../assets/multimedia/backgroundNew2.png");
 }
 
 .consejo{
