@@ -9,10 +9,10 @@ export class Home2Component implements OnInit {
 
   public mantenimientos: number[];
 
-  constructor() { 
+  constructor() {
 
     this.mantenimientos = [
-      
+
     ];
 
   }

@@ -1,4 +1,4 @@
-.body{
+.body {
     width: 414px;
     height: 694px;
     display: flex;
@@ -7,20 +7,22 @@
     align-items: flex-end;
     margin-top: 38px;
 }
-.contenedor{
+
+.contenedor {
     width: 345px;
     height: 540px;
     left: 22px;
     top: 190px;
-    background-color:var(--gris10);
+    background-color: var(--gris10);
     border-radius: 10px;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding-top: 20px;
 }
-.boton{
+
+.boton {
     width: 310px;
     height: 58px;
     left: 39px;
@@ -29,30 +31,30 @@
     border-radius: 10px;
     font-family: 'Mukta Vaani';
     font-weight: 600;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 53px;
     text-align: center;
     color: #000000;
     border: none;
 }
-.cerrar{ 
-     border: solid 2px red; 
 
+.cerrar {
+    margin-left: 3px;
     width: 205px;
     height: 45px;
-     left: 93px; 
-     top: 644px; 
+    left: 93px;
+    top: 644px;
     font-family: 'Mukta Vaani';
     font-style: normal;
-     font-weight: 700; 
-    font-size: 28px;
+    font-weight: 700;
+    font-size: 22px;
     text-align: center;
     color: #000000;
-     border: none; 
+    border: none;
     background: none;
-    text-decoration:none;
-
+    text-decoration: none;
 }
+
 /* .caja{
      border: solid 2px green;
 display:flex;
@@ -60,11 +62,9 @@ display:flex;
     justify-content: center;
     align-items: center;
     padding: 1px;
-
-
 } */
-.linea{
-    width: 165px;
+.linea {
+    width: 130px;
     height: 0px;
     border: 1px solid #FFD966;
     transform: rotate(-0.3deg);

@@ -22,10 +22,26 @@
 
 .back {
     position: absolute;
-    width: 55px;
-    height: 49px;
-    left: 271px;
-    top: 11px;
+    width: 8px;
+    height: 13px;
+    left: 40px;
+    top: 20px;
+    font-size: 25px;
+    color: var(--amarillo);
+}
+
+.eliminar {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 300px;
+    top: 10px;
+    font-size: 26px;
+    color: var(--amarillo);
+    border: none;
+    border-radius: 50%;
+    background-color: var(--gris10);
+
 }
 
 .txtNegro {

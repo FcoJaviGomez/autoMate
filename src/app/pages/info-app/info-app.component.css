@@ -1,12 +1,21 @@
-.all
-{
+.all {
     position: absolute;
     width: 414px;
     height: 694px;
     margin-top: 132px;
 }
-.back
-{
+
+.back1 {
+    position: absolute;
+    width: 8px;
+    height: 15px;
+    left: 40px;
+    top: 13px;
+    font-size: 25px;
+    color: var(--amarillo);
+}
+
+.back {
     position: absolute;
     width: 345px;
     height: 514px;
@@ -16,13 +25,13 @@
     background-color: var(--gris10);
     padding-top: 60px;
 }
-.text
-{
+
+.text {
     font-size: 16px;
     text-align: center;
 }
-.subtitle
-{
+
+.subtitle {
     font-size: 25px;
     text-align: center;
     margin-top: 15px;

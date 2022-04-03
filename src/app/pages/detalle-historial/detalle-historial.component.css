@@ -5,6 +5,30 @@
     margin-top: 132px;
 }
 
+.back1 {
+    position: absolute;
+    width: 8px;
+    height: 15px;
+    left: 40px;
+    top: 13px;
+    font-size: 25px;
+    color: var(--amarillo);
+}
+
+.eliminar {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 300px;
+    top: 10px;
+    font-size: 26px;
+    color: var(--amarillo);
+    border: none;
+    border-radius: 50%;
+    background-color: var(--gris10);
+
+}
+
 .card {
     position: absolute;
     width: 346px;

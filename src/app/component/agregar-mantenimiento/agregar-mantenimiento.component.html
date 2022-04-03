@@ -4,9 +4,9 @@
             <select class="form-select div_seleccionar bg-secondary" style="--bs-bg-opacity: .2;" name="mantenimientos"
                 #tipoMantenimiento on-change="mantenimientoSeleccion(tipoMantenimiento.value)">
 
-                <option value="seleciona mantenimiento">Seleciona mantenimiento
+                <option hidden value="seleciona mantenimiento">Seleciona mantenimiento
                 </option>
-                <option *ngFor="let mantenimiento of mantenimientos" [value]="mantenimiento">
+                <option class="texto" *ngFor="let mantenimiento of mantenimientos" [value]="mantenimiento">
                     {{mantenimiento}}
                 </option>
             </select>

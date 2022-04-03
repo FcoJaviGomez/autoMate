@@ -9,6 +9,8 @@ export class DetalleHistorialComponent implements OnInit {
 
   constructor() { }
 
+  eliminar() { }
+
   ngOnInit(): void {
   }
 

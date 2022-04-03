@@ -13,6 +13,10 @@ export class DetalleMantenimientoComponent implements OnInit {
     this.mantenimientos = this.mantenimientoService.mantenimientoSeleccionado
   }
 
+  eliminar() {
+
+  }
+
   ngOnInit(): void {
   }
 
