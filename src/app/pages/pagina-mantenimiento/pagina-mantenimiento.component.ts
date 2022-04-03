@@ -25,7 +25,9 @@ export class PaginaMantenimientoComponent implements OnInit {
     cost: 100,
     startDate: "20-10-2022",
     endDate: "30-10-2022"
-  }]
+  },]
+
+  // public mantenimientos: any = []
 
   constructor(public router: Router, private mantenimientoService: MantenimientosService) {
 

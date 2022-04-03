@@ -1,36 +1,52 @@
-.all
-{
+.all {
     position: absolute;
     width: 414px;
     height: 694px;
     /* padding-top: 132px; */
 }
-.back
-{
+
+.back {
     position: absolute;
     width: 345px;
-    height: 470px;
+    height: 460px;
     left: 34px;
-    top: 190px;
+    top: 187px;
     background-color: var(--gris10);
 
     border-radius: 10px;
 }
-.img
-{
+
+.texto {
+    position: absolute;
+    width: 309px;
+    height: 75px;
+    top: -2px;
+    padding-left: 49px;
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--negro);
+}
+
+.img {
     position: absolute;
     width: 147px;
     height: 99px;
     left: 99px;
-    top: 27px;
+    top: 57px;
 }
-.text1
-{
+
+.text1 {
     position: absolute;
     width: 334px;
     height: 29px;
     left: 6px;
-    top: 143px;
+    top: 175px;
     font-family: 'Mukta Vaani';
     font-style: normal;
     font-weight: 700;
@@ -38,13 +54,13 @@
     line-height: 30px;
     text-align: center;
 }
-.text2
-{
+
+.text2 {
     position: absolute;
     width: 311px;
     height: 63px;
     left: 17px;
-    top: 195px;
+    top: 216px;
     font-family: 'Mukta Vaani';
     font-style: normal;
     font-weight: 400;
@@ -52,13 +68,13 @@
     line-height: 20px;
     text-align: center;
 }
-.input
-{
+
+.input {
     position: absolute;
     width: 310px;
     height: 54px;
     left: 18px;
-    top: 270px;
+    top: 289px;
     background: white;
     /* opacity: 0.3; */
     border: 1px solid var(--gris10);
@@ -67,13 +83,13 @@
     padding-left: 15px;
     font-size: 22px;
 }
-.butt
-{
+
+.butt {
     position: absolute;
     width: 186px;
     height: 58px;
     left: 80px;
-    top: 360px;
+    top: 369px;
     background-color: var(--amarillo);
     border-radius: 10px;
     font-style: normal;

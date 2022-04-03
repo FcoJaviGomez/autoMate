@@ -1,23 +1,31 @@
-.all
-{
+.all {
     position: absolute;
     width: 414px;
     height: 694px;
     margin-top: 132px;
 }
-.back
-{
+
+.back1 {
+    position: absolute;
+    width: 8px;
+    height: 15px;
+    left: 40px;
+    top: 13px;
+    font-size: 25px;
+    color: var(--amarillo);
+}
+
+.back {
     position: absolute;
     width: 345px;
     height: 464px;
     left: 34px;
     top: 58px;
-    
     background: var(--gris10);
     border-radius: 10px;
 }
-.tittle
-{
+
+.tittle {
     position: absolute;
     width: 310px;
     height: 54px;
@@ -29,8 +37,8 @@
     box-sizing: border-box;
     border-radius: 10px;
 }
-.tittle2
-{
+
+.tittle2 {
     position: absolute;
     width: 310px;
     height: 54px;
@@ -43,69 +51,67 @@
     border-radius: 10px;
 }
 
-.text
-{
+.text {
     position: absolute;
     width: 282px;
     height: 33px;
     left: 14px;
     top: 10px;
-    
+
     font-family: 'Mukta Vaani';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 33px;
     text-align: center;
-    
+
 }
-.text2
-{
+
+.text2 {
     position: absolute;
     width: 282px;
     height: 33px;
     left: 14px;
     top: 10px;
-    
+
     font-family: 'Mukta Vaani';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 33px;
     text-align: center;
-    
+
 }
-.input
-{
+
+.input {
     position: absolute;
     width: 310px;
     height: 54px;
     left: 18px;
     top: 98px;
-    text-align: center;    
+    text-align: center;
     background: #FAFAFA;
     border: 1px solid var(--gris);
     box-sizing: border-box;
-    border-radius: 10px; 
+    border-radius: 10px;
     font-size: 22px;
 }
-.input2
-{
+
+.input2 {
     position: absolute;
     width: 310px;
     height: 54px;
     left: 18px;
     top: 253px;
-    text-align: center;    
+    text-align: center;
     background: #FAFAFA;
     border: 1px solid var(--gris);
     box-sizing: border-box;
-    border-radius: 10px; 
+    border-radius: 10px;
     font-size: 22px;
 }
 
-.butt
-{
+.butt {
     position: absolute;
     width: 186px;
     height: 58px;

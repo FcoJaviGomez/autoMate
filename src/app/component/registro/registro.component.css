@@ -1,4 +1,4 @@
-.registro{
+.registro {
     width: 414px;
     height: 694px;
     /* margin-top: 132px; */
@@ -8,19 +8,19 @@
     /* background-color: red; */
 }
 
-.div{
+.div {
     position: absolute;
     width: 345px;
     height: 587px;
-    top: 186px;
+    top: 187px;
     background: var(--gris10);
-    border-radius: 10px;  
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
-.texto{
+.texto {
     position: absolute;
     width: 269px;
     height: 75px;
@@ -37,7 +37,7 @@
 }
 
 
-.div_nombre{
+.div_nombre {
     position: absolute;
     width: 310px;
     height: 54px;
@@ -55,7 +55,7 @@
     padding-left: 15px;
 }
 
-.div_apellido{
+.div_apellido {
     position: absolute;
     width: 310px;
     height: 54px;
@@ -73,7 +73,7 @@
     padding-left: 15px;
 }
 
-.div_correo{
+.div_correo {
     position: absolute;
     width: 310px;
     height: 54px;
@@ -91,7 +91,7 @@
     padding-left: 15px;
 }
 
-.div_contraseña{
+.div_contraseña {
     position: absolute;
     width: 310px;
     height: 54px;
@@ -109,7 +109,7 @@
     padding-left: 15px;
 }
 
-.div_contraseña1{
+.div_contraseña1 {
     position: absolute;
     width: 310px;
     height: 54px;
@@ -127,7 +127,7 @@
     padding-left: 15px;
 }
 
-.boton{
+.boton {
     position: absolute;
     width: 186px;
     height: 58px;

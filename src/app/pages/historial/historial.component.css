@@ -1,11 +1,21 @@
-.paginaMantenimiento{
+.paginaMantenimiento {
     position: absolute;
     width: 414px;
     height: 694px;
     margin-top: 132px;
 }
 
-.titulo{
+.back1 {
+    position: absolute;
+    width: 8px;
+    height: 15px;
+    left: 40px;
+    top: 13px;
+    font-size: 25px;
+    color: var(--amarillo);
+}
+
+.titulo {
     position: absolute;
     width: 268px;
     height: 52px;
@@ -20,7 +30,7 @@
     color: var(--negro);
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,14 +42,14 @@
     border-radius: 10px;
 }
 
-.cards_mantenimiento{
+.cards_mantenimiento {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 81px;
 }
 
-.card_mantenimiento{
+.card_mantenimiento {
     display: flex;
     width: 310px;
     height: 81px;
@@ -48,7 +58,7 @@
     margin-bottom: 20px;
 }
 
-.texto_1{
+.texto_1 {
     position: absolute;
     width: 129px;
     height: 34px;
@@ -65,7 +75,7 @@
     flex-direction: row;
 }
 
-.subtexto_1{
+.subtexto_1 {
     font-family: 'Mukta Vaani';
     font-style: normal;
     font-weight: 500;
@@ -75,7 +85,7 @@
     margin-top: 8px;
 }
 
-.texto_2{
+.texto_2 {
     position: absolute;
     width: 160px;
     height: 23px;
@@ -89,7 +99,7 @@
     color: var(--negro);
 }
 
-.icono{
+.icono {
     display: flex;
     width: 53px;
     height: 63px;

@@ -12,9 +12,9 @@ export class PaginaPerfilComponent implements OnInit {
 
   constructor(public usuario: UsuarioService, public router: Router) { }
 
-  cerrarSesion()
-  {
-    this.usuario.logged= false;
+  cerrarSesion() {
+    this.usuario.iconoPerfil = false
+    this.usuario.logged = false;
     this.router.navigate(['/'])
   }
 

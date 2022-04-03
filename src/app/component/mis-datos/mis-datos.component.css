@@ -6,6 +6,16 @@
     top: 133px;
 }
 
+.back1 {
+    position: absolute;
+    width: 8px;
+    height: 15px;
+    left: 40px;
+    top: 13px;
+    font-size: 25px;
+    color: var(--amarillo);
+}
+
 .back {
     position: absolute;
     width: 345px;
