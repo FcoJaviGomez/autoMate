@@ -3,38 +3,131 @@
     <a class="back" routerLink="/pagina-mantenimiento">
         <i class="fa-solid fa-arrow-left-long"></i>
     </a>
+    <div *ngIf='mantenimientos.type==="Bateria"||mantenimientos.type==="Aceite motor"||mantenimientos.type==="Bujías"
+    ||mantenimientos.type==="Correa de distribución"||mantenimientos.type==="Escobillas limpiaparabrisas"||
+    mantenimientos.type==="ITV"'>
+        <section class="card1">
 
-    <section class="card1">
+            <button type="reset" on-click=eliminar() class="eliminar"><i class="fa-solid fa-xmark"></i></button>
 
-        <button type="reset" on-click=eliminar() class="eliminar"><i class="fa-solid fa-xmark"></i></button>
+            <div>
+                <h2 class="l1 txtNegro">Tipo de mantenimiento:</h2>
+                <h2 class="l2 txtAmarillo"> {{mantenimientos.type}} </h2>
+            </div>
+            <div>
+                <h2 class="l3 txtNegro">Creado con fecha:</h2>
+                <h2 class="l4 txtAmarillo">{{mantenimientos.startDate}}</h2>
+            </div>
+            <div>
+                <h2 class="l5 txtNegro">Fecha de finalización:</h2>
+                <h2 class="l6 txtAmarillo">{{mantenimientos.endDate}}</h2>
+            </div>
+            <div>
+                <h2 class="l7 txtNegro">Coste:</h2>
+                <h2 class="l8 txtAmarillo">{{mantenimientos.cost}}€</h2>
+            </div>
 
-        <div>
-            <h2 class="l1 txtNegro">Tipo de mantenimiento:</h2>
-            <h2 class="l2 txtAmarillo"> {{mantenimientos.type}} </h2>
-        </div>
-        <!-- <div>
-            <h2 class="l3 txtNegro">Ruedas:</h2>
-            <h2 class="l4 txtAmarillo">Par delantero</h2>
-        </div>
-        <div>
-            <h2 class="l5 txtNegro">Tipo de tracción:</h2>
-            <h2 class="l6 txtAmarillo">Delantera</h2>
-        </div> -->
-        <div>
-            <h2 class="l7 txtNegro">Creado con fecha:</h2>
-            <h2 class="l8 txtAmarillo">02/01/2019</h2>
-        </div>
-        <div>
-            <h2 class="l9 txtNegro">Fecha de finalización:</h2>
-            <h2 class="l10 txtAmarillo">16/04/2022</h2>
-        </div>
-        <div>
-            <h2 class="l11 txtNegro">Coste:</h2>
-            <h2 class="l12 txtAmarillo">30,99 €</h2>
-        </div>
+            <img src="../../../assets/multimedia/detalleMan.png" class="animacion">
 
-        <img src="../../../assets/multimedia/detalleMan.png" class="animacion">
+        </section>
+    </div>
+    <div *ngIf='mantenimientos.type==="Neumáticos"'>
+        <section class="card1">
 
-    </section>
+            <button type="reset" on-click=eliminar() class="eliminar"><i class="fa-solid fa-xmark"></i></button>
+
+            <div>
+                <h2 class="l1 txtNegro">Tipo de mantenimiento:</h2>
+                <h2 class="l2 txtAmarillo"> {{mantenimientos.type}} </h2>
+            </div>
+            <div>
+                <h2 class="l3 txtNegro">Posición:</h2>
+                <h2 class="l4 txtAmarillo">{{mantenimientos.subType}}</h2>
+            </div>
+            <div>
+                <h2 class="l5 txtNegro">Tracción:</h2>
+                <h2 class="l6 txtAmarillo">{{mantenimientos.subSubType}}</h2>
+            </div>
+            <div>
+                <h2 class="l7 txtNegro">Creado con fecha:</h2>
+                <h2 class="l8 txtAmarillo">{{mantenimientos.startDate}}</h2>
+            </div>
+            <div>
+                <h2 class="l9 txtNegro">Fecha de finalización:</h2>
+                <h2 class="l10 txtAmarillo">{{mantenimientos.endDate}}</h2>
+            </div>
+            <div>
+                <h2 class="l11 txtNegro">Coste:</h2>
+                <h2 class="l12 txtAmarillo">{{mantenimientos.cost}}€</h2>
+            </div>
+
+            <img src="../../../assets/multimedia/detalleMan.png" class="animacion">
+
+        </section>
+    </div>
+    <div *ngIf='mantenimientos.type==="Frenos"||mantenimientos.type==="Filtros"'>
+        <section class="card1">
+
+            <button type="reset" on-click=eliminar() class="eliminar"><i class="fa-solid fa-xmark"></i></button>
+
+            <div>
+                <h2 class="l1 txtNegro">Tipo de mantenimiento:</h2>
+                <h2 class="l2 txtAmarillo"> {{mantenimientos.type}} </h2>
+            </div>
+            <div>
+                <h2 class="l3 txtNegro">Tipo:</h2>
+                <h2 class="l4 txtAmarillo">{{mantenimientos.subType}}</h2>
+            </div>
+            <div>
+                <h2 class="l5 txtNegro">Creado con fecha:</h2>
+                <h2 class="l6 txtAmarillo">{{mantenimientos.startDate}}</h2>
+            </div>
+            <div>
+                <h2 class="l7 txtNegro">Fecha de finalización:</h2>
+                <h2 class="l8 txtAmarillo">{{mantenimientos.endDate}}</h2>
+            </div>
+            <div>
+                <h2 class="l9 txtNegro">Coste:</h2>
+                <h2 class="l10 txtAmarillo">{{mantenimientos.cost}}€</h2>
+            </div>
+
+            <img src="../../../assets/multimedia/detalleMan.png" class="animacion">
+
+        </section>
+    </div>
+    <div *ngIf='mantenimientos.type==="Otros"'>
+        <section class="card1">
+
+            <button type="reset" on-click=eliminar() class="eliminar"><i class="fa-solid fa-xmark"></i></button>
+
+            <div>
+                <h2 class="l1 txtNegro">Tipo de mantenimiento:</h2>
+                <h2 class="l2 txtAmarillo"> {{mantenimientos.type}} </h2>
+            </div>
+            <div>
+                <h2 class="l3 txtNegro">Nombre:</h2>
+                <h2 class="l4 txtAmarillo">{{mantenimientos.subType}}</h2>
+            </div>
+            <div>
+                <h2 class="l5 txtNegro">Descripción:</h2>
+                <h2 class="l6 txtAmarillo">{{mantenimientos.description}}</h2>
+            </div>
+            <div>
+                <h2 class="l7 txtNegro">Creado con fecha:</h2>
+                <h2 class="l8 txtAmarillo">{{mantenimientos.startDate}}</h2>
+            </div>
+            <div>
+                <h2 class="l9 txtNegro">Fecha de finalización:</h2>
+                <h2 class="l10 txtAmarillo">{{mantenimientos.endDate}}</h2>
+            </div>
+            <div>
+                <h2 class="l11 txtNegro">Coste:</h2>
+                <h2 class="l12 txtAmarillo">{{mantenimientos.cost}}€</h2>
+            </div>
+
+            <img src="../../../assets/multimedia/detalleMan.png" class="animacion">
+
+        </section>
+    </div>
 
 </section>

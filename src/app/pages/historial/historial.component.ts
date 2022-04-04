@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MantenimientosService } from 'src/app/servicios/mantenimientos.service';
 
 @Component({
   selector: 'app-historial',
@@ -9,7 +10,7 @@ import { Router } from '@angular/router';
 export class HistorialComponent implements OnInit {
 
   public mantenimientos: any = [{
-    type: "itv",
+    type: "ITV",
     subType: "",
     subSubType: "",
     description: "",
@@ -17,20 +18,37 @@ export class HistorialComponent implements OnInit {
     startDate: "1-10-2022",
     endDate: "2-10-2022"
   }, {
-    type: "Bateria",
-    subType: "",
+    type: "Otros",
+    subType: "Faro",
+    subSubType: "",
+    description: "Bombilla",
+    cost: 20,
+    startDate: "20-10-2022",
+    endDate: "30-10-2022"
+  }, {
+    type: "Neumáticos",
+    subType: "Delanteros",
+    subSubType: "Delantera",
+    description: "",
+    cost: 12,
+    startDate: "1-10-2022",
+    endDate: "2-10-2022"
+  }, {
+    type: "Filtros",
+    subType: "Aceite",
     subSubType: "",
     description: "",
-    cost: 100,
+    cost: 55,
     startDate: "20-10-2022",
     endDate: "30-10-2022"
   },]
 
   // public mantenimientos: any = []
 
-  constructor(public router: Router) { }
+  constructor(public router: Router, private mantenimientoService: MantenimientosService) { }
 
-  historialDetalle() {
+  historialDetalle(index: string) {
+    this.mantenimientoService.mantenimientoSeleccionado = this.mantenimientos[index]
     this.router.navigate(['/detalle-historial'])
   }
 
