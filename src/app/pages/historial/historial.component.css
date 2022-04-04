@@ -1,8 +1,11 @@
 .paginaMantenimiento {
-    position: absolute;
+    /* position: absolute; */
     width: 414px;
-    height: 694px;
+    /* min-height: 50vh; */
+    min-height: 694px;
     margin-top: 132px;
+    /* background-color: red; */
+    padding-bottom: 50px;
 }
 
 .back1 {
@@ -10,17 +13,13 @@
     width: 8px;
     height: 15px;
     left: 40px;
-    top: 13px;
+    top: 140px;
     font-size: 25px;
     color: var(--amarillo);
 }
 
 .titulo {
-    position: absolute;
-    width: 268px;
-    height: 52px;
-    left: 38px;
-    top: 19px;
+    margin-top: 20px;
     font-family: 'Mukta Vaani';
     font-style: normal;
     font-weight: 700;
@@ -30,33 +29,40 @@
     color: var(--negro);
 }
 
-.card {
+.card1 {
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 346px;
-    height: 569px;
+    width: 345px;
+    min-height: 220px;
     margin-left: 34px;
-    margin-top: 56px;
+    top: 187px;
     background: var(--gris10);
     border-radius: 10px;
+    padding-bottom: 30px;
+    border-radius: none;
+
 }
 
 .cards_mantenimiento {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 81px;
-}
-
-.card_mantenimiento {
+    margin-top: 13px;
+    margin-bottom: 10px;
+    gap: 20px;
+    border: none;
     display: flex;
     width: 310px;
     height: 81px;
     background: var(--gris40);
+    box-shadow: 0 0 5px 3px green;
+    box-sizing: border-box;
     border-radius: 10px;
-    margin-bottom: 20px;
+    padding-right: 5px;
 }
+
 
 .texto_1 {
     position: absolute;
@@ -105,4 +111,58 @@
     height: 63px;
     margin-left: 249px;
     margin-top: 9px;
+}
+
+
+.condicion {
+    position: absolute;
+    width: 310px;
+    height: 81px;
+    left: 17px;
+    top: 94px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.card_condicion {
+    position: absolute;
+    width: 310px;
+    height: 81px;
+    background: var(--gris40);
+    box-shadow: 0 0 5px 3px #16EA2C;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.texto_condicion {
+    position: absolute;
+    width: 211px;
+    height: 58px;
+    left: 22px;
+    top: 10px;
+
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    text-align: center;
+
+    color: #000000;
+}
+
+.icono_condicion {
+    position: absolute;
+    width: 64px;
+    height: 60px;
+    left: 238px;
+    top: 10px;
 }

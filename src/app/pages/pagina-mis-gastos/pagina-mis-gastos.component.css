@@ -15,12 +15,12 @@
     color: var(--amarillo);
 }
 
-.card {
+.card1 {
     position: absolute;
     width: 346px;
     height: 538px;
     left: 34px;
-    top: 56px;
+    top: 55px;
     border-radius: 10px;
     background: var(--gris10);
 }

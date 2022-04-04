@@ -1,25 +1,37 @@
 <section class="paginaMantenimiento">
+
     <a class="back1" routerLink="/pagina-perfil">
         <i class="fa-solid fa-arrow-left-long"></i>
     </a>
-    <section class="card">
+
+    <div class="card1">
 
         <h2 class="titulo">HISTORIAL</h2>
 
-        <section class="cards_mantenimiento">
+        <div *ngIf="mantenimientos.length === 0 ; else card" class="condicion">
 
-            <button on-click=historial() class="card_mantenimiento">
-                <h1 class="texto_1">NEUMÁTICO
-                    <p class="subtexto_1">&nbsp;(Delanteros)</p>
-                </h1>
-                <p class="texto_2">FECHA FIN: 30/03/2025</p>
-                <img class="icono" src="../../../assets/multimedia/iconoGancho.png">
-            </button>
+            <div routerLink="/pagina-agregar-mantenimiento" class="card_condicion">
+                <p class="texto_condicion">
+                    En este momento no tienes ningún servicio próximo.
+                    Pulsa aquí para crear un mantenimiento.
+                </p>
+                <img class="icono_condicion" src="../../../assets/multimedia/precaucion.png">
+            </div>
+        </div>
+        <ng-template #card>
+            <div *ngFor="let mantenimiento of mantenimientos; let index=index" on-click="historialDetalle(index)"
+                class="cards_mantenimiento">
+                <section class="card_mantenimiento">
+                    <h1 class="texto_1">{{mantenimiento.type}}
+                        <p class="subtexto_1">&nbsp;{{mantenimiento.subType}}</p>
+                    </h1>
+                    <p class="texto_2">FECHA FIN: {{mantenimiento.endDate}} </p>
+                    <img class="icono" src="../../../assets/multimedia/iconoGancho.png">
+                </section>
+            </div>
+        </ng-template>
 
 
-
-        </section>
-
-    </section>
+    </div>
 
 </section>

@@ -8,9 +8,29 @@ import { Router } from '@angular/router';
 })
 export class HistorialComponent implements OnInit {
 
+  public mantenimientos: any = [{
+    type: "itv",
+    subType: "",
+    subSubType: "",
+    description: "",
+    cost: 12,
+    startDate: "1-10-2022",
+    endDate: "2-10-2022"
+  }, {
+    type: "Bateria",
+    subType: "",
+    subSubType: "",
+    description: "",
+    cost: 100,
+    startDate: "20-10-2022",
+    endDate: "30-10-2022"
+  },]
+
+  // public mantenimientos: any = []
+
   constructor(public router: Router) { }
 
-  historial() {
+  historialDetalle() {
     this.router.navigate(['/detalle-historial'])
   }
 

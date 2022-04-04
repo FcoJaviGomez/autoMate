@@ -1,21 +1,21 @@
-.home_logueado{
+.home_logueado {
     position: absolute;
     width: 414px;
     height: 694px;
     margin-top: 132px;
 }
 
-.card{
+.card1 {
     position: absolute;
-    width: 344px;
+    width: 345px;
     height: 547px;
-    left: 35px;
-    top: 56px;
+    left: 34px;
+    top: 55px;
     background: var(--gris10);
     border-radius: 10px;
 }
 
-.titulo_1{
+.titulo_1 {
     position: absolute;
     width: 318px;
     height: 45px;
@@ -30,7 +30,7 @@
     color: var(--negro);
 }
 
-.consejo{
+.consejo {
     position: absolute;
     width: 296px;
     height: 111px;
@@ -47,7 +47,7 @@
     color: var(--negro);
 }
 
-.titulo_2{
+.titulo_2 {
     position: absolute;
     width: 318px;
     height: 37px;
@@ -62,7 +62,7 @@
     color: #1F191A;
 }
 
-.card_mantenimiento{
+.card_mantenimiento {
     position: absolute;
     width: 310px;
     height: 81px;
@@ -75,7 +75,7 @@
     border-radius: 10px;
 }
 
-.texto_1{
+.texto_1 {
     position: absolute;
     width: 129px;
     height: 34px;
@@ -90,7 +90,7 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.texto_2{
+.texto_2 {
     position: absolute;
     width: 160px;
     height: 23px;
@@ -104,7 +104,7 @@
     color: var(--negro);
 }
 
-.icono{
+.icono {
     position: absolute;
     width: 53px;
     height: 63px;
@@ -112,7 +112,7 @@
     top: 9px;
 }
 
-.imagen{
+.imagen {
     position: absolute;
     width: 318px;
     height: 242px;
@@ -122,7 +122,7 @@
     z-index: -1;
 }
 
-.condicion{
+.condicion {
     position: absolute;
     width: 310px;
     height: 81px;

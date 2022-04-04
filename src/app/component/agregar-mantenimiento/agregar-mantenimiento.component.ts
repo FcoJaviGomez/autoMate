@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { UsuarioService } from 'src/app/servicios/usuario.service';
 
 const BATERIA = "Bateria";
 const ACEITE_MOTOR = "Aceite Motor";
@@ -55,7 +56,7 @@ export class AgregarMantenimientoComponent implements OnInit {
   public formularioITV: boolean;
   public formularioOtros: boolean;
 
-  constructor(public router: Router) {
+  constructor(public router: Router, public usuario: UsuarioService) {
 
     this.formularioBasico = false;
     this.formularioFiltros = false;
@@ -137,6 +138,7 @@ export class AgregarMantenimientoComponent implements OnInit {
       console.log(tipoMantenimiento);
       console.log(coste);
       this.router.navigate(['/pagina-mantenimiento'])
+      this.usuario.iconoLlave = true
     }
 
   }
@@ -146,6 +148,7 @@ export class AgregarMantenimientoComponent implements OnInit {
       console.log(tipoFreno);
       console.log(coste);
       this.router.navigate(['/pagina-mantenimiento'])
+      this.usuario.iconoLlave = true
     }
 
   }
@@ -155,6 +158,7 @@ export class AgregarMantenimientoComponent implements OnInit {
       console.log(tipoFiltro);
       console.log(coste);
       this.router.navigate(['/pagina-mantenimiento'])
+      this.usuario.iconoLlave = true
     }
 
   }
@@ -165,6 +169,7 @@ export class AgregarMantenimientoComponent implements OnInit {
       console.log(traccion);
       console.log(coste);
       this.router.navigate(['/pagina-mantenimiento'])
+      this.usuario.iconoLlave = true
     }
 
   }
@@ -173,6 +178,7 @@ export class AgregarMantenimientoComponent implements OnInit {
       console.log(tipoMantenimiento);
       console.log(coste);
       this.router.navigate(['/pagina-mantenimiento'])
+      this.usuario.iconoLlave = true
     }
 
   }
@@ -184,6 +190,7 @@ export class AgregarMantenimientoComponent implements OnInit {
       console.log(coste);
       console.log(fecha);
       this.router.navigate(['/pagina-mantenimiento'])
+      this.usuario.iconoLlave = true
     }
 
   }
