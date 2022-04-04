@@ -2,14 +2,15 @@
     position: fixed;
     z-index: 1;
     width: 414px;
-    height: 75px;
+    height: 85px;
     left: 0px;
-    background: #1F191A;
+    background: #191213;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     bottom: 0;
+    
 }
 
 .boton1 {
@@ -19,8 +20,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 55px;
-    background-color: #1F191A;
+    background-color: #191213;
     border: none;
+    margin-bottom: 5px;
 }
 
 .boton1_activado {
@@ -33,9 +35,10 @@
     background-image: url(../../../assets/multimedia/iconoMas.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: 60px;
-    background-color: #1F191A;
+    background-size: 58px;
+    background-color: #191213;
     border: none;
+    margin-bottom: 5px;
 }
 
 .boton2_activado {
@@ -49,9 +52,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 53px;
-    background-color: #1F191A;
+    background-color: #191213;
     border: none;
     margin-top: 9px;
+    margin-bottom: 5px;
 }
 
 .boton3_activado {
@@ -61,9 +65,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 53px;
-    background-color: #1F191A;
+    background-color: #191213;
     border: none;
     margin-top: 9px;
+    margin-bottom: 5px;
 }
 
 @media screen and (max-width:844px) {}
