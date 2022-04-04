@@ -57,7 +57,7 @@
     width: 310px;
     height: 81px;
     background: var(--gris40);
-    box-shadow: 0 0 5px 3px green;
+    /* box-shadow: 0 0 5px 3px green; */
     box-sizing: border-box;
     border-radius: 10px;
     padding-right: 5px;

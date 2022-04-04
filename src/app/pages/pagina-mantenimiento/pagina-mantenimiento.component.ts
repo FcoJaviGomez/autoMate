@@ -10,7 +10,7 @@ import { MantenimientosService } from 'src/app/servicios/mantenimientos.service'
 export class PaginaMantenimientoComponent implements OnInit {
 
   public mantenimientos: any = [{
-    type: "itv",
+    type: "ITV",
     subType: "",
     subSubType: "",
     description: "",
@@ -18,11 +18,27 @@ export class PaginaMantenimientoComponent implements OnInit {
     startDate: "1-10-2022",
     endDate: "2-10-2022"
   }, {
-    type: "Bateria",
-    subType: "",
+    type: "Otros",
+    subType: "Faro",
+    subSubType: "",
+    description: "Bombilla",
+    cost: 20,
+    startDate: "20-10-2022",
+    endDate: "30-10-2022"
+  }, {
+    type: "Neumáticos",
+    subType: "Delanteros",
+    subSubType: "Delantera",
+    description: "",
+    cost: 12,
+    startDate: "1-10-2022",
+    endDate: "2-10-2022"
+  }, {
+    type: "Filtros",
+    subType: "Aceite",
     subSubType: "",
     description: "",
-    cost: 100,
+    cost: 55,
     startDate: "20-10-2022",
     endDate: "30-10-2022"
   },]

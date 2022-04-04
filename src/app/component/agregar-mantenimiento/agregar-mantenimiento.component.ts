@@ -23,7 +23,7 @@ const FRENOLIQUIDO = "Líquido"
 const BUJIAS = "Bujías";
 const CORREA = "Correa de distribución";
 const ESCOBILLAS = "Escobillas limpiaparabrisas";
-const ITV = "Inspección técnica (ITV)";
+const ITV = "ITV";
 const OTROS = "Otros";
 
 @Component({
