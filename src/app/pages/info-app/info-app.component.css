@@ -40,13 +40,24 @@
     padding: 20px;
 }  
 .padre{
-    width: 280px;
     height: 150px;
-    width:200px;
+    width: 100px;
     background-image: url(../../../assets/multimedia/prueba.png);
     background-repeat: no-repeat;
     background-size: cover; 
     background-size: 200px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.padreA{
+    width: 220px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+
 }
 .lista{
     height: 70px;
@@ -54,7 +65,7 @@
     background-image: url(../../../assets/multimedia/iconoLista.png);
     background-repeat: no-repeat;
     background-size: cover; 
-    background-size: 60px;
+    background-size: 70px;
 }
 .calendario{
     height: 70px;
@@ -62,7 +73,7 @@
     background-image: url(../../../assets/multimedia/iconoCalendario.png);
     background-repeat: no-repeat;
     background-size: cover; 
-    background-size: 60px;
+    background-size: 70px;
 }
 .hucha{
     height: 70px;
@@ -81,6 +92,7 @@
     background-size: 60px;
 }
 .caja{
+    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -89,14 +101,13 @@
     height: 500px;
 }
 .a{
+    
     display:flex;
     flex-direction:row;
     justify-content: center;
     align-items: flex-start;
-
-
-
 }
+
 
 .padre {
     /* border: solid 2px red; */
