@@ -73,3 +73,11 @@
     text-decoration: none;
     color: var(--amarillo);
 }
+
+@media screen and (min-width: 380px){
+    .background{
+        position: fixed;
+        top: 0px;
+        bottom: 0;
+    }
+}
