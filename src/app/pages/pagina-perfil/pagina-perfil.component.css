@@ -31,7 +31,7 @@
     border-radius: 10px;
     font-family: 'Mukta Vaani';
     font-weight: 600;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 53px;
     text-align: center;
     color: #000000;
@@ -39,7 +39,7 @@
 }
 
 .cerrar {
-    margin-left: 3px;
+    margin-left: 9px;
     width: 205px;
     height: 45px;
     left: 93px;
@@ -47,7 +47,7 @@
     font-family: 'Mukta Vaani';
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     color: #000000;
     border: none;
@@ -68,4 +68,5 @@ display:flex;
     height: 0px;
     border: 1px solid #FFD966;
     transform: rotate(-0.3deg);
+    background-color: var(--amarillo);
 }

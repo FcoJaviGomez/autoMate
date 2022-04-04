@@ -10,7 +10,7 @@
     width: 8px;
     height: 15px;
     left: 40px;
-    top: 13px;
+    top: 14px;
     font-size: 25px;
     color: var(--amarillo);
 }
@@ -25,11 +25,10 @@
     color: var(--amarillo);
     border: none;
     border-radius: 50%;
-    background-color: var(--gris10);
-
+    background-color: rgba(179, 171, 172, 0);
 }
 
-.card {
+.card1 {
     position: absolute;
     width: 346px;
     height: 538px;

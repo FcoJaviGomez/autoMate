@@ -8,10 +8,20 @@
     /* background-color: red; */
 }
 
+.back1 {
+    position: absolute;
+    width: 8px;
+    height: 15px;
+    left: 40px;
+    top: 146px;
+    font-size: 25px;
+    color: var(--amarillo);
+}
+
 .div {
     position: absolute;
     width: 345px;
-    height: 587px;
+    height: 600px;
     top: 187px;
     background: var(--gris10);
     border-radius: 10px;
@@ -60,7 +70,7 @@
     position: absolute;
     width: 310px;
     height: 54px;
-    top: 185px;
+    top: 179px;
     background: #FAFAFA;
     border: 1px solid rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
@@ -78,7 +88,7 @@
     position: absolute;
     width: 310px;
     height: 54px;
-    top: 265px;
+    top: 253px;
     background: #FAFAFA;
     border: 1px solid rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
@@ -96,7 +106,7 @@
     position: absolute;
     width: 310px;
     height: 54px;
-    top: 345px;
+    top: 327px;
     background: #FAFAFA;
     border: 1px solid rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
@@ -114,7 +124,7 @@
     position: absolute;
     width: 310px;
     height: 54px;
-    top: 425px;
+    top: 401px;
     background: #FAFAFA;
     border: 1px solid rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
@@ -132,7 +142,7 @@
     position: absolute;
     width: 186px;
     height: 58px;
-    top: 503px;
+    top: 496px;
     background: var(--amarillo);
     border-radius: 10px;
     font-family: 'Mukta Vaani';
