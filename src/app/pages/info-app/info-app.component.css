@@ -6,7 +6,7 @@
     margin-top: 132px;
 }
 .back
-{   
+ {   
     position: absolute;
     width: 345px;
     height: 530px;
@@ -15,80 +15,78 @@
     border-radius: 10px;   
     background-color: var(--gris10);
     padding-top: 20px;
-     /* display: flex;
-    flex-direction: row;
-    justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
 } 
 .cajatexto{
-   
     width: 345px;
-    height: 470px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px;
-   
-}
-.text{
-    /* position: absolute; */
-    width: 329px; 
-    /* height: 389px;  */
-    left: 15px; 
-    top: 258px;   
-    font-family: 'Mukta Vaani';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;  
-    line-height: 32px;
-    text-align: center;
-    color: #000000; 
-} 
-
-.subtitle
-{
-    font-size: 17px;
-    text-align: center;
-    margin-top: 15px;
-    line-height: 30px;
-    
-}
-.card{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 310px;
-    background: var(--amarillo);
-    border-radius: 10px;
-    margin-bottom: 10px;
-    left: 7px;
-   
-
-}
-
-.imagen{
-    
-    width:300px;
-    height: 70px;
-    background-image: url(../../../assets/multimedia/imagenAutoMate.png);
+    align-items: center;
+    padding: 20px;
+}  
+.padre{
+    width: 280px;
+    height: 150px;
+    width:200px;
+    background-image: url(../../../assets/multimedia/prueba.png);
     background-repeat: no-repeat;
     background-size: cover; 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-   
-    
-    
-} 
-.padre{
-    /* border: solid 2px red; */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    width: 345px;
-    height: 200px;
-  
-
+    background-size: 200px; 
 }
+.lista{
+    height: 70px;
+    width: 70px;
+    background-image: url(../../../assets/multimedia/iconoLista.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-size: 60px;
+}
+.calendario{
+    height: 70px;
+    width: 70px;
+    background-image: url(../../../assets/multimedia/iconoCalendario.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-size: 60px;
+}
+.hucha{
+    height: 70px;
+    width: 70px;
+    background-image: url(../../../assets/multimedia/iconoHucha.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-size: 55px;
+}
+.reloj{
+    height: 70px;
+    width: 70px;
+    background-image: url(../../../assets/multimedia/iconoReloj.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-size: 60px;
+}
+.caja{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 329px;
+    height: 500px;
+}
+.a{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    height: 60px;  
+}
+.frase{
+    width: 180px;
+    font-size: 17px;
+}
+
 
