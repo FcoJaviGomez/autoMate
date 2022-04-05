@@ -1,10 +1,10 @@
-<section class="paginaMantenimiento">
+<div class="paginaMantenimiento">
 
     <div class="card1">
 
         <h2 class="titulo">MANTENIMIENTOS</h2>
 
-        <div *ngIf="mantenimientos.length === 0 ; else card" class="condicion">
+        <div *ngIf="mantenimientos.length === 0 ; else tarjeta" class="condicion">
 
             <div routerLink="/pagina-agregar-mantenimiento" class="card_condicion">
                 <p class="texto_condicion">
@@ -13,9 +13,10 @@
                 </p>
                 <img class="icono_condicion" src="../../../assets/multimedia/precaucion.png">
             </div>
-        <ng-template #card>
+        </div>
+        <ng-template #tarjeta>
             <div  *ngFor="let mantenimiento of mantenimientos; let index=index" on-click="mantenimientoDetalle(index)"
-                class="cards_mantenimiento">
+                >
 
                 <section [ngClass]="alerta ? 'cards_mantenimiento_verde': 'cards_mantenimiento_roja'" >
                     <h1 class="texto_1">{{mantenimiento.type}}
@@ -29,6 +30,6 @@
         
     </div>
 
-</section>
+</div>
 
 <!-- *ngIf="anyo== this.mantenimientos.anyo & mes== this.mantenimientos.mes & (this.diasRestantes<= 10); else tarjeta " -->
