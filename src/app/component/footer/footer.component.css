@@ -48,7 +48,7 @@
 .boton3 {
     width: 60px;
     height: 60px;
-    background-image: url(../../../assets/multimedia/iconoLlave2.png);
+    background-image: url(../../../assets/multimedia/llave.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 53px;
@@ -61,7 +61,7 @@
 .boton3_activado {
     width: 60px;
     height: 60px;
-    background-image: url(../../../assets/multimedia/iconoLlaveAmarilla2.png);
+    background-image: url(../../../assets/multimedia/llaveAmarilla.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 53px;
