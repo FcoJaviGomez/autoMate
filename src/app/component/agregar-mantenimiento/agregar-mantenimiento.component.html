@@ -20,9 +20,9 @@
 
         <div *ngIf="formularioFiltros" class="div_km_coste">
             <select class="form-select div_seleccionar bg-secondary" style="--bs-bg-opacity: .2;" name="filtro" #filtro>
-                <option value="">Tipo
+                <option hidden value="">Tipo
                 </option>
-                <option *ngFor="let filtro of tipoFiltro" [value]="filtro">
+                <option class="texto" *ngFor="let filtro of tipoFiltro" [value]="filtro">
                     {{filtro}}
                 </option>
             </select>
@@ -33,9 +33,9 @@
 
         <div *ngIf="formularioFrenos" class="div_km_coste">
             <select class="form-select div_seleccionar bg-secondary" style="--bs-bg-opacity: .2;" name="freno" #freno>
-                <option value="">Tipo
+                <option hidden value="">Tipo
                 </option>
-                <option *ngFor="let freno of tipoFreno" [value]="freno">
+                <option class="texto" *ngFor="let freno of tipoFreno" [value]="freno">
                     {{freno}}
                 </option>
             </select>
@@ -48,18 +48,18 @@
             <select class="form-select div_seleccionar bg-secondary" style="--bs-bg-opacity: .2;" name="neumatico"
                 #posicionNeumatico>
 
-                <option value="">Posición
+                <option hidden value="">Posición
                 </option>
-                <option *ngFor="let neumatico of tipoNeumatico" [value]="neumatico">
+                <option class="texto" *ngFor="let neumatico of tipoNeumatico" [value]="neumatico">
                     {{neumatico}}
                 </option>
             </select>
             <select class="form-select div_seleccionar bg-secondary" style="--bs-bg-opacity: .2;" name="traccion"
                 #traccion>
 
-                <option value="">Tracción
+                <option hidden value="">Tracción
                 </option>
-                <option *ngFor="let traccion of tipoTraccion" [value]="traccion">
+                <option class="texto" *ngFor="let traccion of tipoTraccion" [value]="traccion">
                     {{traccion}}
                 </option>
             </select>
