@@ -1,7 +1,5 @@
 .paginaMantenimiento {
-    /* position: absolute; */
     width: 414px;
-    /* min-height: 50vh; */
     height: 694px;
     margin-top: 132px;
 }
@@ -35,7 +33,7 @@
     padding-bottom: 90px;
 }
 
-.cards_mantenimiento {
+.cards_mantenimiento_verde {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,6 +45,23 @@
     height: 81px;
     background: var(--gris40);
     box-shadow: 0 0 5px 3px green;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-right: 5px;
+}
+
+.cards_mantenimiento_roja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 23px;
+    gap: 20px;
+    border: none;
+    display: flex;
+    width: 310px;
+    height: 81px;
+    background: var(--gris40);
+    box-shadow: 0 0 5px 3px red;
     box-sizing: border-box;
     border-radius: 10px;
     padding-right: 5px;

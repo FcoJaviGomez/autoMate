@@ -9,6 +9,8 @@ import { MantenimientosService } from 'src/app/servicios/mantenimientos.service'
 })
 export class PaginaMantenimientoComponent implements OnInit {
 
+  public alerta: boolean = true
+
   public mantenimientos: any = [{
     type: "itv",
     subType: "",
@@ -16,7 +18,10 @@ export class PaginaMantenimientoComponent implements OnInit {
     description: "",
     cost: 12,
     startDate: "1-10-2022",
-    endDate: "2-10-2022"
+    endDate: "2-10-2022",
+    anyo: 2022,
+    mes: "octubre",
+    dia: 2
   }, {
     type: "Bateria",
     subType: "",
@@ -24,11 +29,15 @@ export class PaginaMantenimientoComponent implements OnInit {
     description: "",
     cost: 100,
     startDate: "20-10-2022",
-    endDate: "30-10-2022"
+    endDate: "30-10-2022",
+    anyo: 2022,
+    mes: "octubre",
+    dia: 30
   }]
 
   constructor(public router: Router, private mantenimientoService: MantenimientosService) {
 
+    
   }
 
   mantenimientoDetalle(index: string) {
