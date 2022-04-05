@@ -9,6 +9,8 @@ import { MantenimientosService } from 'src/app/servicios/mantenimientos.service'
 })
 export class PaginaMantenimientoComponent implements OnInit {
 
+  public alerta: boolean = true
+
   public mantenimientos: any = [{
     type: "ITV",
     subType: "",
@@ -17,6 +19,7 @@ export class PaginaMantenimientoComponent implements OnInit {
     cost: 12,
     startDate: "1-10-2022",
     endDate: "2-10-2022"
+    
   }, {
     type: "Otros",
     subType: "Faro",
@@ -47,6 +50,7 @@ export class PaginaMantenimientoComponent implements OnInit {
 
   constructor(public router: Router, private mantenimientoService: MantenimientosService) {
 
+    
   }
 
   mantenimientoDetalle(index: string) {
