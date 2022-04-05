@@ -1,7 +1,7 @@
 export class Usuario {
     public id_user: number
     public name: string
-    public lastName: string
+    public last_name: string
     public email: string
     public password: string
     public kilometers_car: number
@@ -9,11 +9,11 @@ export class Usuario {
     public provisional_password: string
     public provisional_date: string
 
-    constructor(id_user: number = 0, name: string, lastName: string, email: string, password: string,
+    constructor(id_user: number = 0, name: string, last_name: string, email: string, password: string,
         kilometers_car: number, year_car: number, provisional_password: string, provisional_date: string) {
         this.id_user = id_user;
         this.name = name;
-        this.lastName = lastName;
+        this.last_name = last_name;
         this.email = email;
         this.password = password;
         this.kilometers_car = kilometers_car;
