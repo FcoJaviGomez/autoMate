@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { KilometrajeComponent } from './pages/kilometraje/kilometraje.component';
@@ -63,8 +63,9 @@ import { DetalleHistorialComponent } from './pages/detalle-historial/detalle-his
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxChartsModule
-    
+    NgxChartsModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
