@@ -37,7 +37,7 @@
 .cards_mantenimiento_verde {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     margin-top: 13px;
     margin-bottom: 10px;
     gap: 20px;
@@ -55,7 +55,7 @@
 .cards_mantenimiento_roja {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     margin-top: 23px;
     gap: 20px;
     border: none;
