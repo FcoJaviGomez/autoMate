@@ -9,7 +9,7 @@ import { MantenimientosService } from 'src/app/servicios/mantenimientos.service'
 })
 export class PaginaMantenimientoComponent implements OnInit {
 
-  public alerta: boolean = true
+  public alerta: boolean = false
 
   public mantenimientos: any = [{
     type: "ITV",
