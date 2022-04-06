@@ -9,7 +9,7 @@ import { MantenimientosService } from 'src/app/servicios/mantenimientos.service'
 })
 export class PaginaMantenimientoComponent implements OnInit {
 
-  public alerta: boolean = false
+  public alerta: boolean = true
 
   public mantenimientos: any = [{
     type: "ITV",
@@ -18,8 +18,8 @@ export class PaginaMantenimientoComponent implements OnInit {
     description: "",
     cost: 12,
     startDate: "1-10-2022",
-    endDate: "2-10-2022"
-    
+    endDate: "2022/12/10"
+
   }, {
     type: "Otros",
     subType: "Faro",
@@ -27,7 +27,7 @@ export class PaginaMantenimientoComponent implements OnInit {
     description: "Bombilla",
     cost: 20,
     startDate: "20-10-2022",
-    endDate: "30-10-2022"
+    endDate: "2022/05/02"
   }, {
     type: "Neumáticos",
     subType: "Delanteros",
@@ -35,7 +35,7 @@ export class PaginaMantenimientoComponent implements OnInit {
     description: "",
     cost: 12,
     startDate: "1-10-2022",
-    endDate: "2-10-2022"
+    endDate: "2022/03/10"
   }, {
     type: "Filtros",
     subType: "Aceite",
@@ -43,14 +43,23 @@ export class PaginaMantenimientoComponent implements OnInit {
     description: "",
     cost: 55,
     startDate: "20-10-2022",
-    endDate: "30-10-2022"
+    endDate: "2023/10/10"
   },]
 
   // public mantenimientos: any = []
 
   constructor(public router: Router, private mantenimientoService: MantenimientosService) {
+  }
 
-    
+  compararFecha(endDate: string): boolean {
+    let date = new Date(endDate)
+    console.log(date)
+    let hoy = new Date()
+    let month = hoy.getMonth() + 2
+    let year = hoy.getFullYear()
+    let day = hoy.getDate()
+    hoy = new Date(`${year}/${month}/${day}`)
+    return date < hoy
   }
 
   mantenimientoDetalle(index: string) {

@@ -15,19 +15,19 @@
             </div>
         </div>
         <ng-template #tarjeta>
-            <div  *ngFor="let mantenimiento of mantenimientos; let index=index" on-click="mantenimientoDetalle(index)"
-                >
+            <div *ngFor="let mantenimiento of mantenimientos; let index=index" on-click="mantenimientoDetalle(index)">
 
-                <section [ngClass]="alerta ? 'cards_mantenimiento_verde': 'cards_mantenimiento_roja'" >
+                <section
+                    [ngClass]="compararFecha(mantenimiento.endDate) ? 'cards_mantenimiento_roja': 'cards_mantenimiento_verde'">
                     <h1 class="texto_1">{{mantenimiento.type}}
                         <p class="subtexto_1">&nbsp;{{mantenimiento.subType}}</p>
                     </h1>
                     <p class="texto_2">FECHA FIN: {{mantenimiento.endDate}} </p>
                     <img class="icono" src="../../../assets/multimedia/iconoGancho.png">
-                </section>                
+                </section>
             </div>
-        </ng-template>            
-        
+        </ng-template>
+
     </div>
 
 </div>
