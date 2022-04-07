@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Mantenimiento } from 'src/app/models/mantenimiento';
 import { UsuarioService } from 'src/app/servicios/usuario.service';
+import { MantenimientosService } from 'src/app/servicios/mantenimientos.service';
 
 const BATERIA = "Bateria";
 const ACEITE_MOTOR = "Aceite Motor";
@@ -34,6 +36,8 @@ const OTROS = "Otros";
 
 export class AgregarMantenimientoComponent implements OnInit {
 
+  public mantenimientosAgregados: Mantenimiento[]
+
   public mantenimientos: string[] = [BATERIA, ACEITE_MOTOR, FILTROS,
     NEUMATICOS, FRENOS, BUJIAS, CORREA, ESCOBILLAS,
     ITV, OTROS]
@@ -56,8 +60,9 @@ export class AgregarMantenimientoComponent implements OnInit {
   public formularioITV: boolean;
   public formularioOtros: boolean;
 
-  constructor(public router: Router, public usuario: UsuarioService) {
-
+  constructor(public router: Router, public usuarioService: UsuarioService,
+    private mantenimientoService: MantenimientosService) {
+    console.log(this.usuarioService.usuario.id_user);
     this.formularioBasico = false;
     this.formularioFiltros = false;
     this.formularioFrenos = false;
@@ -133,12 +138,18 @@ export class AgregarMantenimientoComponent implements OnInit {
     // console.log(tipoMantenimiento);
   }
 
-  agregarBasico(tipoMantenimiento: string, coste: string) {
+  agregarBasico(tipoMantenimiento: string, coste: number) {
+    // let mantenimiento = new Mantenimiento(0, this.usuarioService.usuario.id_user, null, tipoMantenimiento,
+    //   null, null, null, coste, null, null)
     if (tipoMantenimiento != "") {
+      // this.mantenimientoService.add(mantenimiento).subscribe((data: number) => {
       console.log(tipoMantenimiento);
       console.log(coste);
+      // console.log(data);
       this.router.navigate(['/pagina-mantenimiento'])
-      this.usuario.iconoLlave = true
+      this.usuarioService.iconoLlave = true
+      // })
+
     }
 
   }
@@ -148,7 +159,7 @@ export class AgregarMantenimientoComponent implements OnInit {
       console.log(tipoFreno);
       console.log(coste);
       this.router.navigate(['/pagina-mantenimiento'])
-      this.usuario.iconoLlave = true
+      this.usuarioService.iconoLlave = true
     }
 
   }
@@ -158,7 +169,7 @@ export class AgregarMantenimientoComponent implements OnInit {
       console.log(tipoFiltro);
       console.log(coste);
       this.router.navigate(['/pagina-mantenimiento'])
-      this.usuario.iconoLlave = true
+      this.usuarioService.iconoLlave = true
     }
 
   }
@@ -169,7 +180,7 @@ export class AgregarMantenimientoComponent implements OnInit {
       console.log(traccion);
       console.log(coste);
       this.router.navigate(['/pagina-mantenimiento'])
-      this.usuario.iconoLlave = true
+      this.usuarioService.iconoLlave = true
     }
 
   }
@@ -178,7 +189,7 @@ export class AgregarMantenimientoComponent implements OnInit {
       console.log(tipoMantenimiento);
       console.log(coste);
       this.router.navigate(['/pagina-mantenimiento'])
-      this.usuario.iconoLlave = true
+      this.usuarioService.iconoLlave = true
     }
 
   }
@@ -190,7 +201,7 @@ export class AgregarMantenimientoComponent implements OnInit {
       console.log(coste);
       console.log(fecha);
       this.router.navigate(['/pagina-mantenimiento'])
-      this.usuario.iconoLlave = true
+      this.usuarioService.iconoLlave = true
     }
 
   }
