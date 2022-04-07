@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { MantenimientosService } from 'src/app/servicios/mantenimientos.service';
 import { TipsService } from 'src/app/servicios/tips.service';
 import { UsuarioService } from 'src/app/servicios/usuario.service';
+import { Mantenimiento } from 'src/app/models/mantenimiento';
+
 
 interface Tips {
   id_tips: number,
@@ -15,20 +18,40 @@ interface Tips {
 })
 export class Home2Component implements OnInit {
 
-  public mantenimientos: number[];
+  public mantenimientos: Mantenimiento[];
 
   public tip: any;
 
-  constructor(public tips: TipsService, public nombreUsuario: UsuarioService) {
+  constructor(public tips: TipsService, public usuario: UsuarioService, public mantenimientoService: MantenimientosService) {
 
-    this.mantenimientos = [
-
-    ]
-
+    
     this.tips.consejo
+    console.log(this.tips.consejo)
      
-    this.nombreUsuario.usuario.name
+    this.usuario.usuario.name
+
+    this.mantenimientoService.getOne(this.usuario.usuario.id_user).subscribe((data: Mantenimiento[])=>
+      {
+        console.log(data)
+        this.mantenimientos= data
+        console.log(this.mantenimientos)
+      }
+    )
+    
   }
+
+  compararFecha(endDate: string): boolean {
+    let date = new Date(endDate)
+    console.log(date)
+    let hoy = new Date()
+    let month = hoy.getMonth() + 2
+    let year = hoy.getFullYear()
+    let day = hoy.getDate()
+    hoy = new Date(`${year}/${month}/${day}`)
+    return date < hoy
+  }
+
+
 
   ngOnInit(): void {
   }

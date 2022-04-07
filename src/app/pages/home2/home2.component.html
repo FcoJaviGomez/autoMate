@@ -2,7 +2,7 @@
 
     <section class="card1">
 
-        <h2 class="titulo_1">Bienvenido {{this.nombreUsuario.usuario.name}}</h2>
+        <h2 class="titulo_1">Bienvenido {{this.usuario.usuario.name}}</h2>
 
         <p class="consejo">
            {{this.tips.consejo}}
@@ -22,9 +22,10 @@
         </div>
 
         <ng-template #card>
-            <div class="card_mantenimiento">
-                <p class="texto_1">FILTRO</p>
-                <p class="texto_2">FECHA FIN: 03/04/2022</p>
+            <div [ngClass]="compararFecha(mantenimientos.endDate) ? 'cards_mantenimiento_roja': 'cards_mantenimiento_verde'">
+                <h1 class="texto_1"> {{mantenimientos[0].type}}</h1>
+                <p class="subtexto_1">&nbsp;{{mantenimientos[0].subtype}}</p>
+                <p class="texto_2">{{mantenimientos[0].end_date.substring(0,10)}}</p>
                 <img class="icono" src="../../../assets/multimedia/iconoGancho.png">
             </div>
         </ng-template>
