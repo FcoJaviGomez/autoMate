@@ -34,6 +34,6 @@ export class MantenimientosService {
       headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
       body: { id_maintenance: id_maintenance }
     }
-    return this.http.delete(this.url + "/books", options)
+    return this.http.delete(this.url + "/mantenimiento", options)
   }
 }

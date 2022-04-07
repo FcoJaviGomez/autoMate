@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MantenimientosService } from 'src/app/servicios/mantenimientos.service';
+import { UsuarioService } from 'src/app/servicios/usuario.service';
+import { Mantenimiento } from 'src/app/models/mantenimiento';
 
 @Component({
   selector: 'app-pagina-mantenimiento',
@@ -11,44 +13,15 @@ export class PaginaMantenimientoComponent implements OnInit {
 
   public alerta: boolean = true
 
-  public mantenimientos: any = [{
-    type: "ITV",
-    subType: "",
-    subSubType: "",
-    description: "",
-    cost: 12,
-    startDate: "1-10-2022",
-    endDate: "2022/12/10"
+  public mantenimientos: Mantenimiento[]
 
-  }, {
-    type: "Otros",
-    subType: "Faro",
-    subSubType: "",
-    description: "Bombilla",
-    cost: 20,
-    startDate: "20-10-2022",
-    endDate: "2022/05/02"
-  }, {
-    type: "Neumáticos",
-    subType: "Delanteros",
-    subSubType: "Delantera",
-    description: "",
-    cost: 12,
-    startDate: "1-10-2022",
-    endDate: "2022/03/10"
-  }, {
-    type: "Filtros",
-    subType: "Aceite",
-    subSubType: "",
-    description: "",
-    cost: 55,
-    startDate: "20-10-2022",
-    endDate: "2023/10/10"
-  },]
-
-  // public mantenimientos: any = []
-
-  constructor(public router: Router, private mantenimientoService: MantenimientosService) {
+  constructor(public router: Router, private mantenimientoService: MantenimientosService,
+    private usuarioService: UsuarioService) {
+    mantenimientoService.getAll(this.usuarioService.usuario.id_user).subscribe((data: Mantenimiento[]) => {
+      console.log(data)
+      this.mantenimientos = data
+      console.log(this.mantenimientos)
+    })
   }
 
   compararFecha(endDate: string): boolean {

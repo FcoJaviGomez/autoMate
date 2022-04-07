@@ -20,9 +20,9 @@
                 <section
                     [ngClass]="compararFecha(mantenimiento.endDate) ? 'cards_mantenimiento_roja': 'cards_mantenimiento_verde'">
                     <h1 class="texto_1">{{mantenimiento.type}}
-                        <p class="subtexto_1">&nbsp;{{mantenimiento.subType}}</p>
+                        <p class="subtexto_1">&nbsp;{{mantenimiento.subtype}}</p>
                     </h1>
-                    <p class="texto_2">FECHA FIN: {{mantenimiento.endDate}} </p>
+                    <p class="texto_2">FECHA FIN: {{mantenimiento.end_date.substring(0,10)}} </p>
                     <img class="icono" src="../../../assets/multimedia/iconoGancho.png">
                 </section>
             </div>
