@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TipsService } from 'src/app/servicios/tips.service';
+import { UsuarioService } from 'src/app/servicios/usuario.service';
+
+interface Tips
+{
+  id_tips: number,
+  text: string
+}
 
 @Component({
   selector: 'app-home1',
@@ -9,7 +16,7 @@ import { TipsService } from 'src/app/servicios/tips.service';
 })
 export class Home1Component implements OnInit {
 
-  constructor(public router: Router, public tips: TipsService) { 
+  constructor(public router: Router, public tips: TipsService ) { 
     this.mostrarConsejo()
   }
 
@@ -21,10 +28,13 @@ export class Home1Component implements OnInit {
 
   mostrarConsejo()
   {
-    this.tips.getTip().subscribe((data:string[])=>
+    this.tips.getTip().subscribe((data:Tips[])=>
     {
       console.log(data)
-      this.tip = data[0]
+      this.tip = data[0].text
+      this.tips.consejo = this.tip
+      
+      console.log(this.tips.consejo)
     })
   }
 

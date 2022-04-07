@@ -18,7 +18,7 @@
     font-size: 22px;
     line-height: 37px;
     text-align: right;
-    color: #FAFAFA;
+    color: var(--amarillo);
 }
 
 .imagen{

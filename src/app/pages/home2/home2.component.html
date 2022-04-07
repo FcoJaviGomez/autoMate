@@ -2,12 +2,10 @@
 
     <section class="card1">
 
-        <h2 class="titulo_1">Bienvenido $NombreUsuario</h2>
+        <h2 class="titulo_1">Bienvenido {{this.nombreUsuario.usuario.name}}</h2>
 
         <p class="consejo">
-            “No escatimes en los precios de los <br>
-            recambios, un buen material hará que <br>
-            nos duren mucho más tiempo.”
+           {{this.tips.consejo}}
         </p>
 
         <h2 class="titulo_2">Tu próximo servicio es:</h2>
