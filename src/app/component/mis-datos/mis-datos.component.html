@@ -5,20 +5,20 @@
     <section class="back">
         <div class="caja">
             <div class="label"><label for="nombre" class="">Nombre</label></div>
-            <input type="text" #nombre id="nombre" class="input">
+            <input type="text" value="{{usuario.name}}" #nombre class="input"> 
         </div>
         <div class="caja">
             <div class="label"><label for="apellido" class="">Apellido</label></div>
-            <input type="text" #apellido id="apellido" class="input">
+            <input type="text" value={{usuario.last_name}} #apellido class="input">
         </div>
         <div class="caja">
             <div class="label"><label for="correo" class="">Correo</label></div>
-            <input type="text" #correo id="correo" class="input">
+            <input type="text" value={{usuario.email}} #correo class="input">
         </div>
         <div class="caja">
             <div class="label"><label for="contraseña" class="">Contraseña</label></div>
-            <input type="text" #contraseña id="contraseña" class="input">
+            <input type="password" #password  class="input">
         </div>
-        <button class="butt">MODIFICAR</button>
+        <button on-click="modificar(nombre, apellido, correo, password)" class="butt">MODIFICAR</button>
     </section>
 </body>

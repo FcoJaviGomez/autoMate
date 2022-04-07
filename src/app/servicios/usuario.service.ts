@@ -33,4 +33,7 @@ export class UsuarioService {
   postLogin(usuario: Usuario) {
     return this.http.post(this.url + "/login", usuario)
   }
+  putUsuario(usuario: Usuario) {
+    return this.http.put(this.url + "/usuario", usuario)
+  }
 }
