@@ -49,7 +49,7 @@ export class AgregarMantenimientoComponent implements OnInit {
 
   public tipoFreno: string[] = [FRENODISCOS, FRENOPASTILLAS, FRENOLIQUIDO]
 
-  public tipoNeumatico: string[] = [NEUMATICODELANTEROS, NEUMATICOTRASEROS, NEUMATICOAMBOS]
+  public tipoNeumatico: string[] = [NEUMATICODELANTEROS, NEUMATICOTRASEROS]
 
   public tipoTraccion: string[] = [TRACCIONDELANTERA, TRACCIONTRASERA, TRACCIONAMBOS]
 
@@ -139,16 +139,16 @@ export class AgregarMantenimientoComponent implements OnInit {
   }
 
   agregarBasico(tipoMantenimiento: string, coste: number) {
-    // let mantenimiento = new Mantenimiento(0, this.usuarioService.usuario.id_user, null, tipoMantenimiento,
-    //   null, null, null, coste, null, null)
+    let mantenimiento = new Mantenimiento(0, this.usuarioService.usuario.id_user, "", tipoMantenimiento,
+      "", "", "", coste, "", "")
     if (tipoMantenimiento != "") {
-      // this.mantenimientoService.add(mantenimiento).subscribe((data: number) => {
-      console.log(tipoMantenimiento);
-      console.log(coste);
-      // console.log(data);
-      this.router.navigate(['/pagina-mantenimiento'])
-      this.usuarioService.iconoLlave = true
-      // })
+      this.mantenimientoService.add(mantenimiento).subscribe((data: number) => {
+        console.log(tipoMantenimiento);
+        console.log(coste);
+        console.log(data);
+        this.router.navigate(['/pagina-mantenimiento'])
+        this.usuarioService.iconoLlave = true
+      })
 
     }
 

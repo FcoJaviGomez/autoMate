@@ -20,7 +20,7 @@ export class PaginaMantenimientoComponent implements OnInit {
     mantenimientoService.getAll(this.usuarioService.usuario.id_user).subscribe((data: Mantenimiento[]) => {
       console.log(data)
       this.mantenimientos = data
-      console.log(this.mantenimientos)
+      console.log(this.mantenimientos.length)
     })
   }
 
