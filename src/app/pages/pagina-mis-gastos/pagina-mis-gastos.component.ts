@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { Gastos } from 'src/app/models/gastos';
+import { GastosService } from 'src/app/servicios/gastos.service';
 import { single } from './data';
 
 @Component({
@@ -9,6 +11,9 @@ import { single } from './data';
   styleUrls: ['./pagina-mis-gastos.component.css'],
 })
 export class PaginaMisGastosComponent implements OnInit {
+
+  public gastosTotales: Gastos;
+  public gastosTipo: Gastos;
 
   // single: any[];
   view:[number,number] = [340, 369];
@@ -54,8 +59,16 @@ export class PaginaMisGastosComponent implements OnInit {
     }
   ];
 
-  constructor() {
+  constructor(public ServicioGastos: GastosService) {
     // Object.assign(this, { single });
+
+    this.ServicioGastos.getGastos()
+
+    // this.librosService.getAll(this.usuarioService.usuario.id_usuario).subscribe((data: any)=>
+    // {
+    //   this.libros = data
+    //   console.log(data)
+    // })
   }
 
   onSelect(data: any): void {
