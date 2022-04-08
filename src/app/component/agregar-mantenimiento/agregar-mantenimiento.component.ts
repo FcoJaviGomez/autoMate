@@ -149,61 +149,84 @@ export class AgregarMantenimientoComponent implements OnInit {
         this.router.navigate(['/pagina-mantenimiento'])
         this.usuarioService.iconoLlave = true
       })
-
     }
-
   }
-  agregarFreno(tipoMantenimiento: string, tipoFreno: string, coste: string) {
+
+  agregarFreno(tipoMantenimiento: string, tipoFreno: string, coste: number) {
+    let mantenimiento = new Mantenimiento(0, this.usuarioService.usuario.id_user, "", tipoMantenimiento,
+      tipoFreno, "", "", coste, "", "")
     if (tipoMantenimiento != "" && tipoFreno != "") {
-      console.log(tipoMantenimiento);
-      console.log(tipoFreno);
-      console.log(coste);
-      this.router.navigate(['/pagina-mantenimiento'])
-      this.usuarioService.iconoLlave = true
+      this.mantenimientoService.add(mantenimiento).subscribe((data: number) => {
+        console.log(tipoMantenimiento);
+        console.log(tipoFreno);
+        console.log(coste);
+        console.log(data);
+        this.router.navigate(['/pagina-mantenimiento'])
+        this.usuarioService.iconoLlave = true
+      })
     }
-
   }
-  agregarFiltro(tipoMantenimiento: string, tipoFiltro: string, coste: string) {
+
+  agregarFiltro(tipoMantenimiento: string, tipoFiltro: string, coste: number) {
+    let mantenimiento = new Mantenimiento(0, this.usuarioService.usuario.id_user, "", tipoMantenimiento,
+      tipoFiltro, "", "", coste, "", "")
     if (tipoMantenimiento != "" && tipoFiltro != "") {
-      console.log(tipoMantenimiento);
-      console.log(tipoFiltro);
-      console.log(coste);
-      this.router.navigate(['/pagina-mantenimiento'])
-      this.usuarioService.iconoLlave = true
+      this.mantenimientoService.add(mantenimiento).subscribe((data: number) => {
+        console.log(tipoMantenimiento);
+        console.log(tipoFiltro);
+        console.log(coste);
+        console.log(data);
+        this.router.navigate(['/pagina-mantenimiento'])
+        this.usuarioService.iconoLlave = true
+      })
     }
-
   }
-  agregarNeumatico(tipoMantenimiento: string, posicionNeumatico: string, traccion: string, coste: string) {
+
+  agregarNeumatico(tipoMantenimiento: string, posicionNeumatico: string, traccion: string, coste: number) {
+    let mantenimiento = new Mantenimiento(0, this.usuarioService.usuario.id_user, "", tipoMantenimiento,
+      posicionNeumatico, traccion, "", coste, "", "")
     if (tipoMantenimiento != "" && posicionNeumatico != "" && traccion != "") {
-      console.log(tipoMantenimiento);
-      console.log(posicionNeumatico);
-      console.log(traccion);
-      console.log(coste);
-      this.router.navigate(['/pagina-mantenimiento'])
-      this.usuarioService.iconoLlave = true
+      this.mantenimientoService.add(mantenimiento).subscribe((data: number) => {
+        console.log(tipoMantenimiento);
+        console.log(posicionNeumatico);
+        console.log(traccion);
+        console.log(coste);
+        console.log(data);
+        this.router.navigate(['/pagina-mantenimiento'])
+        this.usuarioService.iconoLlave = true
+      })
     }
-
   }
-  agregarItv(tipoMantenimiento: string, coste: string) {
+
+  agregarItv(tipoMantenimiento: string, coste: number) {
+    let mantenimiento = new Mantenimiento(0, this.usuarioService.usuario.id_user, "", tipoMantenimiento,
+      "", "", "", coste, "", "")
     if (tipoMantenimiento != "") {
-      console.log(tipoMantenimiento);
-      console.log(coste);
-      this.router.navigate(['/pagina-mantenimiento'])
-      this.usuarioService.iconoLlave = true
+      this.mantenimientoService.add(mantenimiento).subscribe((data: number) => {
+        console.log(tipoMantenimiento);
+        console.log(coste);
+        console.log(data);
+        this.router.navigate(['/pagina-mantenimiento'])
+        this.usuarioService.iconoLlave = true
+      })
     }
-
   }
-  agregarOtro(tipoMantenimiento: string, nombre: string, descripcion: string, coste: string, fecha: string) {
-    if (tipoMantenimiento != "" && nombre != "" && fecha != "") {
-      console.log(tipoMantenimiento);
-      console.log(nombre);
-      console.log(descripcion);
-      console.log(coste);
-      console.log(fecha);
-      this.router.navigate(['/pagina-mantenimiento'])
-      this.usuarioService.iconoLlave = true
-    }
 
+  agregarOtro(tipoMantenimiento: string, nombre: string, descripcion: string, coste: number, fecha: string) {
+    let mantenimiento = new Mantenimiento(0, this.usuarioService.usuario.id_user, nombre, tipoMantenimiento,
+      "", "", descripcion, coste, "", "")
+    if (tipoMantenimiento != "" && nombre != "" && fecha != "") {
+      this.mantenimientoService.add(mantenimiento).subscribe((data: number) => {
+        console.log(tipoMantenimiento);
+        console.log(nombre);
+        console.log(descripcion);
+        console.log(coste);
+        console.log(fecha);
+        console.log(data);
+        this.router.navigate(['/pagina-mantenimiento'])
+        this.usuarioService.iconoLlave = true
+      })
+    }
   }
 
   ngOnInit(): void {
