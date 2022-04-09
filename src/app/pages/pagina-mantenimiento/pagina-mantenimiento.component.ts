@@ -26,11 +26,16 @@ export class PaginaMantenimientoComponent implements OnInit {
 
   compararFecha(endDate: string): boolean {
     let date = new Date(endDate)
-    console.log(date)
+    console.log(endDate);
+
+    // console.log(date)
     let hoy = new Date()
+
+
     let month = hoy.getMonth() + 2
     let year = hoy.getFullYear()
     let day = hoy.getDate()
+    // console.log(day);1
     hoy = new Date(`${year}/${month}/${day}`)
     return date < hoy
   }

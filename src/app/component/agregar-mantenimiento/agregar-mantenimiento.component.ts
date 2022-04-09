@@ -214,7 +214,7 @@ export class AgregarMantenimientoComponent implements OnInit {
 
   agregarOtro(tipoMantenimiento: string, nombre: string, descripcion: string, coste: number, fecha: string) {
     let mantenimiento = new Mantenimiento(0, this.usuarioService.usuario.id_user, nombre, tipoMantenimiento,
-      "", "", descripcion, coste, "", "")
+      "", "", descripcion, coste, "", fecha)
     if (tipoMantenimiento != "" && nombre != "" && fecha != "") {
       this.mantenimientoService.add(mantenimiento).subscribe((data: number) => {
         console.log(tipoMantenimiento);
