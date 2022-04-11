@@ -5,7 +5,6 @@
         <h2 class="titulo">MANTENIMIENTOS</h2>
 
         <div *ngIf="mantenimientos.length === 0 ; else tarjeta" class="condicion">
-
             <div routerLink="/pagina-agregar-mantenimiento" class="card_condicion">
                 <p class="texto_condicion">
                     En este momento no tienes ningún servicio próximo.
@@ -16,19 +15,26 @@
         </div>
         <ng-template #tarjeta>
             <div *ngFor="let mantenimiento of mantenimientos; let index=index" on-click="mantenimientoDetalle(index)">
-                <section
+
+                <section *ngIf="mantenimiento.name === null"
                     [ngClass]="compararFecha(mantenimiento.end_date) ? 'cards_mantenimiento_roja': 'cards_mantenimiento_verde'">
-                    <h1 class="texto_1">{{mantenimiento.type}}
-                        <p class="subtexto_1">&nbsp;{{mantenimiento.subtype}}</p>
+                    <h1 class="texto_1">{{mantenimiento.type | titlecase}}
+                        <p class="subtexto_1">&nbsp;{{mantenimiento.subtype | titlecase}}</p>
+                    </h1>
+                    <p class="texto_2">FECHA FIN: {{mantenimiento.end_date.substring(0,10)}} </p>
+                    <img class="icono" src="../../../assets/multimedia/iconoGancho.png">
+                </section>
+                <section *ngIf="mantenimiento.name !== null"
+                    [ngClass]="compararFecha(mantenimiento.end_date) ? 'cards_mantenimiento_roja': 'cards_mantenimiento_verde'">
+                    <h1 class="texto_1">{{mantenimiento.name | titlecase}}
+                        <p class="subtexto_1">&nbsp;{{mantenimiento.type | titlecase}}</p>
                     </h1>
                     <p class="texto_2">FECHA FIN: {{mantenimiento.end_date.substring(0,10)}} </p>
                     <img class="icono" src="../../../assets/multimedia/iconoGancho.png">
                 </section>
             </div>
         </ng-template>
-
     </div>
-
 </div>
 
 <!-- *ngIf="anyo== this.mantenimientos.anyo & mes== this.mantenimientos.mes & (this.diasRestantes<= 10); else tarjeta " -->

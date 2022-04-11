@@ -23,8 +23,8 @@ const FRENODISCOS = "Discos";
 const FRENOPASTILLAS = "Pastillas";
 const FRENOLIQUIDO = "Líquido"
 const BUJIAS = "Bujías";
-const CORREA = "Correa de distribución";
-const ESCOBILLAS = "Escobillas limpiaparabrisas";
+const CORREA = "Correa de Distribución";
+const ESCOBILLAS = "Limpiaparabrisas";
 const ITV = "ITV";
 const OTROS = "Otros";
 
@@ -139,7 +139,7 @@ export class AgregarMantenimientoComponent implements OnInit {
   }
 
   agregarBasico(tipoMantenimiento: string, coste: number) {
-    let mantenimiento = new Mantenimiento(0, this.usuarioService.usuario.id_user, "", tipoMantenimiento,
+    let mantenimiento = new Mantenimiento(0, this.usuarioService.usuario.id_user, null, tipoMantenimiento,
       "", "", "", coste, "", "")
     if (tipoMantenimiento != "") {
       this.mantenimientoService.add(mantenimiento).subscribe((data: number) => {
@@ -153,7 +153,7 @@ export class AgregarMantenimientoComponent implements OnInit {
   }
 
   agregarFreno(tipoMantenimiento: string, tipoFreno: string, coste: number) {
-    let mantenimiento = new Mantenimiento(0, this.usuarioService.usuario.id_user, "", tipoMantenimiento,
+    let mantenimiento = new Mantenimiento(0, this.usuarioService.usuario.id_user, null, tipoMantenimiento,
       tipoFreno, "", "", coste, "", "")
     if (tipoMantenimiento != "" && tipoFreno != "") {
       this.mantenimientoService.add(mantenimiento).subscribe((data: number) => {
@@ -168,7 +168,7 @@ export class AgregarMantenimientoComponent implements OnInit {
   }
 
   agregarFiltro(tipoMantenimiento: string, tipoFiltro: string, coste: number) {
-    let mantenimiento = new Mantenimiento(0, this.usuarioService.usuario.id_user, "", tipoMantenimiento,
+    let mantenimiento = new Mantenimiento(0, this.usuarioService.usuario.id_user, null, tipoMantenimiento,
       tipoFiltro, "", "", coste, "", "")
     if (tipoMantenimiento != "" && tipoFiltro != "") {
       this.mantenimientoService.add(mantenimiento).subscribe((data: number) => {
@@ -183,7 +183,7 @@ export class AgregarMantenimientoComponent implements OnInit {
   }
 
   agregarNeumatico(tipoMantenimiento: string, posicionNeumatico: string, traccion: string, coste: number) {
-    let mantenimiento = new Mantenimiento(0, this.usuarioService.usuario.id_user, "", tipoMantenimiento,
+    let mantenimiento = new Mantenimiento(0, this.usuarioService.usuario.id_user, null, tipoMantenimiento,
       posicionNeumatico, traccion, "", coste, "", "")
     if (tipoMantenimiento != "" && posicionNeumatico != "" && traccion != "") {
       this.mantenimientoService.add(mantenimiento).subscribe((data: number) => {
@@ -199,7 +199,7 @@ export class AgregarMantenimientoComponent implements OnInit {
   }
 
   agregarItv(tipoMantenimiento: string, coste: number) {
-    let mantenimiento = new Mantenimiento(0, this.usuarioService.usuario.id_user, "", tipoMantenimiento,
+    let mantenimiento = new Mantenimiento(0, this.usuarioService.usuario.id_user, null, tipoMantenimiento,
       "", "", "", coste, "", "")
     if (tipoMantenimiento != "") {
       this.mantenimientoService.add(mantenimiento).subscribe((data: number) => {
