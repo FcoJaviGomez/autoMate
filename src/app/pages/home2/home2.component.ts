@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { MantenimientosService } from 'src/app/servicios/mantenimientos.service';
 import { TipsService } from 'src/app/servicios/tips.service';
 import { UsuarioService } from 'src/app/servicios/usuario.service';
@@ -22,7 +23,7 @@ export class Home2Component implements OnInit {
 
   public tip: any;
 
-  constructor(public tips: TipsService, public usuario: UsuarioService, public mantenimientoService: MantenimientosService) {
+  constructor(public tips: TipsService, public usuario: UsuarioService, public mantenimientoService: MantenimientosService, public router: Router) {
 
     
     this.tips.consejo
@@ -51,7 +52,10 @@ export class Home2Component implements OnInit {
     return date < hoy
   }
 
-
+  mantenimientoDetalle(index: string) {
+    this.mantenimientoService.mantenimientoSeleccionado = this.mantenimientos[index]
+    this.router.navigate(['/detalle-mantenimiento'])
+  }
 
   ngOnInit(): void {
   }

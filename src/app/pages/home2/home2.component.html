@@ -8,6 +8,8 @@
            {{this.tips.consejo}}
         </p>
 
+        <h4 class="lineas">- - - - - - -</h4>
+
         <h2 class="titulo_2">Tu próximo servicio es:</h2>
 
         <div *ngIf="mantenimientos.length === 0 ; else card" class="condicion">
@@ -22,7 +24,8 @@
         </div>
 
         <ng-template #card>
-            <div [ngClass]="compararFecha(mantenimientos.endDate) ? 'cards_mantenimiento_roja': 'cards_mantenimiento_verde'">
+            <div *ngFor="let mantenimiento of mantenimientos; let index=index" on-click="mantenimientoDetalle(index)"
+            [ngClass]="compararFecha(mantenimientos.endDate) ? 'cards_mantenimiento_verde': 'cards_mantenimiento_roja'">
                 <h1 class="texto_1"> {{mantenimientos[0].type}}</h1>
                 <p class="subtexto_1">&nbsp;{{mantenimientos[0].subtype}}</p>
                 <p class="texto_2">{{mantenimientos[0].end_date.substring(0,10)}}</p>
