@@ -65,7 +65,7 @@ import { DetalleHistorialComponent } from './pages/detalle-historial/detalle-his
     BrowserModule,
     AppRoutingModule,
     NgxChartsModule,
-    HttpClientModule        
+    HttpClientModule
 
   ],
   providers: [],

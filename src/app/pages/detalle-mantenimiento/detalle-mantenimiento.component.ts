@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
 import { MantenimientosService } from 'src/app/servicios/mantenimientos.service';
 import { Mantenimiento } from 'src/app/models/mantenimiento';
 import { Router } from '@angular/router';
+import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 
 
 @Component({
@@ -13,17 +14,23 @@ export class DetalleMantenimientoComponent implements OnInit {
 
   public mantenimientos: any
 
-  constructor(public router: Router, private mantenimientoService: MantenimientosService) {
+  modalRef: BsModalRef;
+
+  constructor(public router: Router, private mantenimientoService: MantenimientosService,
+    private modalService: BsModalService) {
     this.mantenimientos = this.mantenimientoService.mantenimientoSeleccionado
     console.log(this.mantenimientos);
 
   }
 
-  eliminar() {
+  openModal(template: TemplateRef<any>) {
+    this.modalRef = this.modalService.show(template);
+  }
+
+  confirmarEliminar() {
     this.mantenimientoService.delete(this.mantenimientos.id_maintenance).subscribe((data1: any) => {
       this.router.navigate(['/pagina-mantenimiento'])
     })
-
   }
 
   ngOnInit(): void {
