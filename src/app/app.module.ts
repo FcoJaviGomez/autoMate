@@ -32,6 +32,7 @@ import { PaginaAgregarMantenimientoComponent } from './pages/pagina-agregar-mant
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { DetalleHistorialComponent } from './pages/detalle-historial/detalle-historial.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,7 +65,7 @@ import { DetalleHistorialComponent } from './pages/detalle-historial/detalle-his
     BrowserModule,
     AppRoutingModule,
     NgxChartsModule,
-    HttpClientModule
+    HttpClientModule        
 
   ],
   providers: [],
