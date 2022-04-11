@@ -16,7 +16,6 @@
         </div>
         <ng-template #tarjeta>
             <div *ngFor="let mantenimiento of mantenimientos; let index=index" on-click="mantenimientoDetalle(index)">
-
                 <section
                     [ngClass]="compararFecha(mantenimiento.end_date) ? 'cards_mantenimiento_roja': 'cards_mantenimiento_verde'">
                     <h1 class="texto_1">{{mantenimiento.type}}
