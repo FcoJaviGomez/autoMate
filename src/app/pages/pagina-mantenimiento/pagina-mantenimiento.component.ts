@@ -11,14 +11,13 @@ import { Mantenimiento } from 'src/app/models/mantenimiento';
 })
 export class PaginaMantenimientoComponent implements OnInit {
 
-  public alerta: boolean = true
-
-  public mantenimientos: Mantenimiento[]
+  public mantenimientos: any
 
   constructor(public router: Router, private mantenimientoService: MantenimientosService,
     private usuarioService: UsuarioService) {
     mantenimientoService.getAll(this.usuarioService.usuario.id_user).subscribe((data: Mantenimiento[]) => {
       console.log("chec", data)
+      console.log(data);
 
       for (let mantenimiento of data) {
         for (let mantenimientoModificado in mantenimiento) {
@@ -32,7 +31,6 @@ export class PaginaMantenimientoComponent implements OnInit {
 
         }
       }
-
       this.mantenimientos = data
       console.log(this.mantenimientos.length)
     })
@@ -40,12 +38,9 @@ export class PaginaMantenimientoComponent implements OnInit {
 
   compararFecha(endDate: string): boolean {
     let date = new Date(endDate)
-    console.log(endDate);
-
+    // console.log(endDate);
     // console.log(date)
     let hoy = new Date()
-
-
     let month = hoy.getMonth() + 2
     let year = hoy.getFullYear()
     let day = hoy.getDate()

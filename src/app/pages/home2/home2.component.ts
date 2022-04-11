@@ -8,7 +8,7 @@ import { Mantenimiento } from 'src/app/models/mantenimiento';
 
 interface Tips {
   id_tips: number,
-  text:string
+  text: string
 }
 
 
@@ -25,20 +25,19 @@ export class Home2Component implements OnInit {
 
   constructor(public tips: TipsService, public usuario: UsuarioService, public mantenimientoService: MantenimientosService, public router: Router) {
 
-    
+
     this.tips.consejo
     console.log(this.tips.consejo)
-     
+
     this.usuario.usuario.name
 
-    this.mantenimientoService.getOne(this.usuario.usuario.id_user).subscribe((data: Mantenimiento[])=>
-      {
-        console.log(data)
-        this.mantenimientos= data
-        console.log(this.mantenimientos)
-      }
+    this.mantenimientoService.getOne(this.usuario.usuario.id_user).subscribe((data: Mantenimiento[]) => {
+      console.log(data)
+      this.mantenimientos = data
+      console.log(this.mantenimientos)
+    }
     )
-    
+
   }
 
   compararFecha(endDate: string): boolean {
