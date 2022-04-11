@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Gastos } from '../models/gastos';
 
 @Injectable({
   providedIn: 'root'
@@ -10,11 +9,12 @@ export class GastosService {
 
   private url = "https://my-api-automate.herokuapp.com";
 
-  public gastos: Gastos;
+  // private url = "https://localhost:3000";
 
   constructor(private http: HttpClient) { }
 
-  getGastos(): Observable<Object> {
-    return this.http.get(this.url + '/gastos')
+  getGastos(id_user: number): Observable<Object> {
+    return this.http.get(this.url + '/gastos' + '?id_user=' + id_user)
   }
+  
 }
