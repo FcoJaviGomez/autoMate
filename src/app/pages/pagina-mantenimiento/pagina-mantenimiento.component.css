@@ -73,7 +73,7 @@
 
 .texto_1 {
     position: absolute;
-    width: 129px;
+    width: 230px;
     height: 34px;
     margin-left: 19px;
     margin-top: 9px;
@@ -96,7 +96,7 @@
     font-size: 16px;
     line-height: 27px;
     color: var(--negro);
-    margin-top: 8px;
+    margin-top: 7px;
 }
 
 .texto_2 {

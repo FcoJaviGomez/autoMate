@@ -129,3 +129,9 @@
     border: none;
     box-shadow: 0px 1px 3px 1px var(--gris);
 }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

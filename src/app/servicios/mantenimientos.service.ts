@@ -22,6 +22,10 @@ export class MantenimientosService {
     return this.http.get(this.url + "/mantenimiento?id_user=" + id_user)
   }
 
+  getAllHistorial(id_user: number): Observable<Object> {
+    return this.http.get(this.url + "/historial?id_user=" + id_user)
+  }
+
   getOne(id_user: number): Observable<Object> {
 
     return this.http.get(this.url + `/mantenimientoHome?id_user= ${id_user} `)

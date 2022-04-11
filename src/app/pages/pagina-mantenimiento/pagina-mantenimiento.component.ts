@@ -18,7 +18,21 @@ export class PaginaMantenimientoComponent implements OnInit {
   constructor(public router: Router, private mantenimientoService: MantenimientosService,
     private usuarioService: UsuarioService) {
     mantenimientoService.getAll(this.usuarioService.usuario.id_user).subscribe((data: Mantenimiento[]) => {
-      console.log(data)
+      console.log("chec", data)
+
+      for (let mantenimiento of data) {
+        for (let mantenimientoModificado in mantenimiento) {
+
+          if (mantenimiento[mantenimientoModificado] === "aceitemotor") {
+            mantenimiento[mantenimientoModificado] = "Aceite Motor"
+          }
+          if (mantenimiento[mantenimientoModificado] === "correadedistribución") {
+            mantenimiento[mantenimientoModificado] = "Correa de Distribución"
+          }
+
+        }
+      }
+
       this.mantenimientos = data
       console.log(this.mantenimientos.length)
     })

@@ -4,7 +4,7 @@
         <i class="fa-solid fa-arrow-left-long"></i>
     </a>
     <div *ngIf='mantenimientos.type==="bateria"||mantenimientos.type==="aceitemotor"||mantenimientos.type==="bujías"
-    ||mantenimientos.type==="correadedistribución"||mantenimientos.type==="escobillaslimpiaparabrisas"||
+    ||mantenimientos.type==="correadedistribución"||mantenimientos.type==="limpiaparabrisas"||
     mantenimientos.type==="itv"'>
         <section class="card1">
 
@@ -12,7 +12,7 @@
 
             <div>
                 <h2 class="l1 txtNegro">Tipo de mantenimiento:</h2>
-                <h2 class="l2 txtAmarillo"> {{mantenimientos.type}} </h2>
+                <h2 class="l2 txtAmarillo"> {{mantenimientos.type | titlecase}} </h2>
             </div>
             <div>
                 <h2 class="l3 txtNegro">Creado con fecha:</h2>
@@ -38,15 +38,15 @@
 
             <div>
                 <h2 class="l1 txtNegro">Tipo de mantenimiento:</h2>
-                <h2 class="l2 txtAmarillo"> {{mantenimientos.type}} </h2>
+                <h2 class="l2 txtAmarillo"> {{mantenimientos.type | titlecase}} </h2>
             </div>
             <div>
                 <h2 class="l3 txtNegro">Posición:</h2>
-                <h2 class="l4 txtAmarillo">{{mantenimientos.subtype}}</h2>
+                <h2 class="l4 txtAmarillo">{{mantenimientos.subtype | titlecase}}</h2>
             </div>
             <div>
                 <h2 class="l5 txtNegro">Tracción:</h2>
-                <h2 class="l6 txtAmarillo">{{mantenimientos.subsubtype}}</h2>
+                <h2 class="l6 txtAmarillo">{{mantenimientos.subsubtype | titlecase}}</h2>
             </div>
             <div>
                 <h2 class="l7 txtNegro">Creado con fecha:</h2>
@@ -72,11 +72,11 @@
 
             <div>
                 <h2 class="l1 txtNegro">Tipo de mantenimiento:</h2>
-                <h2 class="l2 txtAmarillo"> {{mantenimientos.type}} </h2>
+                <h2 class="l2 txtAmarillo"> {{mantenimientos.type | titlecase}} </h2>
             </div>
             <div>
                 <h2 class="l3 txtNegro">Tipo:</h2>
-                <h2 class="l4 txtAmarillo">{{mantenimientos.subtype}}</h2>
+                <h2 class="l4 txtAmarillo">{{mantenimientos.subtype | titlecase}}</h2>
             </div>
             <div>
                 <h2 class="l5 txtNegro">Creado con fecha:</h2>
@@ -102,27 +102,26 @@
 
             <div>
                 <h2 class="l1 txtNegro">Tipo de mantenimiento:</h2>
-                <h2 class="l2 txtAmarillo"> {{mantenimientos.type}} </h2>
+                <h2 class="l2 txtAmarillo"> {{mantenimientos.type | titlecase}} </h2>
             </div>
             <div>
                 <h2 class="l3 txtNegro">Nombre:</h2>
-                <h2 class="l4 txtAmarillo">{{mantenimientos.name}}</h2>
+                <h2 class="l4 txtAmarillo">{{mantenimientos.name | titlecase}}</h2>
             </div>
             <div>
-                <h2 class="l5 txtNegro">Descripción:</h2>
-                <h2 class="l6 txtAmarillo">{{mantenimientos.description}}</h2>
+                <h2 class="l5 txtNegro">Creado con fecha:</h2>
+                <h2 class="l6 txtAmarillo">{{mantenimientos.start_date.substring(0,10)}}</h2>
             </div>
             <div>
-                <h2 class="l7 txtNegro">Creado con fecha:</h2>
-                <h2 class="l8 txtAmarillo">{{mantenimientos.start_date.substring(0,10)}}</h2>
+                <h2 class="l7 txtNegro">Fecha de finalización:</h2>
+                <h2 class="l8 txtAmarillo">{{mantenimientos.end_date.substring(0,10)}}</h2>
             </div>
             <div>
-                <h2 class="l9 txtNegro">Fecha de finalización:</h2>
-                <h2 class="l10 txtAmarillo">{{mantenimientos.end_date.substring(0,10)}}</h2>
+                <h2 class="l9 txtNegro">Coste:</h2>
+                <h2 class="l10 txtAmarillo">{{mantenimientos.cost}}€</h2>
             </div>
             <div>
-                <h2 class="l11 txtNegro">Coste:</h2>
-                <h2 class="l12 txtAmarillo">{{mantenimientos.cost}}€</h2>
+                <p class="l11 txtDescription">{{mantenimientos.description | titlecase}}</p>
             </div>
 
             <img src="../../../assets/multimedia/detalleMan.png" class="animacion">
