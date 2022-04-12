@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MantenimientosService } from 'src/app/servicios/mantenimientos.service';
 import { Mantenimiento } from 'src/app/models/mantenimiento';
 import { Router } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @Component({
@@ -13,7 +14,8 @@ export class DetalleMantenimientoComponent implements OnInit {
 
   public mantenimientos: any
 
-  constructor(public router: Router, private mantenimientoService: MantenimientosService) {
+  constructor(public router: Router, private mantenimientoService: MantenimientosService,
+    private modal: NgbModule) {
     this.mantenimientos = this.mantenimientoService.mantenimientoSeleccionado
     console.log(this.mantenimientos);
 

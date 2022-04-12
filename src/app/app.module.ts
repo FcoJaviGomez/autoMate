@@ -31,6 +31,7 @@ import { AgregarMantenimientoComponent } from './component/agregar-mantenimiento
 import { PaginaAgregarMantenimientoComponent } from './pages/pagina-agregar-mantenimiento/pagina-agregar-mantenimiento.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { DetalleHistorialComponent } from './pages/detalle-historial/detalle-historial.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -65,7 +66,8 @@ import { DetalleHistorialComponent } from './pages/detalle-historial/detalle-his
     BrowserModule,
     AppRoutingModule,
     NgxChartsModule,
-    HttpClientModule        
+    HttpClientModule,
+    NgbModule
 
   ],
   providers: [],
