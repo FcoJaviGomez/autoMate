@@ -3,13 +3,13 @@
     <a class="back" routerLink="/pagina-mantenimiento">
         <i class="fa-solid fa-arrow-left-long"></i>
     </a>
-    <div *ngIf='mantenimientos.type==="bateria"||mantenimientos.type==="aceitemotor"||mantenimientos.type==="bujías"
-    ||mantenimientos.type==="correadedistribución"||mantenimientos.type==="limpiaparabrisas"||
+    <div *ngIf='mantenimientos.type==="bateria"||mantenimientos.type==="Aceite Motor"||mantenimientos.type==="bujías"
+    ||mantenimientos.type==="Correa de Distribución"||mantenimientos.type==="limpiaparabrisas"||
     mantenimientos.type==="itv"'>
         <section class="card1">
 
-            <button type="reset" on-click=eliminar() class="eliminar"><i class="fa-solid fa-xmark"></i></button>
-
+            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="eliminar"><i
+                    class="fa-solid fa-xmark"></i></button>
             <div>
                 <h2 class="l1 txtNegro">Tipo de mantenimiento:</h2>
                 <h2 class="l2 txtAmarillo"> {{mantenimientos.type | titlecase}} </h2>
@@ -34,8 +34,8 @@
     <div *ngIf='mantenimientos.type==="neumáticos"'>
         <section class="card1">
 
-            <button type="reset" on-click=eliminar() class="eliminar"><i class="fa-solid fa-xmark"></i></button>
-
+            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="eliminar"><i
+                    class="fa-solid fa-xmark"></i></button>
             <div>
                 <h2 class="l1 txtNegro">Tipo de mantenimiento:</h2>
                 <h2 class="l2 txtAmarillo"> {{mantenimientos.type | titlecase}} </h2>
@@ -68,8 +68,8 @@
     <div *ngIf='mantenimientos.type==="frenos"||mantenimientos.type==="filtros"'>
         <section class="card1">
 
-            <button type="reset" on-click=eliminar() class="eliminar"><i class="fa-solid fa-xmark"></i></button>
-
+            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="eliminar"><i
+                    class="fa-solid fa-xmark"></i></button>
             <div>
                 <h2 class="l1 txtNegro">Tipo de mantenimiento:</h2>
                 <h2 class="l2 txtAmarillo"> {{mantenimientos.type | titlecase}} </h2>
@@ -98,8 +98,8 @@
     <div *ngIf='mantenimientos.type==="otros"'>
         <section class="card1">
 
-            <button type="reset" on-click=eliminar() class="eliminar"><i class="fa-solid fa-xmark"></i></button>
-
+            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="eliminar"><i
+                    class="fa-solid fa-xmark"></i></button>
             <div>
                 <h2 class="l1 txtNegro">Tipo de mantenimiento:</h2>
                 <h2 class="l2 txtAmarillo"> {{mantenimientos.type | titlecase}} </h2>
@@ -128,5 +128,21 @@
 
         </section>
     </div>
-
+    <div class="modal fade" id="exampleModal" style="margin-top: 120px;" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¿Estás seguro que deseas eliminar este mantenimiento?
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" on-click=eliminar() data-bs-dismiss="modal"
+                        class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>

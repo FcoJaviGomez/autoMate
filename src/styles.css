@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@600&display=swap');
+@import '~bootstrap/dist/css/bootstrap.min.css';
 
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -8,10 +9,14 @@
 
 }
 
-:root{
+:root {
     --negro: #191213;
     --amarillo: #FFD966;
     --gris40: rgba(179, 171, 172, 0.4);
     --gris10: rgba(179, 171, 172, 0.1);
     --gris: #B3ABAC;
 }
+
+/* .toast-top-center {
+    margin-top: 50px;
+} */

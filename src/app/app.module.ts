@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -31,6 +32,14 @@ import { AgregarMantenimientoComponent } from './component/agregar-mantenimiento
 import { PaginaAgregarMantenimientoComponent } from './pages/pagina-agregar-mantenimiento/pagina-agregar-mantenimiento.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { DetalleHistorialComponent } from './pages/detalle-historial/detalle-historial.component';
+
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+// import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap'
+
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { ToastrModule } from 'ngx-toastr';
 
 
 @NgModule({
@@ -65,10 +74,14 @@ import { DetalleHistorialComponent } from './pages/detalle-historial/detalle-his
     BrowserModule,
     AppRoutingModule,
     NgxChartsModule,
-    HttpClientModule        
-
+    HttpClientModule,
+    NgbModule,
+    CommonModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
+    // NgbActiveModal
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

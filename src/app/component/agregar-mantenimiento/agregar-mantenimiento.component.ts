@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Mantenimiento } from 'src/app/models/mantenimiento';
 import { UsuarioService } from 'src/app/servicios/usuario.service';
 import { MantenimientosService } from 'src/app/servicios/mantenimientos.service';
+import { ToastrService } from 'ngx-toastr';
 
 const BATERIA = "Bateria";
 const ACEITE_MOTOR = "Aceite Motor";
@@ -61,7 +62,7 @@ export class AgregarMantenimientoComponent implements OnInit {
   public formularioOtros: boolean;
 
   constructor(public router: Router, public usuarioService: UsuarioService,
-    private mantenimientoService: MantenimientosService) {
+    private mantenimientoService: MantenimientosService, private toastr: ToastrService) {
     console.log(this.usuarioService.usuario.id_user);
     this.formularioBasico = false;
     this.formularioFiltros = false;
@@ -148,6 +149,10 @@ export class AgregarMantenimientoComponent implements OnInit {
         console.log(data);
         this.router.navigate(['/pagina-mantenimiento'])
         this.usuarioService.iconoLlave = true
+        this.toastr.success('Hello world!', 'Toastr fun!', {
+          timeOut: 4000,
+          positionClass: "toast-top-center"
+        });
       })
     }
   }
