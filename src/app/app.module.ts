@@ -81,6 +81,7 @@ import { ToastrModule } from 'ngx-toastr';
     NgbModule,
     CommonModule,
     BrowserAnimationsModule,
+    FormsModule,
     ToastrModule.forRoot(),
     // NgbActiveModal
   ],
