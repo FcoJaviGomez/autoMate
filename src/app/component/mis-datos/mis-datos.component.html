@@ -1,24 +1,123 @@
+
 <body class="all">
     <a class="back1" routerLink="/pagina-perfil">
         <i class="fa-solid fa-arrow-left-long"></i>
     </a>
-    <section class="back">
-        <div class="caja">
-            <div class="label"><label for="nombre" class="">Nombre</label></div>
-            <input type="text" value="{{usuario.name}}" #nombre class="input"> 
+    <form class="back" #usuarioForm="ngForm" (ngSubmit)="onSubmit(usuarioForm)">
+         <div class="caja">
+            <div class="caja1">
+
+                <div class="col">
+
+                    <div class="row">
+                        <div class="label"><label for="name" class="">Nombre</label></div>
+
+                        <input class="input" type="text" name="name" [(ngModel)]="usuario.name" #name="ngModel">
+                    </div>
+
+                </div>
+ 
+            </div>
         </div>
+
+
+         <div class="caja">
+            <div class="caja1">
+
+                <div class="col">
+
+                    <div class="row">
+                        <div class="label"><label for="apellido" class="">Apellido</label></div>
+
+                        <input class="input" type="text" name="apellido"  [(ngModel)]="usuario.last_name"  #last_name="ngModel">
+                   </div>
+                
+                </div>
+            
+            </div>
+        </div>           
+        
+        
+        
         <div class="caja">
-            <div class="label"><label for="apellido" class="">Apellido</label></div>
-            <input type="text" value={{usuario.last_name}} #apellido class="input">
+            <div class="caja1">
+
+                <div class="col">
+
+                    <div class="row">
+                    <div class="label"><label for="correo" class="">Correo</label></div>
+                   
+                    <input class="input" type="text" name="correo" [(ngModel)]="usuario.email" #email="ngModel"
+                    [ngClass]="{'is-invalid': usuarioForm.dirty && email.invalid }" email>
+                   
+                    <div *ngIf="usuarioForm.dirty && email.invalid" class="invalid-feedback">
+                        <div *ngIf="email.errors.email">Dirección email incorrecta</div>
+                    </div> 
+                    </div>
+                </div>
+
+            </div>
+        
+        </div> 
+        
+        
+      
+        
+        <button  class="butt">MODIFICAR</button>
+        <div class="cajab">
+            
+            <a class="cambiar" routerLink="/pagina-cambiarContrasena" >Cambiar Contraseña</a>
+            
         </div>
-        <div class="caja">
-            <div class="label"><label for="correo" class="">Correo</label></div>
-            <input type="text" value={{usuario.email}} #correo class="input">
-        </div>
-        <div class="caja">
-            <div class="label"><label for="contraseña" class="">Contraseña</label></div>
-            <input type="password" #password  class="input">
-        </div>
-        <button on-click="modificar(nombre, apellido, correo, password)" class="butt">MODIFICAR</button>
-    </section>
+    </form>
+
+
+
+
+    
 </body>
+
+
+
+
+
+
+
+<!-- <form #usuarioForm="ngForm" (ngSubmit)="onSubmit(usuarioForm)">
+    <div class="form-group">
+        <label >Nombre</label>
+        <input type="text" name="name" class="form-control" [(ngModel)]="usuario.name" #name="ngModel"
+        [ngClass]="{'is-invalid': usuarioForm.submitted && name.invalid }" required>
+        <div class="invalid-feedback" *ngIf="usuarioForm.submitted && name.invalid">
+            <p *ngIf="name.errors.required">El nombre es obligatorio</p>
+        </div>
+    </div>
+    <div>
+        <label>Apellido</label>
+        <input type="text" name="apellido" class="form-control" [(ngModel)]="usuario.last_name"  #last_name="ngModel" 
+        [ngClass]="{ 'is-invalid': usuarioForm.submitted && last_name.invalid }" required>
+        <div class="invalid-feedback" *ngIf="usuarioForm.submitted && last_name.invalid">
+            <p *ngIf="last_name.errors.required">El apellido es obligatorio</p>
+        </div>
+    </div>
+    <div>
+        <label>Correo</label>
+        <input type="text" name="correo" class="form-control" [(ngModel)]="usuario.email" #email="ngModel"
+        [ngClass]="{ 'is-invalid': usuarioForm.submitted && email.invalid }" required>
+        <div *ngIf="usuarioForm.submitted && email.invalid" class="invalid-feedback">
+            <div *ngIf="email.errors.required">La dirección de email es obligatoria</div>
+            <div *ngIf="email.errors.email">Dirección email incorrecta</div>
+        </div>    
+    </div>
+
+    <div>
+        <label>Contraseña</label>
+        <input type="password" name="password" class="form-control" [(ngModel)]="usuario.password" #password="ngModel"
+        [ngClass]="{ 'is-invalid': usuarioForm.submitted && password.invalid }" minlenght="4" required>
+        <div *ngIf="usuarioForm.submitted && password.invalid" class="invalid-feedback">
+            <div *ngIf="password.errors.required">La clave es obligatoria</div>
+            <div *ngIf="password.errors.minlenght">La clave debe tener al menos 4 caracteres</div>
+        </div>
+    </div>
+    <button  class="btn btn-danger btn-block">MODIFICAR</button>
+</form> -->
