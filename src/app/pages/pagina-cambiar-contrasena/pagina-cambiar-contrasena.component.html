@@ -1,0 +1,56 @@
+<body class="all">
+    <a class="back1" routerLink="/pagina-mis-datos">
+        <i class="fa-solid fa-arrow-left-long"></i>
+    </a>
+    <form class="back" #contrasenaForm="ngForm" (ngSubmit)="onSubmit(contrasenaForm)">
+         <div class="caja">
+            <div class="caja1">
+                <div class="col">
+                    <div class="row">
+                        <div class="label"><label for="contrasena" class="">Contraseña Actual</label></div>
+                        <input class="input" type="password" name="contrasena" [(ngModel)]="contrasena.contrasena" #contrasena="ngModel"
+                        [ngClass]="{'is-invalid': contrasenaForm.submitted && contrasena.invalid }" required>
+                        <div class="invalid-feedback col" *ngIf="contrasenaForm.submitted && contrasena.invalid">
+                            <p *ngIf="contrasena.errors.required">Campo obligatorio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="caja">
+            <div class="caja1">
+                <div class="col">
+                    <div class="row">
+                        <div class="label"><label for="contrasenaNueva" class="">Contraseña Nueva</label></div>
+                        <input class="input" type="password" name="contrasenaNueva" [(ngModel)]="contrasena.contrasenaNueva" #contrasenaNueva="ngModel"
+                        [ngClass]="{'is-invalid': contrasenaForm.submitted && contrasenaNueva.invalid }" required>
+                        <div class="invalid-feedback col" *ngIf="contrasenaForm.submitted && contrasenaNueva.invalid">
+                            <p *ngIf="contrasenaNueva.errors.required">Campo obligatorio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="caja">
+            <div class="caja1">
+                <div class="col">
+                    <div class="row">
+                        <div class="label"><label for="contrasenaRepite" class="">Repite Contraseña</label></div>
+                        <input class="input" type="password" name="contrasenaRepite" [(ngModel)]="contrasena.contrasenaRepite" #contrasenaRepite="ngModel"
+                        [ngClass]="{'is-invalid': contrasenaForm.submitted && contrasenaRepite.invalid }" required>
+                        <div class="invalid-feedback col" *ngIf="contrasenaForm.submitted && contrasenaRepite.invalid">
+                            <p *ngIf="contrasenaRepite.errors.required">Campo obligatorio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button  class="butt">MODIFICAR</button>
+    </form>
+
+
+
+
+    
+</body>
