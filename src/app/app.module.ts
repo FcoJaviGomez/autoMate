@@ -41,7 +41,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 import { ToastrModule } from 'ngx-toastr';
+import { NgChartsModule } from 'ng2-charts';
+import { MisGastosGraficaComponent } from './pages/mis-gastos-grafica/mis-gastos-grafica.component';
 
 
 @NgModule({
@@ -71,7 +74,8 @@ import { ToastrModule } from 'ngx-toastr';
     PaginaAgregarMantenimientoComponent,
     PaginaMisGastosComponent,
     DetalleHistorialComponent,
-    PaginaCambiarContrasenaComponent
+    PaginaCambiarContrasenaComponent,
+    MisGastosGraficaComponent
   ],
   imports: [
     BrowserModule,
@@ -83,7 +87,9 @@ import { ToastrModule } from 'ngx-toastr';
     BrowserAnimationsModule,
     FormsModule,
     ToastrModule.forRoot(),
-    // NgbActiveModal
+    HttpClientModule, 
+    NgChartsModule,      
+
   ],
   providers: [],
   bootstrap: [AppComponent],

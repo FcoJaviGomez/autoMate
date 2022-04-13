@@ -1,0 +1,37 @@
+<div class="misGastos">
+
+  <a class="back1" routerLink="/pagina-perfil">
+    <i class="fa-solid fa-arrow-left-long"></i>
+  </a>
+
+  <div *ngIf="this.gastoTotal == 0; else misGastos" class="condicion_gastos">
+    <h2 class="titulo">MIS GASTOS</h2>
+    <h4 class="lineas">- - - - - - -</h4>
+    <h3 class="condicion_texto">
+      En estos momentos no tienes ningun gasto 
+      asociado a un mantenimiento.
+    </h3>
+  </div>
+  
+  <ng-template #misGastos>
+    <div class="card_principal">
+      <h2 class="titulo">MIS GASTOS</h2>
+      <div class="grafica_anillo"> 
+        <div>
+          <div style="display: block">
+            <canvas baseChart
+              [data]="doughnutChartData"
+      
+              [type]="doughnutChartType">
+            </canvas>
+          </div>
+        </div>
+      </div>
+      <div class="texto_final">
+        <h2>{{this.gastoTotal}} €</h2>
+        <h2>Gasto Total Actual</h2>
+      </div>
+    </div>
+  </ng-template>
+  
+</div>
