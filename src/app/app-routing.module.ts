@@ -16,6 +16,7 @@ import { Home2Component } from './pages/home2/home2.component';
 import { PaginaSobreNosotrosComponent } from './pages/pagina-sobre-nosotros/pagina-sobre-nosotros.component';
 import { PaginaMisGastosComponent } from './pages/pagina-mis-gastos/pagina-mis-gastos.component';
 import { DetalleHistorialComponent } from './pages/detalle-historial/detalle-historial.component';
+import { MisGastosGraficaComponent } from './pages/mis-gastos-grafica/mis-gastos-grafica.component';
 
 const routes: Routes = [
   { path: "", component: Home1Component },
@@ -33,7 +34,7 @@ const routes: Routes = [
   { path: "sobre-app", component: InfoAppComponent },
   { path: "sobre-nosotros", component: PaginaSobreNosotrosComponent },
   { path: "pagina-agregar-mantenimiento", component: PaginaAgregarMantenimientoComponent },
-  { path: "pagina-mis-gastos", component: PaginaMisGastosComponent },
+  { path: "pagina-mis-gastos", component: MisGastosGraficaComponent },
 ];
 
 

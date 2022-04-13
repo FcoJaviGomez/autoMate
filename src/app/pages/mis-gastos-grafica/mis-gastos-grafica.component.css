@@ -1,0 +1,77 @@
+.misGastos {
+    position: absolute;
+    width: 414px;
+    height: 694px;
+    margin-top: 132px;
+}
+
+.back1 {
+    position: absolute;
+    width: 8px;
+    height: 15px;
+    left: 40px;
+    top: 14px;
+    font-size: 25px;
+    color: var(--amarillo);
+}
+
+.card_principal {
+    position: absolute;
+    width: 345px;
+    height: 547px;
+    left: 34px;
+    top: 55px;
+    background: var(--gris10);
+    border-radius: 10px;
+}
+
+.titulo {
+    margin-top: 20px;
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 53px;
+    text-align: center;
+    color: var(--negro);
+}
+
+.grafica_anillo {
+    width: 340px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.texto_final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 26px;
+    font-style: italic;
+    color: var(--negro);
+}
+
+.condicion_gastos {
+    position: absolute;
+    width: 345px;
+    height: 280px;
+    left: 34px;
+    top: 55px;
+    background: var(--gris10);
+    border-radius: 10px;
+}
+
+.lineas {
+    color: var(--amarillo);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 60px;
+}
+
+.condicion_texto {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    color: var(--gris);
+}
