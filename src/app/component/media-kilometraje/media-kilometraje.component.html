@@ -8,15 +8,16 @@
             <p class="text">Media semanal de KM</p>
         </div>
 
-        <input type="number" value="{{usuario.kilometers_car}" #km class="input">
+        <input type="number" value="{{usuario.kilometers_car}}" #km class="input">
         <div class="tittle2">
             <p class="text2">Año de matriculación</p>
 
         </div>
         <input type="number" value="{{usuario.year_car}}" #year class="input2">
-        <button on-click="modificar(km, year)" class="butt">AÑADIR</button>
-        <!-- <ng-template #login>MODIFICAR</ng-template>
-    </section>
-</body>
-*ngIf="sign== true; else login" -->
-        <!-- on-click="changePass(km)" -->
+        <!-- <button on-click="modificar(km, year)" class="butt">AÑADIR</button> -->
+        <div *ngIf="usuarioService.usuario.first_log===1">
+            <button on-click="modificar(km, year)" class="butt">AÑADIR</button>
+        </div>
+        <div *ngIf="usuarioService.usuario.first_log===0">
+            <button on-click="modificar(km, year)" class="butt">MODIFICAR</button>
+        </div>

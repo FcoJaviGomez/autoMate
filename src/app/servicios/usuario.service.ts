@@ -10,8 +10,6 @@ export class UsuarioService {
   // private url = "https://my-api-automate.herokuapp.com"
   private url = "http://localhost:3000"
 
-  // private url = "http://localhost:3000"
-
   public userLogged: boolean
 
   public usuario: Usuario

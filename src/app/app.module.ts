@@ -86,10 +86,13 @@ import { MisGastosGraficaComponent } from './pages/mis-gastos-grafica/mis-gastos
     CommonModule,
     BrowserAnimationsModule,
     FormsModule,
-    ToastrModule.forRoot(),
-    HttpClientModule, 
-    NgChartsModule,      
-
+    ToastrModule.forRoot({
+      timeOut: 4000,
+      closeButton: true,
+      progressBar: true,
+      positionClass: "toast-top-center",
+    }),
+    NgChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

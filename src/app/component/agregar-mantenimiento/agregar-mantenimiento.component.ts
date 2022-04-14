@@ -136,7 +136,6 @@ export class AgregarMantenimientoComponent implements OnInit {
       this.formularioITV = false;
       this.formularioOtros = true;
     }
-    // console.log(tipoMantenimiento);
   }
 
   agregarBasico(tipoMantenimiento: string, coste: number) {
@@ -144,14 +143,9 @@ export class AgregarMantenimientoComponent implements OnInit {
       "", "", "", coste, "", "")
     if (tipoMantenimiento != "") {
       this.mantenimientoService.add(mantenimiento).subscribe((data: number) => {
-        console.log(tipoMantenimiento);
-        console.log(coste);
-        console.log(data);
         this.router.navigate(['/pagina-mantenimiento'])
         this.usuarioService.iconoLlave = true
-        this.toastr.success('Hello world!', 'Toastr fun!', {
-          timeOut: 4000,
-          positionClass: "toast-top-center"
+        this.toastr.success('', 'Mantenimiento agregado correctamente', {
         });
       })
     }
@@ -162,13 +156,15 @@ export class AgregarMantenimientoComponent implements OnInit {
       tipoFreno, "", "", coste, "", "")
     if (tipoMantenimiento != "" && tipoFreno != "") {
       this.mantenimientoService.add(mantenimiento).subscribe((data: number) => {
-        console.log(tipoMantenimiento);
-        console.log(tipoFreno);
-        console.log(coste);
-        console.log(data);
         this.router.navigate(['/pagina-mantenimiento'])
         this.usuarioService.iconoLlave = true
+        this.toastr.success('', 'Mantenimiento agregado correctamente', {
+        });
       })
+    }
+    else {
+      this.toastr.warning('', 'Faltan campos por completar', {
+      });
     }
   }
 
@@ -177,13 +173,15 @@ export class AgregarMantenimientoComponent implements OnInit {
       tipoFiltro, "", "", coste, "", "")
     if (tipoMantenimiento != "" && tipoFiltro != "") {
       this.mantenimientoService.add(mantenimiento).subscribe((data: number) => {
-        console.log(tipoMantenimiento);
-        console.log(tipoFiltro);
-        console.log(coste);
-        console.log(data);
         this.router.navigate(['/pagina-mantenimiento'])
         this.usuarioService.iconoLlave = true
+        this.toastr.success('', 'Mantenimiento agregado correctamente', {
+        });
       })
+    }
+    else {
+      this.toastr.warning('', 'Faltan campos por completar', {
+      });
     }
   }
 
@@ -192,14 +190,15 @@ export class AgregarMantenimientoComponent implements OnInit {
       posicionNeumatico, traccion, "", coste, "", "")
     if (tipoMantenimiento != "" && posicionNeumatico != "" && traccion != "") {
       this.mantenimientoService.add(mantenimiento).subscribe((data: number) => {
-        console.log(tipoMantenimiento);
-        console.log(posicionNeumatico);
-        console.log(traccion);
-        console.log(coste);
-        console.log(data);
         this.router.navigate(['/pagina-mantenimiento'])
         this.usuarioService.iconoLlave = true
+        this.toastr.success('', 'Mantenimiento agregado correctamente', {
+        });
       })
+    }
+    else {
+      this.toastr.warning('', 'Faltan campos por completar', {
+      });
     }
   }
 
@@ -208,11 +207,10 @@ export class AgregarMantenimientoComponent implements OnInit {
       "", "", "", coste, "", "")
     if (tipoMantenimiento != "") {
       this.mantenimientoService.add(mantenimiento).subscribe((data: number) => {
-        console.log(tipoMantenimiento);
-        console.log(coste);
-        console.log(data);
         this.router.navigate(['/pagina-mantenimiento'])
         this.usuarioService.iconoLlave = true
+        this.toastr.success('', 'Mantenimiento agregado correctamente', {
+        });
       })
     }
   }
@@ -222,15 +220,15 @@ export class AgregarMantenimientoComponent implements OnInit {
       "", "", descripcion, coste, "", fecha)
     if (tipoMantenimiento != "" && nombre != "" && fecha != "") {
       this.mantenimientoService.add(mantenimiento).subscribe((data: number) => {
-        console.log(tipoMantenimiento);
-        console.log(nombre);
-        console.log(descripcion);
-        console.log(coste);
-        console.log(fecha);
-        console.log(data);
         this.router.navigate(['/pagina-mantenimiento'])
         this.usuarioService.iconoLlave = true
+        this.toastr.success('', 'Mantenimiento agregado correctamente', {
+        });
       })
+    }
+    else {
+      this.toastr.warning('', 'Faltan campos por completar', {
+      });
     }
   }
 
