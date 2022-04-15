@@ -33,6 +33,18 @@ export class Home2Component implements OnInit {
 
     this.mantenimientoService.getOne(this.usuario.usuario.id_user).subscribe((data: Mantenimiento[]) => {
       console.log(data)
+      for (let mantenimiento of data) {
+        for (let mantenimientoModificado in mantenimiento) {
+
+          if (mantenimiento[mantenimientoModificado] === "aceitemotor") {
+            mantenimiento[mantenimientoModificado] = "Aceite Motor"
+          }
+          if (mantenimiento[mantenimientoModificado] === "correadedistribución") {
+            mantenimiento[mantenimientoModificado] = "Correa de Distribución"
+          }
+
+        }
+      }
       this.mantenimientos = data
       console.log(this.mantenimientos)
     }
