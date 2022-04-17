@@ -19,7 +19,7 @@ interface Tips {
 })
 export class Home2Component implements OnInit {
 
-  public mantenimientos: Mantenimiento[];
+  public mantenimientos: any[] = [""];
 
   public tip: any;
 

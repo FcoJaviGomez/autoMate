@@ -8,8 +8,8 @@ import { Mantenimiento } from '../models/mantenimiento';
 })
 export class MantenimientosService {
 
-  private url = "https://my-api-automate.herokuapp.com"
-  // private url = "http://localhost:3000"
+  // private url = "https://my-api-automate.herokuapp.com"
+  private url = "http://localhost:3000"
 
   public mantenimientoSeleccionado: any
 

@@ -3,16 +3,42 @@
         <i class="fa-solid fa-arrow-left-long"></i>
     </a>
 
-    <div class="div">
+
+    <form class="div" #inicioForm="ngForm" (ngSubmit)="iniciarSesion()">
         <div class="texto">Accede a tu cuenta</div>
-        <input type="email" #input1 class="div_correo" placeholder="Correo">
-        <input type="password" #input2 class="div_contrasenya" placeholder="Contraseña">
-        <button on-click=iniciarSesion(input1,input2) class="div_boton">INICIAR SESIÓN</button>
+        <div class="caja1">
+            <input class="div_input" type="text" name="email" [(ngModel)]="usuario.email" #email="ngModel"
+                placeholder="Correo" [ngClass]="{'is-invalid': inicioForm.submitted && email.invalid }" required email>
+            <div class="invalid-feedback col" *ngIf="inicioForm.submitted && email.invalid">
+                <p *ngIf="email.errors.required">Campo obligatorio</p>
+            </div>
+            <div class="invalid-feedback" *ngIf="inicioForm.dirty && email.invalid">
+                <div *ngIf="email.errors.email">Dirección email incorrecta</div>
+            </div>
+        </div>
+        <div class="caja1">
+            <input class="div_input" type="password" name="password" [(ngModel)]="usuario.password" #password="ngModel"
+                placeholder="Contraseña" [ngClass]="{'is-invalid': inicioForm.submitted && password.invalid }"
+                minlength="8" required>
+            <div class="invalid-feedback col" *ngIf="inicioForm.submitted && password.invalid">
+                <p *ngIf="password.errors.required">Campo obligatorio</p>
+            </div>
+            <div *ngIf="password.errors?.['minlength']">
+                <p class="text-danger">La contraseña debe tener 8 caracteres</p>
+            </div>
+            <div *ngIf="validacion.length === 0">
+                <p class="text-danger">Correo o Contraseña incorrecta</p>
+            </div>
+        </div>
+        <!-- <input type="email" #input1 class="div_input" placeholder="Correo"> -->
+        <!-- <input type="password" #input2 class="div_input" placeholder="Contraseña"> -->
+        <button class="div_boton">INICIAR SESIÓN</button>
         <a class="div_olvidarContra" routerLink="/pagina-recuperar">¿Olvidaste tu contraseña?</a>
-        <div>
+        <div class="div_caja">
             <a class="div_noTienesCuenta">¿No tienes una cuenta?</a>
             <a class="div_registrate" routerLink="/pagina-registro">Regístrate</a>
         </div>
-    </div>
+    </form>
+
 
 </div>

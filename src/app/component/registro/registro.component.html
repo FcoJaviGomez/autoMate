@@ -21,7 +21,7 @@
         </div>
         <div class="caja1">
             <input class="div_input" type="text" name="email" [(ngModel)]="nuevoUsuario.email" #email="ngModel"
-                placeholder="Correo" [ngClass]="{'is-invalid': registroForm.submitted && last_name.invalid }" required
+                placeholder="Correo" [ngClass]="{'is-invalid': registroForm.submitted && email.invalid }" required
                 email>
             <div class="invalid-feedback col" *ngIf="registroForm.submitted && email.invalid">
                 <p *ngIf="email.errors.required">Campo obligatorio</p>
@@ -38,7 +38,7 @@
                 <p *ngIf="password.errors.required">Campo obligatorio</p>
             </div>
             <div *ngIf="password.errors?.['minlength']">
-                <p>La contraseña debe tener 8 caracteres</p>
+                <p class="text-danger">La contraseña debe tener 8 caracteres</p>
             </div>
         </div>
         <div class="caja1">
@@ -49,10 +49,10 @@
                 <p *ngIf="passwordd.errors.required">Campo obligatorio</p>
             </div>
             <div *ngIf="passwordd.errors?.['minlength']">
-                <p>La contraseña debe tener 8 caracteres</p>
+                <p class="text-danger">La contraseña debe tener 8 caracteres</p>
             </div>
             <div *ngIf="password1 != nuevoUsuario.password">
-                <p>Las contraseñas no coinciden</p>
+                <p class="text-danger">Las contraseñas no coinciden</p>
             </div>
         </div>
         <button class="butt">REGISTRARSE</button>

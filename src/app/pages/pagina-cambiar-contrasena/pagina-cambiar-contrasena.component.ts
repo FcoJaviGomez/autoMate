@@ -14,7 +14,7 @@ export class PaginaCambiarContrasenaComponent implements OnInit {
 
   public myForm: Contrasena
 
-  public prueba: any
+  public validacion: any
 
   constructor(private usuarioService: UsuarioService, private toastr: ToastrService,
     private router: Router) {
@@ -29,8 +29,8 @@ export class PaginaCambiarContrasenaComponent implements OnInit {
         this.usuarioService.putPassword(this.myForm).subscribe((data) => {
           console.log("cambios api")
           console.log(data)
-          this.prueba = data
-          if (this.prueba === true) {
+          this.validacion = data
+          if (this.validacion === true) {
             this.toastr.success('', 'Contraseña modificada correctamente', {
             });
             this.router.navigate(['/pagina-mis-datos'])

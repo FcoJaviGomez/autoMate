@@ -12,20 +12,23 @@ export class LoginComponent implements OnInit {
 
   public logged: boolean;
 
+  public usuario: Usuario
+
+  public validacion: any = ["", ""]
+
   constructor(public router: Router, public usuarioService: UsuarioService, private toastr: ToastrService) {
     console.log(this.usuarioService.logged)
+    this.usuario = new Usuario(0, "", "", "", "", null, null, "", "", null)
   }
 
-  iniciarSesion(email: HTMLInputElement, contrasenya: HTMLInputElement) {
+  iniciarSesion() {
 
-    let usuario = new Usuario(null, null, null, email.value, contrasenya.value, null, null, null, null, null)
-    if (this.validar(usuario)) {
-      this.usuarioService.postLogin(usuario).subscribe((data: Usuario[]) => {
+    if (this.validar(this.usuario)) {
+      this.usuarioService.postLogin(this.usuario).subscribe((data: Usuario[]) => {
         console.log(data);
+        this.validacion = data
 
         if (data.length === 0) {
-          this.toastr.warning('', 'Datos no validos', {
-          });
         }
         else {
           if (data[0].first_log === 1) {
@@ -43,10 +46,6 @@ export class LoginComponent implements OnInit {
           }
         }
       })
-    }
-    else {
-      this.toastr.warning('', 'Datos no validos', {
-      });
     }
   }
 
