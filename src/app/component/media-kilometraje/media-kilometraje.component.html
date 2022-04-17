@@ -41,10 +41,10 @@
             </div>
         </div>
 
-        <div *ngIf="usuarioModificado.year_car===null">
+        <div *ngIf="usuarioModificado.first_log===1">
             <button class="butt">AÑADIR</button>
         </div>
-        <div *ngIf="usuarioModificado.year_car!==null">
+        <div *ngIf="usuarioModificado.first_log===0">
             <button class="butt">MODIFICAR</button>
         </div>
     </form>

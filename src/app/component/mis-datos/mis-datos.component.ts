@@ -53,7 +53,7 @@ export class MisDatosComponent implements OnInit {
         this.usuarioService.usuario.email = this.usuario.email
       }
     })
-    this.toastr.success('', 'Datos modificados', {
+    this.toastr.success('', 'Datos modificados correctamente', {
     });
   }
 

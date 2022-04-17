@@ -32,48 +32,41 @@ export class MediaKilometrajeComponent implements OnInit {
     if (this.usuarioModificado.year_car === null) {
       this.usuarioModificado.year_car = this.usuarioService.usuario.year_car
     }
+    if (this.validar(this.usuarioModificado)) {
+      this.usuarioService.putUsuario(this.usuarioModificado).subscribe((data) => {
 
-    this.usuarioService.putUsuario(this.usuarioModificado).subscribe((data) => {
+        if (this.usuarioModificado.kilometers_car !== null) {
+          this.usuarioService.usuario.kilometers_car = this.usuarioModificado.kilometers_car
+        }
 
-      if (this.usuarioModificado.kilometers_car !== null) {
-        this.usuarioService.usuario.kilometers_car = this.usuarioModificado.kilometers_car
-      }
+        if (this.usuarioModificado.year_car !== null) {
+          this.usuarioService.usuario.year_car = this.usuarioModificado.year_car
+        }
 
-      if (this.usuarioModificado.year_car !== null) {
-        this.usuarioService.usuario.year_car = this.usuarioModificado.year_car
-      }
-
-      if (this.usuarioModificado.first_log === 1) {
-        this.usuarioService.usuario.first_log = 0
-      }
-    })
-    if (this.usuarioService.usuario.first_log === 1) {
-      this.router.navigate(['/home2'])
-      this.toastr.success('', 'Datos del coche añadidos', {
-      });
+        if (this.usuarioModificado.first_log === 1) {
+          this.usuarioService.usuario.first_log = 0
+        }
+        if (this.usuarioService.usuario.first_log === 1) {
+          this.router.navigate(['/home2'])
+          this.toastr.success('', 'Datos del coche añadidos', {
+          });
+        }
+        if (this.usuarioService.usuario.first_log === 0) {
+          this.toastr.success('', 'Datos del coche modificados', {
+          });
+        }
+      })
     }
-    if (this.usuarioService.usuario.first_log === 0) {
-      this.toastr.success('', 'Datos del coche modificados', {
-      });
-    }
+
   }
-  //   {
 
+  validar(usuario: Usuario) {
+    if (usuario.kilometers_car == null || usuario.year_car == null) {
+      return false
+    }
+    return true
+  }
 
-  //   console.log(this.usuarioModificado)
-
-  //   this.usuarioService.putUsuario(this.usuarioModificado).subscribe((data: Usuario) => {
-  //     console.log(data);
-  //     this.usuarioService.usuario = data;
-  //     // console.log(this.usuario);
-
-  //     // this.usuarioService.usuario.year_car = Number(año.value)
-  //     // this.usuarioService.usuario.kilometers_car = Number(kilometros.value)
-  //   })
-  //   if (this.usuarioService.usuario.first_log === 1) {
-  //     this.router.navigate(['/home2'])
-  //   }
-  // }
   ngOnInit(): void {
   }
 

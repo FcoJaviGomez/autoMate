@@ -14,7 +14,7 @@ export class RegistroComponent implements OnInit {
 
   public nuevoUsuario: Usuario;
 
-  public password1: string
+  public password1: string = ""
 
   constructor(public router: Router, private miUsuarioServicio: UsuarioService, private toastr: ToastrService) {
     this.nuevoUsuario = new Usuario(0, "", "", "", "", null, null, "", "", null)
@@ -25,10 +25,6 @@ export class RegistroComponent implements OnInit {
   }
   registrarse() {
     console.log(this.nuevoUsuario);
-
-
-    // let usuario = new Usuario(0, nombre.value, apellido.value, email.value, contraseña.value,
-    //   null, null, null, null, null)
 
     if (this.validar(this.nuevoUsuario)) {
       if (this.nuevoUsuario.password === this.password1) {
@@ -41,10 +37,7 @@ export class RegistroComponent implements OnInit {
         });
       }
       else {
-        this.toastr.warning('', 'Las contraseñas no coinciden', {
-        });
         console.log("contraseña no coincide");
-
       }
     }
     else {
