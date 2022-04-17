@@ -1,5 +1,5 @@
 <div class="registro">
-    <a class="back1" routerLink="/">
+    <!-- <a class="back1" routerLink="/">
         <i class="fa-solid fa-arrow-left-long"></i>
     </a>
     <div class="div">
@@ -11,9 +11,69 @@
         <input type="password" #password1 class="div_contrasenya1" placeholder="Repetir contraseña">
         <button type="button" class="boton"
             on-click=registrarse(nombre,apellido,correo,password,password1)>REGISTRARSE</button>
+    </div> -->
+    <a class="back1" routerLink="/">
+        <i class="fa-solid fa-arrow-left-long"></i>
+    </a>
+    <form class="back" #registroForm="ngForm" (ngSubmit)="registrarse()">
 
+        <div class="texto">Introduce tus datos</div>
 
-    </div>
+        <div class="caja1">
+            <input class="div_input" type="text" name="name" [(ngModel)]="nuevoUsuario.name" #name="ngModel"
+                placeholder="Nombre" [ngClass]="{'is-invalid': registroForm.submitted && name.invalid }" required>
+            <div class="invalid-feedback col" *ngIf="registroForm.submitted && name.invalid">
+                <p *ngIf="name.errors.required">Campo obligatorio</p>
+            </div>
+        </div>
+        <div class="caja1">
+            <input class="div_input" type="text" name="last_name" [(ngModel)]="nuevoUsuario.last_name"
+                #last_name="ngModel" placeholder="Apellido"
+                [ngClass]="{'is-invalid': registroForm.submitted && last_name.invalid }" required>
+            <div class="invalid-feedback col" *ngIf="registroForm.submitted && last_name.invalid">
+                <p *ngIf="last_name.errors.required">Campo obligatorio</p>
+            </div>
+        </div>
+        <div class="caja1">
+            <input class="div_input" type="text" name="email" [(ngModel)]="nuevoUsuario.email" #email="ngModel"
+                placeholder="Correo" [ngClass]="{'is-invalid': registroForm.submitted && last_name.invalid }" required
+                email>
+            <div class="invalid-feedback col" *ngIf="registroForm.submitted && email.invalid">
+                <p *ngIf="email.errors.required">Campo obligatorio</p>
+            </div>
+            <div class="invalid-feedback" *ngIf="registroForm.dirty && email.invalid">
+                <div *ngIf="email.errors.email">Dirección email incorrecta</div>
+            </div>
+        </div>
+        <div class="caja1">
+            <input class="div_input" type="password" name="password" [(ngModel)]="nuevoUsuario.password"
+                #password="ngModel" placeholder="Contraseña"
+                [ngClass]="{'is-invalid': registroForm.submitted && password.invalid }" minlength="8" required>
+            <div class="invalid-feedback col" *ngIf="registroForm.submitted && password.invalid">
+                <p *ngIf="password.errors.required">Campo obligatorio</p>
+            </div>
+            <div *ngIf="password.errors?.['minlength']">
+                <p>La contraseña debe tener 8 caracteres</p>
+            </div>
+        </div>
+        <div class="caja1">
+            <input class="div_input" type="password" name="passwordd" [(ngModel)]="password1" #passwordd="ngModel"
+                placeholder="Repetir contraseña"
+                [ngClass]="{'is-invalid': registroForm.submitted && passwordd.invalid }" minlength="8" required>
+            <div class="invalid-feedback col" *ngIf="registroForm.submitted && passwordd.invalid">
+                <p *ngIf="passwordd.errors.required">Campo obligatorio</p>
+            </div>
+            <div *ngIf="passwordd.errors?.['minlength']">
+                <p>La contraseña debe tener 8 caracteres</p>
+            </div>
+
+        </div>
+        <button class="butt">REGISTRARSE</button>
+
+    </form>
+    <!-- <div *ngIf="nuevoUsuario.password!=password1">
+        <p>Las contraseñas deben coincidir</p>
+    </div> -->
 
 
 
