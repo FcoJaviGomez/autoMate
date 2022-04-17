@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { Usuario } from 'src/app/models/usuario';
 import { UsuarioService } from 'src/app/servicios/usuario.service';
 
@@ -12,24 +14,37 @@ export class RegistroComponent implements OnInit {
 
   public nuevoUsuario: Usuario;
 
-  constructor(public router: Router, private miUsuarioServicio: UsuarioService) { }
+  public password1: string
 
-  registrarse(nombre: HTMLInputElement, apellido: HTMLInputElement, email: HTMLInputElement,
-    contraseña: HTMLInputElement, contraseña1: HTMLInputElement) {
+  constructor(public router: Router, private miUsuarioServicio: UsuarioService, private toastr: ToastrService) {
+    this.nuevoUsuario = new Usuario(0, "", "", "", "", null, null, "", "", null)
+    console.log(this.password1);
+    console.log(this.nuevoUsuario);
 
-    let usuario = new Usuario(0, nombre.value, apellido.value, email.value, contraseña.value,
-      0, 0, null, null, null)
 
-    if (this.validar(usuario)) {
-      if (contraseña.value === contraseña1.value) {
+  }
+  registrarse() {
+    console.log(this.nuevoUsuario);
+
+
+    // let usuario = new Usuario(0, nombre.value, apellido.value, email.value, contraseña.value,
+    //   null, null, null, null, null)
+
+    if (this.validar(this.nuevoUsuario)) {
+      if (this.nuevoUsuario.password === this.password1) {
         console.log("hola");
-        this.miUsuarioServicio.postRegister(usuario).subscribe(function (data) {
+        this.miUsuarioServicio.postRegister(this.nuevoUsuario).subscribe(function (data) {
           console.log(data);
         })
         this.router.navigate(['/pagina-login'])
+        this.toastr.success('', 'Cuenta creada correctamente', {
+        });
       }
       else {
+        this.toastr.warning('', 'Las contraseñas no coinciden', {
+        });
         console.log("contraseña no coincide");
+
       }
     }
     else {
