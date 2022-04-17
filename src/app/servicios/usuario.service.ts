@@ -40,7 +40,7 @@ export class UsuarioService {
     return this.http.put(this.url + "/usuario", usuario)
   }
 
-  putPassword(contrasena: Contrasena){
+  putPassword(contrasena: Contrasena) {
     return this.http.put(this.url + "/usuario/password", contrasena)
   }
 
