@@ -7,6 +7,7 @@
 }
 
 .back1 {
+    
     position: absolute;
     width: 8px;
     height: 15px;
@@ -17,9 +18,10 @@
 }
 
 .back {
+    
     position: absolute;
     width: 345px;
-    height: 464px;
+    height: 500px;
     left: 34px;
     top: 54px;
     border-radius: 10px;
@@ -31,32 +33,22 @@
 }
 
 .caja {
-   
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    /* padding-right: 18px; */
-    /* gap: 26px;*/
 }
 .caja1{
-   
     display:flex;
     flex-direction: row;
     justify-content: center;
     padding-left: 30px;
 }
-/* .caja2{
-    display: flex;
-    flex-direction: column;
-} */
-
 .label {
     background-color: var(--gris40);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border: 1px solid var(--gris);
     width: 113px;
-    /* text-align: center; */
     padding-left: 15px;
     color: var(--negro);
     padding-top: 15px;
@@ -70,9 +62,7 @@
     height: 54px;
     padding-left: 15px;
 }
-
 .butt {
-    /* position: absolute; */
     width: 186px;
     height: 58px;
     font-style: normal;
@@ -80,12 +70,20 @@
     font-size: 20px;
     line-height: 33px;
     text-align: center;
-
     background: var(--amarillo);
     border-radius: 10px;
     margin-left: 80px;
     border: none;
     box-shadow: 0px 1px 3px 1px var(--gris);
+}
+.titulo {
+    width: 310px;
+    height: 58px;
+    left: 18px;
+    top: 28px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
 }
 .cajab{
 
@@ -95,26 +93,38 @@
      align-items: center;
      padding: 1px;
 }
-.linea {
-    width: 30px;
-    height: 0px;
-    border: 1px solid #FFD966;
-    padding-left: 30px;
-    background-color: var(--amarillo);
-}
+
 .cambiar {
     margin-left: 9px;
     width: 205px;
-    height: 20px;
     left: 93px;
     top: 644px;
     font-family: 'Mukta Vaani';
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
+    display:flex;
+    flex-direction: column;
     text-align: center;
     color: #000000;
-    border: none;
     background: none;
     text-decoration: none;
+}
+.titulo {
+    width: 310px;
+    height: 58px;
+    left: 18px;
+    top: 28px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+}
+.cajaTitulo{
+    height: 90px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;  
 }

@@ -1,14 +1,16 @@
 export class Contrasena {
 
+    public id_user: number
     public contrasena: string
     public contrasenaNueva: string
     public contrasenaRepite: string
     
-    constructor()
+    constructor(user, contrasena, contrasenaNueva, contrasenaRepite)
     {
-        this.contrasena;
-        this.contrasenaNueva;
-        this.contrasenaRepite
+        this.id_user= user;
+        this.contrasena = contrasena;
+        this.contrasenaNueva= contrasenaNueva;
+        this.contrasenaRepite= contrasenaRepite;
     }
     
 }
