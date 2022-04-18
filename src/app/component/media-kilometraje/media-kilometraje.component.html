@@ -3,16 +3,6 @@
         <i class="fa-solid fa-arrow-left-long"></i>
     </a>
 
-    <!-- <section class="back"> -->
-    <!-- <div class="tittle">
-            <p class="text">Media semanal de KM</p>
-        </div> -->
-
-    <!-- <input type="number" value="{{usuarioService.usuario.kilometers_car}}" #km class="input">-->
-    <!-- <div class="tittle2">
-            <p class="text2">Año de matriculación</p>
-
-        </div> -->
     <form class="back" #modificarForm="ngForm" (ngSubmit)="onSubmit(modificarForm)">
 
         <div class="tittle">
@@ -48,15 +38,4 @@
             <button class="butt">MODIFICAR</button>
         </div>
     </form>
-
-
-    <!-- <input type="number" value="{{usuarioService.usuario.year_car}}" #year class="input2"> -->
-    <!-- <button on-click="modificar(km, year)" class="butt">AÑADIR</button> -->
-    <!-- <div *ngIf="usuarioService.usuario.kilometers_car===null">
-            <button on-click="modificar(km, year)" class="butt">AÑADIR</button>
-        </div>
-        <div *ngIf="usuarioService.usuario.kilometers_car!==null">
-            <button on-click="modificar(km, year)" class="butt">MODIFICAR</button>
-        </div> -->
-    <!-- </section> -->
 </body>
