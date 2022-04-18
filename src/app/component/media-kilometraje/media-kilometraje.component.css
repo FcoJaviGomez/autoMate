@@ -18,77 +18,44 @@
 .back {
     position: absolute;
     width: 345px;
-    height: 464px;
+    min-height: 417px;
     left: 34px;
     top: 55px;
     background: var(--gris10);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+    padding-top: 25px;
+    padding-bottom: 31px;
 }
 
 .tittle {
-    position: absolute;
+    /* position: absolute; */
     width: 310px;
     height: 54px;
-    left: 18px;
-    top: 32px;
-
     background: var(--gris40);
     border: 1px solid var(--gris);
     box-sizing: border-box;
     border-radius: 10px;
-}
-
-.tittle2 {
-    position: absolute;
-    width: 310px;
-    height: 54px;
-    left: 18px;
-    top: 185px;
-
-    background: rgba(179, 171, 172, 0.4);
-    border: 1px solid var(--gris);
-    box-sizing: border-box;
-    border-radius: 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: -16px;
+    margin-top: 6px;
 }
 
 .text {
-    position: absolute;
-    width: 282px;
-    height: 33px;
-    left: 14px;
-    top: 10px;
-
-    font-family: 'Mukta Vaani';
-    font-style: normal;
-    font-weight: 600;
     font-size: 20px;
     line-height: 33px;
-    text-align: center;
-
-}
-
-.text2 {
-    position: absolute;
-    width: 282px;
-    height: 33px;
-    left: 14px;
-    top: 10px;
-
-    font-family: 'Mukta Vaani';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 33px;
-    text-align: center;
-
 }
 
 .input {
-    position: absolute;
+    /* position: absolute; */
     width: 310px;
     height: 54px;
-    left: 18px;
-    top: 98px;
     text-align: center;
     background: #FAFAFA;
     border: 1px solid var(--gris);
@@ -112,19 +79,12 @@
 }
 
 .butt {
-    position: absolute;
     width: 186px;
     height: 58px;
-    left: 76px;
-    top: 369px;
     border-radius: 10px;
     box-shadow: inset;
     background-color: var(--amarillo);
-    font-style: normal;
-    font-weight: 600;
     font-size: 20px;
-    line-height: 33px;
-    text-align: center;
     color: var(--negro);
     border: none;
     box-shadow: 0px 1px 3px 1px var(--gris);

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { Usuario } from 'src/app/models/usuario';
 import { UsuarioService } from 'src/app/servicios/usuario.service';
 
@@ -9,28 +12,61 @@ import { UsuarioService } from 'src/app/servicios/usuario.service';
 })
 export class MediaKilometrajeComponent implements OnInit {
 
-  public usuario: Usuario
+  public usuarioModificado: Usuario
 
-  constructor(public usuarioService: UsuarioService) 
-  {
-    this.usuario = this.usuarioService.usuario
-    console.log(this.usuario);
+  constructor(private usuarioService: UsuarioService, private router: Router, private toastr: ToastrService) {
+    this.usuarioModificado = this.usuarioService.usuario
+    console.log(this.usuarioModificado);
+
     console.log(this.usuarioService.usuario)
   }
- modificar(kilometros:number, año:number)
- {
-   this.usuario = new Usuario(this.usuario.id_user, this.usuario.name, this.usuario.last_name, this.usuario.email, this.usuario.password, kilometros, año, this.usuario.provisional_password, this.usuario.provisional_date)
-   console.log(this.usuario)
-   this.usuarioService.putUsuario(this.usuario).subscribe((data:Usuario) =>
-   {
-     console.log(data);
-     this.usuario = data;
-     this.usuario.year_car  = año
-     this.usuario.kilometers_car = kilometros
 
-     console.log(this.usuario)
-   })
- }
+  onSubmit(form: NgForm) {
+
+    console.log(form)
+
+    if (this.usuarioModificado.kilometers_car === null) {
+      this.usuarioModificado.kilometers_car = this.usuarioService.usuario.kilometers_car
+    }
+
+    if (this.usuarioModificado.year_car === null) {
+      this.usuarioModificado.year_car = this.usuarioService.usuario.year_car
+    }
+    if (this.validar(this.usuarioModificado)) {
+      this.usuarioService.putUsuario(this.usuarioModificado).subscribe((data) => {
+
+        if (this.usuarioModificado.kilometers_car !== null) {
+          this.usuarioService.usuario.kilometers_car = this.usuarioModificado.kilometers_car
+        }
+
+        if (this.usuarioModificado.year_car !== null) {
+          this.usuarioService.usuario.year_car = this.usuarioModificado.year_car
+        }
+
+        if (this.usuarioModificado.first_log === 1) {
+          this.usuarioService.usuario.first_log = 0
+        }
+        if (this.usuarioService.usuario.first_log === 1) {
+          this.router.navigate(['/home2'])
+          this.toastr.success('', 'Datos del coche añadidos', {
+          });
+        }
+        if (this.usuarioService.usuario.first_log === 0) {
+          this.toastr.success('', 'Datos del coche modificados', {
+          });
+        }
+      })
+    }
+
+  }
+
+  validar(usuario: Usuario) {
+    if (usuario.kilometers_car == null || usuario.year_car == null) {
+      return false
+    }
+    return true
+  }
+
   ngOnInit(): void {
   }
 

@@ -6,6 +6,11 @@
     justify-content: center;
     font-family: 'Mukta Vaani';
     /* background-color: red; */
+    position: absolute;
+    width: 414px;
+    height: 694px;
+    left: 0px;
+    top: 133px;
 }
 
 .back1 {
@@ -13,7 +18,7 @@
     width: 8px;
     height: 15px;
     left: 40px;
-    top: 146px;
+    top: 13px;
     font-size: 25px;
     color: var(--amarillo);
 }
@@ -48,11 +53,11 @@
 }
 
 
-.div_nombre {
-    position: absolute;
+.div_input {
+    /* position: absolute; */
     width: 310px;
     height: 54px;
-    top: 105px;
+    /* top: 105px; */
     background: #FAFAFA;
     border: 1px solid rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
@@ -64,78 +69,7 @@
     line-height: 43px;
     color: var(--negro);
     padding-left: 15px;
-}
-
-.div_apellido {
-    position: absolute;
-    width: 310px;
-    height: 54px;
-    top: 179px;
-    background: #FAFAFA;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    box-sizing: border-box;
-    border-radius: 10px;
-    font-family: 'Mukta Vaani';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 43px;
-    color: var(--negro);
-    padding-left: 15px;
-}
-
-.div_correo {
-    position: absolute;
-    width: 310px;
-    height: 54px;
-    top: 253px;
-    background: #FAFAFA;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    box-sizing: border-box;
-    border-radius: 10px;
-    font-family: 'Mukta Vaani';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 43px;
-    color: var(--negro);
-    padding-left: 15px;
-}
-
-.div_contrasenya {
-    position: absolute;
-    width: 310px;
-    height: 54px;
-    top: 327px;
-    background: #FAFAFA;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    box-sizing: border-box;
-    border-radius: 10px;
-    font-family: 'Mukta Vaani';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 43px;
-    color: var(--negro);
-    padding-left: 15px;
-}
-
-.div_contrasenya1 {
-    position: absolute;
-    width: 310px;
-    height: 54px;
-    top: 401px;
-    background: #FAFAFA;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    box-sizing: border-box;
-    border-radius: 10px;
-    font-family: 'Mukta Vaani';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 43px;
-    color: var(--negro);
-    padding-left: 15px;
+    margin-left: -12px;
 }
 
 .boton {
@@ -154,4 +88,66 @@
     color: var(--negro);
     border: none;
     box-shadow: 0px 1px 3px 1px var(--gris);
+}
+
+
+
+.caja {
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* padding-right: 18px; */
+    /* gap: 26px;*/
+
+}
+
+.caja1 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    /* background-color: red; */
+}
+
+.input {
+    border: 1px solid var(--gris);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 197px;
+    height: 70px;
+    padding-left: 15px;
+}
+
+.butt {
+    /* position: absolute; */
+    width: 186px;
+    height: 58px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 33px;
+    text-align: center;
+
+    background: var(--amarillo);
+    border-radius: 10px;
+    margin-left: 80px;
+    border: none;
+    box-shadow: 0px 1px 3px 1px var(--gris);
+}
+
+.back {
+    position: absolute;
+    width: 345px;
+    min-height: 464px;
+    left: 34px;
+    top: 54px;
+    border-radius: 10px;
+    background-color: var(--gris10);
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    padding-top: 105px;
+    padding-bottom: 45px;
 }

@@ -40,7 +40,7 @@ export class PaginaMantenimientoComponent implements OnInit {
 
   compararFecha(endDate: string): boolean {
     let date = new Date(endDate)
-    console.log(endDate);
+    // console.log(endDate);
 
     // console.log(date)
     let hoy = new Date()

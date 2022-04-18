@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Usuario } from 'src/app/models/usuario';
 import { UsuarioService } from 'src/app/servicios/usuario.service';
-
+import { ToastrService } from 'ngx-toastr';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -12,35 +12,40 @@ export class LoginComponent implements OnInit {
 
   public logged: boolean;
 
-  constructor(public router: Router, public usuarioService: UsuarioService) {
+  public usuario: Usuario
+
+  public validacion: any = ["", ""]
+
+  constructor(public router: Router, public usuarioService: UsuarioService, private toastr: ToastrService) {
     console.log(this.usuarioService.logged)
+    this.usuario = new Usuario(0, "", "", "", "", null, null, "", "", null)
   }
 
-  iniciarSesion(email: HTMLInputElement, contrasenya: HTMLInputElement) {
+  iniciarSesion() {
 
-    let usuario = new Usuario(null, null, null, email.value, contrasenya.value, null, null, null, null)
-    if (this.validar(usuario)) {
-      this.usuarioService.postLogin(usuario).subscribe((data: Usuario[]) => {
+    if (this.validar(this.usuario)) {
+      this.usuarioService.postLogin(this.usuario).subscribe((data: Usuario[]) => {
         console.log(data);
+        this.validacion = data
 
         if (data.length === 0) {
-          console.log("Datos no validos");
         }
         else {
-          console.log("Datos correctos");
-          this.router.navigate(['/home2']);
-          this.usuarioService.logged = true;
-          this.usuarioService.userLogged = true
-          this.usuarioService.usuario = data[0]
-          console.log(this.usuarioService.logged)
-          console.log(this.usuarioService.userLogged);
-          console.log(this.usuarioService.usuario);
+          if (data[0].first_log === 1) {
+            this.router.navigate(['/pagina-kilometraje']);
+            this.usuarioService.logged = true;
+            this.usuarioService.userLogged = true
+            this.usuarioService.usuario = data[0]
+          }
+          else {
+            this.router.navigate(['/home2']);
+            this.usuarioService.logged = true;
+            this.usuarioService.userLogged = true
+            this.usuarioService.usuario = data[0]
+            console.log(this.usuarioService.usuario.first_log)
+          }
         }
       })
-    }
-    else {
-      console.log("Faltan campos por rellenar");
-
     }
   }
 

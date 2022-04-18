@@ -101,10 +101,10 @@
 
 .texto_1 {
     position: absolute;
-    width: 129px;
+    width: 230px;
     height: 34px;
-    left: 24px;
-    top: 9px;
+    margin-left: 19px;
+    margin-top: 9px;
     font-family: 'Mukta Vaani';
     font-style: normal;
     font-weight: 600;
@@ -112,6 +112,9 @@
     line-height: 37px;
     color: var(--negro);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    text-align: left;
 }
 
 .subtexto_1 {
@@ -121,8 +124,7 @@
     font-size: 16px;
     line-height: 27px;
     color: var(--negro);
-    margin-top: 15.5px;
-    margin-left: 138px;
+    margin-top: 7.9px;
 }
 
 .texto_2 {
@@ -178,7 +180,7 @@
     width: 310px;
     height: 81px;
     background: var(--gris40);
-    box-shadow: 0 0 5px 3px #16EA2C;
+    box-shadow: 0 0 5px 3px var(--amarillo);
     box-sizing: border-box;
     border-radius: 10px;
 }

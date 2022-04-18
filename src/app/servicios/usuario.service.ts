@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Contrasena } from '../models/contrasena';
 import { Usuario } from '../models/usuario';
 
 
@@ -7,9 +8,9 @@ import { Usuario } from '../models/usuario';
   providedIn: 'root'
 })
 export class UsuarioService {
-  // private url = "https://my-api-automate.herokuapp.com"
+  private url = "https://my-api-automate.herokuapp.com"
 
-  private url = "http://localhost:3000"
+  // private url = "http://localhost:3000"
 
   public userLogged: boolean
 
@@ -37,4 +38,9 @@ export class UsuarioService {
   putUsuario(usuario: Usuario) {
     return this.http.put(this.url + "/usuario", usuario)
   }
+
+  putPassword(contrasena: Contrasena) {
+    return this.http.put(this.url + "/usuario/password", contrasena)
+  }
+
 }

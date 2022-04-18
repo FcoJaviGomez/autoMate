@@ -14,7 +14,7 @@ export class RecuperacionComponent implements OnInit {
   constructor(public router: Router, public contrasenya: ContraseñaService) { }
   recuperar(email: HTMLInputElement) {
 
-    let correo = new Usuario(0,null,null,email.value,null,0,0,null,null);
+    let correo = new Usuario(0,null,null,email.value,null,0,0,null,null,null);
     console.log(correo)
     this.contrasenya.restoreContrasena(correo).subscribe(function(data){
       console.log(data)

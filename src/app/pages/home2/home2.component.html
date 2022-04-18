@@ -5,7 +5,7 @@
         <h2 class="titulo_1">Bienvenido {{this.usuario.usuario.name}}</h2>
 
         <p class="consejo">
-           {{this.tips.consejo}}
+            {{this.tips.consejo}}
         </p>
 
         <h4 class="lineas">- - - - - - -</h4>
@@ -24,12 +24,23 @@
         </div>
 
         <ng-template #card>
-            <div *ngFor="let mantenimiento of mantenimientos; let index=index" on-click="mantenimientoDetalle(index)"
-            [ngClass]="compararFecha(mantenimientos.endDate) ? 'cards_mantenimiento_verde': 'cards_mantenimiento_roja'">
-                <h1 class="texto_1"> {{mantenimientos[0].type}}</h1>
-                <p class="subtexto_1">&nbsp;{{mantenimientos[0].subtype}}</p>
-                <p class="texto_2">{{mantenimientos[0].end_date.substring(0,10)}}</p>
-                <img class="icono" src="../../../assets/multimedia/iconoGancho.png">
+            <div *ngFor="let mantenimiento of mantenimientos; let index=index" on-click="mantenimientoDetalle(index)">
+                <section *ngIf="mantenimientos[0].name === null"
+                    [ngClass]="compararFecha(mantenimiento.end_date) ? 'cards_mantenimiento_roja': 'cards_mantenimiento_verde'">
+                    <h1 class="texto_1">{{mantenimientos[0].type | titlecase}}
+                        <p class="subtexto_1">&nbsp;{{mantenimientos[0].subtype | titlecase}}</p>
+                    </h1>
+                    <p class="texto_2">FECHA FIN: {{mantenimientos[0].end_date.substring(0,10)}} </p>
+                    <img class="icono" src="../../../assets/multimedia/iconoGancho.png">
+                </section>
+                <section *ngIf="mantenimientos[0].name !== null"
+                    [ngClass]="compararFecha(mantenimiento.end_date) ? 'cards_mantenimiento_roja': 'cards_mantenimiento_verde'">
+                    <h1 class="texto_1">{{mantenimientos[0].name | titlecase}}
+                        <p class="subtexto_1">&nbsp;{{mantenimientos[0].type | titlecase}}</p>
+                    </h1>
+                    <p class="texto_2">FECHA FIN: {{mantenimientos[0].end_date.substring(0,10)}} </p>
+                    <img class="icono" src="../../../assets/multimedia/iconoGancho.png">
+                </section>
             </div>
         </ng-template>
 
