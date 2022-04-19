@@ -47,8 +47,10 @@ export class MediaKilometrajeComponent implements OnInit {
           this.router.navigate(['/home2'])
           this.toastr.success('', 'Datos del coche añadidos', {
           });
+          this.usuarioService.usuario.first_log = 0
+
         }
-        if (this.usuarioService.usuario.first_log === 0) {
+        else {
           this.toastr.success('', 'Datos del coche modificados', {
           });
         }

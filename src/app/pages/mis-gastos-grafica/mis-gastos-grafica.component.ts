@@ -12,24 +12,26 @@ import { BaseChartDirective } from 'ng2-charts';
 })
 
 export class MisGastosGraficaComponent {
-  
-  @ViewChild (BaseChartDirective) chart: BaseChartDirective | undefined;
+
+  @ViewChild(BaseChartDirective) chart: BaseChartDirective | undefined;
 
   public doughnutChartLabels: string[] = [];
 
   public doughnutChartData: ChartData<'doughnut'> = {
     labels: this.doughnutChartLabels,
     datasets: [
-      { data: [],
-        backgroundColor: ['#FFD966','#A18F65','#FFF9EE','#1B3D2F','#B3ABAC',
-                          '#574144','#BEA5A8','#8DB5AD','#5A8079','#1F191A']}
+      {
+        data: [],
+        backgroundColor: ['#FFD966', '#A18F65', '#e59a11', '#1B3D2F', '#B3ABAC',
+          '#574144', '#BEA5A8', '#8DB5AD', '#5A8079', '#1F191A']
+      }
     ]
   };
   public doughnutChartType: ChartType = 'doughnut';
 
-  public gastoTotal: number =0;
+  public gastoTotal: number = 0;
 
-  constructor(private servicioGastos: GastosService, private servicioUsuario: UsuarioService) {}
+  constructor(private servicioGastos: GastosService, private servicioUsuario: UsuarioService) { }
 
   // events
   public chartClicked({ event, active }: { event: MouseEvent, active: {}[] }): void {
@@ -42,15 +44,15 @@ export class MisGastosGraficaComponent {
 
   ngOnInit(): void {
 
-    this.servicioGastos.getGastos(this.servicioUsuario.usuario.id_user).subscribe((data: any)=> {
-      
-      for(let gasto of data) {
+    this.servicioGastos.getGastos(this.servicioUsuario.usuario.id_user).subscribe((data: any) => {
+
+      for (let gasto of data) {
         this.doughnutChartData.datasets[0].data.push(gasto.cost)
         this.doughnutChartLabels.push(gasto.type)
-        this.gastoTotal+= parseInt(gasto.cost)
+        this.gastoTotal += parseInt(gasto.cost)
 
         this.chart?.update();
       }
     })
-  } 
+  }
 }
