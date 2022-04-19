@@ -8,16 +8,17 @@ import { Home1Component } from '../pages/home1/home1.component';
 })
 export class TipsService {
 
-  private url = "https://my-api-automate.herokuapp.com"
+  // private url = "https://my-api-automate.herokuapp.com"
 
-   public consejo: string  
+  private url = "http://localhost:3000";
 
-  constructor(private http: HttpClient ) { }
+  public consejo: string
 
-  
+  constructor(private http: HttpClient) { }
 
-  getTip():Observable<Object>
-  {
+
+
+  getTip(): Observable<Object> {
     return this.http.get(this.url + '/home-logged')
   }
 }

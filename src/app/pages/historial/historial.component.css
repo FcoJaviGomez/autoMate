@@ -136,7 +136,7 @@
     width: 310px;
     height: 81px;
     background: var(--gris40);
-    box-shadow: 0 0 5px 3px #16EA2C;
+    box-shadow: 0 0 5px 3px var(--amarillo);
     box-sizing: border-box;
     border-radius: 10px;
 }
