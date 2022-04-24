@@ -10,7 +10,9 @@ import { Usuario } from '../models/usuario';
 export class UsuarioService {
   // private url = "https://my-api-automate.herokuapp.com"
 
-  private url = "http://localhost:3000"
+  private url = "https://app-api-auto-mate.herokuapp.com"
+
+  // private url = "http://localhost:3000"
 
   public userLogged: boolean
 
