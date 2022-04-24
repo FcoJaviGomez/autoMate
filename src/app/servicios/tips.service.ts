@@ -10,7 +10,9 @@ export class TipsService {
 
   // private url = "https://my-api-automate.herokuapp.com"
 
-  private url = "http://localhost:3000";
+  private url = "https://app-api-auto-mate.herokuapp.com/"
+
+  // private url = "http://localhost:3000";
 
   public consejo: string
 
