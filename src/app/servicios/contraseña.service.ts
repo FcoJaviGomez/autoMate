@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { Usuario } from '../models/usuario';
 
 
@@ -9,12 +10,7 @@ import { Usuario } from '../models/usuario';
 })
 export class ContraseñaService {
 
-  // private url = "https://my-api-automate.herokuapp.com"
-
-  private url = "https://app-api-auto-mate.herokuapp.com"
-
-  // private url = "http://localhost:3000"
-
+  private url = environment.apiURL
 
   constructor(private http: HttpClient) { }
 

@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 import { Contrasena } from '../models/contrasena';
 import { Usuario } from '../models/usuario';
 
@@ -8,11 +9,8 @@ import { Usuario } from '../models/usuario';
   providedIn: 'root'
 })
 export class UsuarioService {
-  // private url = "https://my-api-automate.herokuapp.com"
 
-  private url = "https://app-api-auto-mate.herokuapp.com"
-
-  // private url = "http://localhost:3000"
+  private url = environment.apiURL
 
   public userLogged: boolean
 

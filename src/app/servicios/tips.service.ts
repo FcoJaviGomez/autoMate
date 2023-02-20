@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { Home1Component } from '../pages/home1/home1.component';
 
 @Injectable({
@@ -8,11 +9,7 @@ import { Home1Component } from '../pages/home1/home1.component';
 })
 export class TipsService {
 
-  // private url = "https://my-api-automate.herokuapp.com"
-
-  private url = "https://app-api-auto-mate.herokuapp.com"
-
-  // private url = "http://localhost:3000";
+  private url = environment.apiURL
 
   public consejo: string
 

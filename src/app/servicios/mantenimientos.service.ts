@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { Mantenimiento } from '../models/mantenimiento';
 
 @Injectable({
@@ -8,11 +9,7 @@ import { Mantenimiento } from '../models/mantenimiento';
 })
 export class MantenimientosService {
 
-  // private url = "https://my-api-automate.herokuapp.com"
-
-  private url = "https://app-api-auto-mate.herokuapp.com"
-
-  // private url = "http://localhost:3000"
+  private url = environment.apiURL
 
   public mantenimientoSeleccionado: any
 
