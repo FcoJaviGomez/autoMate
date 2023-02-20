@@ -10,7 +10,7 @@ import { Usuario } from '../models/usuario';
 })
 export class ContraseñaService {
 
-  private url = environment.apiURL
+  private url = "https://apiautomate002.fly.dev"
 
   constructor(private http: HttpClient) { }
 

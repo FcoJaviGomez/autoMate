@@ -10,7 +10,7 @@ import { Usuario } from '../models/usuario';
 })
 export class UsuarioService {
 
-  private url = environment.apiURL
+  private url = "https://apiautomate002.fly.dev"
 
   public userLogged: boolean
 

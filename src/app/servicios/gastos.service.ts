@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
 })
 export class GastosService {
 
-  private url = environment.apiURL
+  private url = "https://apiautomate002.fly.dev"
 
   constructor(private http: HttpClient) { }
 

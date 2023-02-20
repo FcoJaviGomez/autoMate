@@ -9,7 +9,7 @@ import { Home1Component } from '../pages/home1/home1.component';
 })
 export class TipsService {
 
-  private url = environment.apiURL
+  private url = "https://apiautomate002.fly.dev"
 
   public consejo: string
 

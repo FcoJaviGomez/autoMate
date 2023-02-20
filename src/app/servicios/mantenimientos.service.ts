@@ -9,7 +9,7 @@ import { Mantenimiento } from '../models/mantenimiento';
 })
 export class MantenimientosService {
 
-  private url = environment.apiURL
+  private url = "https://apiautomate002.fly.dev"
 
   public mantenimientoSeleccionado: any
 
