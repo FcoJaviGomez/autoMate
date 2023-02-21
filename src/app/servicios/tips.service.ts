@@ -9,7 +9,7 @@ import { Home1Component } from '../pages/home1/home1.component';
 })
 export class TipsService {
 
-  private url = "https://automate01.fly.dev/"
+  private url = "https://automate01.fly.dev"
 
   public consejo: string
 
